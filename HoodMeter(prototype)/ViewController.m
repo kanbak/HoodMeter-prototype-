@@ -10,7 +10,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+{
+    
+}
 @property (nonatomic, strong) NSArray *crimesArray;
 
 @end
@@ -21,22 +23,22 @@
 {
     [super viewDidLoad];
 
-    NSURL *url=[NSURL URLWithString:@"http://data.cityofchicago.org/resource/a95h-gwzm.json"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
-     {
-         NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-         NSMutableArray *temporaryArray = [NSMutableArray arrayWithCapacity:[jsonArray count]];
-         [jsonArray enumerateObjectsUsingBlock:^(NSDictionary *crimeDictionary, NSUInteger idx, BOOL *stop) {
-             Crime *crime = [[Crime alloc] initWithCrimeDictionary:crimeDictionary];
-                         
-             NSLog(@"%@", [crime description]);
-             
-             
-             [temporaryArray addObject:crime];
-         }];
-         self.crimesArray = [NSArray arrayWithArray:temporaryArray];
-     }];
+//    NSURL *url=[NSURL URLWithString:@"http://data.cityofchicago.org/resource/a95h-gwzm.json"];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:url];
+//    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
+//     {
+//         NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
+//         NSMutableArray *temporaryArray = [NSMutableArray arrayWithCapacity:[jsonArray count]];
+//         [jsonArray enumerateObjectsUsingBlock:^(NSDictionary *crimeDictionary, NSUInteger idx, BOOL *stop) {
+//             Crime *crime = [[Crime alloc] initWithCrimeDictionary:crimeDictionary];
+//                         
+//             NSLog(@"%@", [crime description]);
+//             
+//             
+//             [temporaryArray addObject:crime];
+//         }];
+//         self.crimesArray = [NSArray arrayWithArray:temporaryArray];
+//     }];
     
 	// Do any additional setup after loading the view, typically from a nib.
 }

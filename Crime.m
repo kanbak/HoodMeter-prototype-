@@ -46,5 +46,16 @@
     return [NSString stringWithFormat:@"%@ %@ %@ %f%f", self.blockString, self.primaryTypeString,self.crimeDescriptionString, self.crimeLocation.latitude, self.crimeLocation.longitude];
 }
 
+-(CLLocationCoordinate2D)coordinate {
+    return self.crimeLocation;
+}
+
+-(NSString *)title {
+    return self.primaryTypeString;
+}
+
+-(NSString *)subtitle {
+    return self.crimeDescriptionString;
+}
 
 @end 

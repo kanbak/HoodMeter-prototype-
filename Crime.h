@@ -9,8 +9,9 @@
 #import <Foundation/Foundation.h>
 
 #import <CoreLocation/CoreLocation.h>
+#import <MapKit/MapKit.h>
 
-@interface Crime : NSObject
+@interface Crime : NSObject <MKAnnotation>
 
 @property (nonatomic, strong) NSNumber *arrestNumber;
 @property (nonatomic, strong) NSString *beatString;
