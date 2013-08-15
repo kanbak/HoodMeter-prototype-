@@ -19,6 +19,8 @@
 		55291ED417BBD4F700512F2E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55291ED217BBD4F700512F2E /* MainStoryboard_iPhone.storyboard */; };
 		55291ED717BBD4F700512F2E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55291ED517BBD4F700512F2E /* MainStoryboard_iPad.storyboard */; };
 		55291EDA17BBD4F700512F2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55291ED917BBD4F700512F2E /* ViewController.m */; };
+		559AA99F17BD360E00174BA6 /* Crime.m in Sources */ = {isa = PBXBuildFile; fileRef = 559AA99E17BD360E00174BA6 /* Crime.m */; };
+		559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559AA9A117BD38BF00174BA6 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,9 @@
 		55291ED617BBD4F700512F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		55291ED817BBD4F700512F2E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		55291ED917BBD4F700512F2E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		559AA99D17BD360E00174BA6 /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crime.h; path = ../Crime.h; sourceTree = "<group>"; };
+		559AA99E17BD360E00174BA6 /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crime.m; path = ../Crime.m; sourceTree = "<group>"; };
+		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */,
 				55291EBB17BBD4F700512F2E /* UIKit.framework in Frameworks */,
 				55291EBD17BBD4F700512F2E /* Foundation.framework in Frameworks */,
 				55291EBF17BBD4F700512F2E /* CoreGraphics.framework in Frameworks */,
@@ -75,6 +81,7 @@
 		55291EB917BBD4F700512F2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				559AA9A117BD38BF00174BA6 /* CoreLocation.framework */,
 				55291EBA17BBD4F700512F2E /* UIKit.framework */,
 				55291EBC17BBD4F700512F2E /* Foundation.framework */,
 				55291EBE17BBD4F700512F2E /* CoreGraphics.framework */,
@@ -85,6 +92,7 @@
 		55291EC017BBD4F700512F2E /* HoodMeter(prototype) */ = {
 			isa = PBXGroup;
 			children = (
+				559AA9A017BD362E00174BA6 /* Model */,
 				55291EC917BBD4F700512F2E /* AppDelegate.h */,
 				55291ECA17BBD4F700512F2E /* AppDelegate.m */,
 				55291ED217BBD4F700512F2E /* MainStoryboard_iPhone.storyboard */,
@@ -108,6 +116,15 @@
 				55291ED017BBD4F700512F2E /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		559AA9A017BD362E00174BA6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				559AA99D17BD360E00174BA6 /* Crime.h */,
+				559AA99E17BD360E00174BA6 /* Crime.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,6 +197,7 @@
 				55291EC717BBD4F700512F2E /* main.m in Sources */,
 				55291ECB17BBD4F700512F2E /* AppDelegate.m in Sources */,
 				55291EDA17BBD4F700512F2E /* ViewController.m in Sources */,
+				559AA99F17BD360E00174BA6 /* Crime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +330,7 @@
 				55291EDF17BBD4F700512F2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
