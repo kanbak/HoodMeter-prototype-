@@ -17,9 +17,11 @@
 
 - (void)viewDidLoad
 {
+    
+    [super viewDidLoad];
+
     NSURL *url=[NSURL URLWithString:@"http://data.cityofchicago.org/resource/a95h-gwzm.json"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [super viewDidLoad];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
      {
          NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
