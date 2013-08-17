@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Crime Map View Controller-->
+        <!--Crime Map View Controller - Chicago Crime Map-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="CrimeMapViewController" sceneMemberID="viewController">
@@ -17,18 +17,38 @@
                                     <outlet property="delegate" destination="2" id="hiC-jo-mz6"/>
                                 </connections>
                             </mapView>
+                            <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKE-ZR-Aw3">
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="47S-Bx-N2f"/>
+                                </connections>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="hHK-xP-Tyi" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="5Z1-fU-y4v"/>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="Wb4-je-Y7f"/>
+                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="7Yx-3q-aqW"/>
+                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="MQy-my-gYY"/>
+                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-2" id="aQh-fr-VUc"/>
                             <constraint firstItem="hHK-xP-Tyi" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="bU0-1Z-QSJ"/>
                             <constraint firstItem="hHK-xP-Tyi" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="jN5-O5-WlQ"/>
+                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="rSQ-9v-PNQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="5fl-CC-IA1"/>
+                    <navigationItem key="navigationItem" title="Chicago Crime Map" id="5fl-CC-IA1">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="Vp3-6r-VHF">
+                            <connections>
+                                <action selector="showSearchBar:" destination="2" id="aGB-PF-fDD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="crimeMapView" destination="hHK-xP-Tyi" id="6gW-ho-ztt"/>
+                        <outlet property="searchBar" destination="iKE-ZR-Aw3" id="oMq-M1-NEh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -58,7 +78,9 @@
         <class className="CrimeMapViewController" superclassName="ViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CrimeMapViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="mapView" candidateClass="MKMapView"/>
+                <relationship kind="action" name="showSearchBar:"/>
+                <relationship kind="outlet" name="crimeMapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
             </relationships>
         </class>
         <class className="NSLayoutConstraint" superclassName="NSObject">

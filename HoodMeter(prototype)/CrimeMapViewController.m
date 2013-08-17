@@ -17,9 +17,13 @@
 @interface CrimeMapViewController ()
 {
     __weak IBOutlet MKMapView *crimeMapView;
+    __weak IBOutlet UISearchBar *searchBar;
+    
 }
+- (IBAction)showSearchBar:(id)sender;
 
 @property (nonatomic, strong) NSArray *crimesArray;
+
 @end
 
 @implementation CrimeMapViewController
@@ -88,9 +92,39 @@
     
     return nil;
 }
+-(void)searchBarSearchButtonClicked:(UISearchBar*)aSearchBar
+{
+    [aSearchBar resignFirstResponder];
+    CLGeocoder *geocoder = [[CLGeocoder alloc] init];
+    [geocoder geocodeAddressString:aSearchBar.text completionHandler:^(NSArray *placemarks, NSError *error) {
+        //Error checking
+        
+        CLPlacemark *placemark = [placemarks objectAtIndex:0];
+        MKCoordinateRegion region;
+        region.center.latitude = placemark.region.center.latitude;
+        region.center.longitude = placemark.region.center.longitude;
+        MKCoordinateSpan span;
+        double radius = placemark.region.radius / 1000; // convert to km
+        
+        NSLog(@"[searchBarSearchButtonClicked] Radius is %f", radius);
+        span.latitudeDelta = radius / 20.0;
+        
+        region.span = span;
+        
+        [crimeMapView setRegion:region animated:YES];
+        aSearchBar.hidden = YES;
+    }];
+}
+- (void)searchBarCancelButtonClicked:(UISearchBar *)aSearchBar{
+    [aSearchBar resignFirstResponder];
+    aSearchBar.hidden = YES;
+
+}
 
 
-    
 
 
+- (IBAction)showSearchBar:(id)sender {
+    searchBar.hidden = NO;
+}
 @end
