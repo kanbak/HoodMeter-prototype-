@@ -24,6 +24,8 @@
 		553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */; };
 		559AA99F17BD360E00174BA6 /* Crime.m in Sources */ = {isa = PBXBuildFile; fileRef = 559AA99E17BD360E00174BA6 /* Crime.m */; };
 		559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559AA9A117BD38BF00174BA6 /* CoreLocation.framework */; };
+		9D4A9F4517C02DF500316349 /* CustomAnnotations.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D4A9F4417C02DF500316349 /* CustomAnnotations.m */; };
+		9D4A9F4D17C03A5B00316349 /* narcoticsIcon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9D4A9F4C17C03A5B00316349 /* narcoticsIcon2.png */; };
 		9DD05BFB17BEFCD600DDEEE8 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DD05BFA17BEFCD600DDEEE8 /* QuartzCore.framework */; };
 		9DD05BFE17BEFD7A00DDEEE8 /* Compass.m in Sources */ = {isa = PBXBuildFile; fileRef = 9DD05BFD17BEFD7A00DDEEE8 /* Compass.m */; };
 		9DD05C0017BF05BC00DDEEE8 /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 9DD05BFF17BF05BC00DDEEE8 /* compass_needle.png */; };
@@ -55,6 +57,9 @@
 		559AA99D17BD360E00174BA6 /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crime.h; path = ../Crime.h; sourceTree = "<group>"; };
 		559AA99E17BD360E00174BA6 /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crime.m; path = ../Crime.m; sourceTree = "<group>"; };
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9D4A9F4317C02DF500316349 /* CustomAnnotations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomAnnotations.h; sourceTree = "<group>"; };
+		9D4A9F4417C02DF500316349 /* CustomAnnotations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomAnnotations.m; sourceTree = "<group>"; };
+		9D4A9F4C17C03A5B00316349 /* narcoticsIcon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = narcoticsIcon2.png; path = ../../narcoticsIcon2.png; sourceTree = "<group>"; };
 		9DD05BFA17BEFCD600DDEEE8 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		9DD05BFC17BEFD7A00DDEEE8 /* Compass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Compass.h; path = ../Compass.h; sourceTree = "<group>"; };
 		9DD05BFD17BEFD7A00DDEEE8 /* Compass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Compass.m; path = ../Compass.m; sourceTree = "<group>"; };
@@ -149,6 +154,8 @@
 		559AA9A017BD362E00174BA6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9D4A9F4317C02DF500316349 /* CustomAnnotations.h */,
+				9D4A9F4417C02DF500316349 /* CustomAnnotations.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -156,6 +163,7 @@
 		9DD05C0117BF05C500DDEEE8 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				9D4A9F4C17C03A5B00316349 /* narcoticsIcon2.png */,
 				9DD05BFF17BF05BC00DDEEE8 /* compass_needle.png */,
 			);
 			name = Images;
@@ -219,6 +227,7 @@
 				55291ED417BBD4F700512F2E /* MainStoryboard_iPhone.storyboard in Resources */,
 				55291ED717BBD4F700512F2E /* MainStoryboard_iPad.storyboard in Resources */,
 				9DD05C0017BF05BC00DDEEE8 /* compass_needle.png in Resources */,
+				9D4A9F4D17C03A5B00316349 /* narcoticsIcon2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -236,6 +245,7 @@
 				553CFEDF17BD63BF00DF6444 /* CrimeLocation.m in Sources */,
 				553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */,
 				9DD05BFE17BEFD7A00DDEEE8 /* Compass.m in Sources */,
+				9D4A9F4517C02DF500316349 /* CustomAnnotations.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
