@@ -5,7 +5,11 @@
 //  Created by Umut Kanbak on 8/14/13.
 //  Copyright (c) 2013 Umut Kanbak. All rights reserved.
 //
-//just typing something to test git......!!!!!!!!!!!!!!!!!
+
+
+
+//Umut here's the website'
+//http://blog.objectgraph.com/index.php/2012/01/10/how-to-create-a-compass-in-iphone/
 
 #import "ViewController.h"
 
