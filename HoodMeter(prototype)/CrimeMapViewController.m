@@ -100,9 +100,57 @@
      NSLog(@"%i",seCrimeVolume);
          
          if (nwCrimeVolume <=100) {
-             nwView.backgroundColor = [UIColor greenColor];
-             
-         }
+             nwView.backgroundColor = [UIColor greenColor];}
+
+         else if
+             (nwCrimeVolume >=100 && nwCrimeVolume <=299){
+                 nwView.backgroundColor = [UIColor yellowColor];}
+             else if
+                 (nwCrimeVolume >=300 && nwCrimeVolume <=599){
+                     nwView.backgroundColor = [UIColor orangeColor];}
+                 else if
+                     (nwCrimeVolume >=600 && nwCrimeVolume <=10000){
+                         nwView.backgroundColor = [UIColor redColor];}
+                     
+         if (nwCrimeVolume <=100) {
+             neView.backgroundColor = [UIColor greenColor];}
+         
+         else if
+             (neCrimeVolume >=100 && nwCrimeVolume <=299){
+                 neView.backgroundColor = [UIColor yellowColor];}
+         else if
+             (neCrimeVolume >=300 && nwCrimeVolume <=599){
+                 neView.backgroundColor = [UIColor orangeColor];}
+         else if
+             (neCrimeVolume >=600 && nwCrimeVolume <=10000){
+                 neView.backgroundColor = [UIColor redColor];}
+         
+         if (swCrimeVolume <=100) {
+             swView.backgroundColor = [UIColor greenColor];}
+         
+         else if
+             (swCrimeVolume >=100 && nwCrimeVolume <=299){
+                 swView.backgroundColor = [UIColor yellowColor];}
+         else if
+             (swCrimeVolume >=300 && nwCrimeVolume <=599){
+                 swView.backgroundColor = [UIColor orangeColor];}
+         else if
+             (swCrimeVolume >=600 && nwCrimeVolume <=10000){
+                 swView.backgroundColor = [UIColor redColor];}
+         
+         if (seCrimeVolume <=100) {
+             seView.backgroundColor = [UIColor greenColor];}
+         
+         else if
+             (seCrimeVolume >=100 && nwCrimeVolume <=299){
+                 seView.backgroundColor = [UIColor yellowColor];}
+         else if
+             (seCrimeVolume >=300 && nwCrimeVolume <=599){
+                 seView.backgroundColor = [UIColor orangeColor];}
+         else if
+             (seCrimeVolume >=600 && nwCrimeVolume <=10000){
+                 seView.backgroundColor = [UIColor redColor];}
+         
      }];
     
     
