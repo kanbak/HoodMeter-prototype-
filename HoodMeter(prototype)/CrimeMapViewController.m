@@ -18,6 +18,7 @@
 {
     __weak IBOutlet MKMapView *crimeMapView;
     __weak IBOutlet UISearchBar *searchBar;
+    CLLocationManager *locationManager;
     
 }
 - (IBAction)showSearchBar:(id)sender;
@@ -41,6 +42,16 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    locationManager = [[CLLocationManager alloc]init];
+    locationManager.delegate = self;
+    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [locationManager startUpdatingLocation];
+    
+    NSMutableArray *nwArray = [NSMutableArray array];
+    NSMutableArray *neArray = [NSMutableArray array];
+    NSMutableArray *swArray = [NSMutableArray array];
+    NSMutableArray *seArray = [NSMutableArray array];
+
     NSURL *url=[NSURL URLWithString:@"http://data.cityofchicago.org/resource/a95h-gwzm.json"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
@@ -54,7 +65,36 @@
          }];
          self.crimesArray = [NSArray arrayWithArray:temporaryArray];
          [crimeMapView addAnnotations:self.crimesArray];
+         
+         for (Crime *crime in self.crimesArray) {
+             if ((crime.coordinate.latitude <= locationManager.location.coordinate.latitude)&&(crime.coordinate.longitude >= locationManager.location.coordinate.longitude)) {
+                 [nwArray addObject:crime];
+             }
+             else if ((crime.coordinate.latitude >= locationManager.location.coordinate.latitude)&&(crime.coordinate.longitude >= locationManager.location.coordinate.longitude)) {
+                 [neArray addObject:crime];
+             }
+             else if ((crime.coordinate.latitude <= locationManager.location.coordinate.latitude)&&(crime.coordinate.longitude <= locationManager.location.coordinate.longitude)) {
+                 [swArray addObject:crime];
+             }
+             else if ((crime.coordinate.latitude >= locationManager.location.coordinate.latitude)&&(crime.coordinate.longitude <= locationManager.location.coordinate.longitude)) {
+                 [seArray addObject:crime];
+             }
+         //NSLog(@"NW:%i NE:%i SW:%i SE:%i",[nwArray count],[neArray count], [swArray count], [seArray count]);
+         
+        
+         
+         }
+     int nwCrimeVolume = nwArray.count;
+     NSLog(@"%i",nwCrimeVolume);
+     int neCrimeVolume = neArray.count;
+     NSLog(@"%i",neCrimeVolume);
+     int swCrimeVolume = swArray.count;
+     NSLog(@"%i",swCrimeVolume);
+     int seCrimeVolume = seArray.count;
+     NSLog(@"%i",seCrimeVolume);
      }];
+    
+    
 }
 
 - (void)didReceiveMemoryWarning
