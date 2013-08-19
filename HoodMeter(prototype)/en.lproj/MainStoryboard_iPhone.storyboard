@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="TMA-2x-Xhb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="TMA-2x-Xhb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -12,12 +12,34 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHK-xP-Tyi">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="hHK-xP-Tyi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <connections>
                                     <outlet property="delegate" destination="2" id="hiC-jo-mz6"/>
                                 </connections>
                             </mapView>
-                            <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKE-ZR-Aw3">
+                            <view alpha="0.30000001192092896" tag="1" contentMode="scaleToFill" id="eh5-s0-2rE">
+                                <rect key="frame" x="0.0" y="42" width="160" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.30000001192092896" tag="4" contentMode="scaleToFill" id="kvg-S4-ffD">
+                                <rect key="frame" x="160" y="228" width="160" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.30000001192092896" tag="3" contentMode="scaleToFill" id="IgT-YN-ZBM">
+                                <rect key="frame" x="0.0" y="228" width="160" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view alpha="0.30000001192092896" tag="2" contentMode="scaleToFill" id="RY0-v9-7UR">
+                                <rect key="frame" x="160" y="42" width="160" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" showsCancelButton="YES" id="iKE-ZR-Aw3">
+                                <rect key="frame" x="0.0" y="-2" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
@@ -29,15 +51,6 @@
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="5Z1-fU-y4v"/>
-                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="7Yx-3q-aqW"/>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="MQy-my-gYY"/>
-                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-2" id="aQh-fr-VUc"/>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="bU0-1Z-QSJ"/>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="jN5-O5-WlQ"/>
-                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="rSQ-9v-PNQ"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chicago Crime Map" id="5fl-CC-IA1">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Vp3-6r-VHF">
@@ -48,12 +61,16 @@
                     </navigationItem>
                     <connections>
                         <outlet property="crimeMapView" destination="hHK-xP-Tyi" id="6gW-ho-ztt"/>
+                        <outlet property="neView" destination="RY0-v9-7UR" id="jje-31-HNf"/>
+                        <outlet property="nwView" destination="eh5-s0-2rE" id="QUQ-Xj-xke"/>
+                        <outlet property="seView" destination="kvg-S4-ffD" id="Ihf-Yk-x8u"/>
                         <outlet property="searchBar" destination="iKE-ZR-Aw3" id="oMq-M1-NEh"/>
+                        <outlet property="swView" destination="IgT-YN-ZBM" id="NaF-5l-27h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="701" y="-1"/>
+            <point key="canvasLocation" x="1139" y="-1"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UdM-Rs-cnK">
@@ -74,22 +91,6 @@
             <point key="canvasLocation" x="175" y="-1"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="CrimeMapViewController" superclassName="ViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CrimeMapViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="showSearchBar:"/>
-                <relationship kind="outlet" name="crimeMapView" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

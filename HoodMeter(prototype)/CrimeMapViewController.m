@@ -19,6 +19,10 @@
     __weak IBOutlet MKMapView *crimeMapView;
     __weak IBOutlet UISearchBar *searchBar;
     CLLocationManager *locationManager;
+    __weak IBOutlet UIView *nwView;
+    __weak IBOutlet UIView *neView;
+    __weak IBOutlet UIView *swView;
+    __weak IBOutlet UIView *seView;
     
 }
 - (IBAction)showSearchBar:(id)sender;
@@ -66,8 +70,10 @@
          self.crimesArray = [NSArray arrayWithArray:temporaryArray];
          [crimeMapView addAnnotations:self.crimesArray];
          
+         CLLocationCoordinate2D currentLocation = locationManager.location.coordinate;
+         
          for (Crime *crime in self.crimesArray) {
-             if ((crime.coordinate.latitude <= locationManager.location.coordinate.latitude)&&(crime.coordinate.longitude >= locationManager.location.coordinate.longitude)) {
+             if ((crime.coordinate.latitude <= locationManager.location.coordinate.latitude)&&(crime.coordinate.longitude >= currentLocation.longitude)) {
                  [nwArray addObject:crime];
              }
              else if ((crime.coordinate.latitude >= locationManager.location.coordinate.latitude)&&(crime.coordinate.longitude >= locationManager.location.coordinate.longitude)) {
@@ -92,6 +98,11 @@
      NSLog(@"%i",swCrimeVolume);
      int seCrimeVolume = seArray.count;
      NSLog(@"%i",seCrimeVolume);
+         
+         if (nwCrimeVolume <=100) {
+             nwView.backgroundColor = [UIColor greenColor];
+             
+         }
      }];
     
     
