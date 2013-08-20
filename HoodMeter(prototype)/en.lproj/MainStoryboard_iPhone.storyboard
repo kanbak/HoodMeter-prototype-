@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="TMA-2x-Xhb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="pTg-pf-F9I">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -12,12 +12,14 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHK-xP-Tyi">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="hHK-xP-Tyi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <connections>
                                     <outlet property="delegate" destination="2" id="hiC-jo-mz6"/>
                                 </connections>
                             </mapView>
-                            <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKE-ZR-Aw3">
+                            <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" showsCancelButton="YES" id="iKE-ZR-Aw3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
@@ -28,16 +30,6 @@
                                 </connections>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="5Z1-fU-y4v"/>
-                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="7Yx-3q-aqW"/>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="MQy-my-gYY"/>
-                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-2" id="aQh-fr-VUc"/>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="bU0-1Z-QSJ"/>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="jN5-O5-WlQ"/>
-                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="rSQ-9v-PNQ"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chicago Crime Map" id="5fl-CC-IA1">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Vp3-6r-VHF">
@@ -52,29 +44,110 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="8Vz-2G-jaI"/>
             </objects>
-            <point key="canvasLocation" x="701" y="-1"/>
+            <point key="canvasLocation" x="1665" y="-1"/>
+        </scene>
+        <!--Compass View Controller-->
+        <scene sceneID="NKp-wa-YzC">
+            <objects>
+                <viewController id="YcS-LA-tHF" customClass="CompassViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qH3-3g-syp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="center" id="snG-YX-jmM">
+                                <rect key="frame" x="59" y="89" width="211" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="vCf-ZL-YzB">
+                                        <rect key="frame" x="35" y="45" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="GOX-oc-Lnd">
+                                        <rect key="frame" x="35" y="205" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="OQz-cp-Afk">
+                                        <rect key="frame" x="154" y="205" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CGv-F5-CUV">
+                                        <rect key="frame" x="154" y="45" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="compass_needle.png" id="vft-ep-wPs">
+                                        <rect key="frame" x="-5" y="-47" width="221" height="364"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                    <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="bDv-Vw-tY1">
+                                        <rect key="frame" x="93" y="129" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="vAN-i0-Za7"/>
+                    <connections>
+                        <outlet property="caOutlet" destination="bDv-Vw-tY1" id="uLN-Pd-4pI"/>
+                        <outlet property="compassImage" destination="vft-ep-wPs" id="hju-lo-dTe"/>
+                        <outlet property="currentLocationView" destination="bDv-Vw-tY1" id="2JP-rF-EDW"/>
+                        <outlet property="neView" destination="CGv-F5-CUV" id="vAu-qK-8a5"/>
+                        <outlet property="nwView" destination="vCf-ZL-YzB" id="1mi-Qb-7Nx"/>
+                        <outlet property="seView" destination="OQz-cp-Afk" id="ay4-Y3-0YL"/>
+                        <outlet property="swView" destination="GOX-oc-Lnd" id="k75-cV-Ovx"/>
+                        <outletCollection property="compassViews" destination="vft-ep-wPs" id="dG0-cg-wN4"/>
+                        <segue destination="2" kind="push" identifier="toMapView" id="NAc-Zq-5vf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wqp-WT-woo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="7IC-NT-yf2"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="-1"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="UdM-Rs-cnK">
+        <scene sceneID="7zk-Te-1EV">
             <objects>
-                <navigationController id="TMA-2x-Xhb" sceneMemberID="viewController">
+                <navigationController id="pTg-pf-F9I" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qUX-fa-yk7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="au3-nY-np7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="ecq-YA-lYP"/>
+                        <segue destination="YcS-LA-tHF" kind="relationship" relationship="rootViewController" id="HQf-M4-rXX"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XP8-KU-MyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4A-EN-EPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175" y="-1"/>
+            <point key="canvasLocation" x="618" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="compass_needle.png" width="300" height="289"/>
+    </resources>
     <classes>
+        <class className="CompassViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompassViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="caOutlet" candidateClass="UIView"/>
+                <relationship kind="outlet" name="compassImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="currentLocationView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="neView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="nwView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="seView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="swView" candidateClass="UIView"/>
+                <relationship kind="outletCollection" name="compassViews" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="CrimeMapViewController" superclassName="ViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CrimeMapViewController.h"/>
             <relationships>
@@ -82,9 +155,6 @@
                 <relationship kind="outlet" name="crimeMapView" candidateClass="MKMapView"/>
                 <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
             </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>

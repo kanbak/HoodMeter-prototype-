@@ -19,6 +19,7 @@
     __weak IBOutlet MKMapView *crimeMapView;
     __weak IBOutlet UISearchBar *searchBar;
     CLLocationManager *locationManager;
+  
     
 }
 - (IBAction)showSearchBar:(id)sender;
@@ -42,6 +43,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    searchBar.hidden = YES;
     locationManager = [[CLLocationManager alloc]init];
     locationManager.delegate = self;
     locationManager.desiredAccuracy = kCLLocationAccuracyBest;
@@ -51,7 +53,7 @@
     NSMutableArray *neArray = [NSMutableArray array];
     NSMutableArray *swArray = [NSMutableArray array];
     NSMutableArray *seArray = [NSMutableArray array];
-
+    
     NSURL *url=[NSURL URLWithString:@"http://data.cityofchicago.org/resource/a95h-gwzm.json"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
@@ -66,34 +68,26 @@
          self.crimesArray = [NSArray arrayWithArray:temporaryArray];
          [crimeMapView addAnnotations:self.crimesArray];
          
+         CLLocationCoordinate2D currentLocation = locationManager.location.coordinate;
+         
          for (Crime *crime in self.crimesArray) {
-             if ((crime.coordinate.latitude <= locationManager.location.coordinate.latitude)&&(crime.coordinate.longitude >= locationManager.location.coordinate.longitude)) {
+             if ((crime.coordinate.latitude <= currentLocation.latitude)&&(crime.coordinate.longitude >= currentLocation.longitude)) {
                  [nwArray addObject:crime];
              }
-             else if ((crime.coordinate.latitude >= locationManager.location.coordinate.latitude)&&(crime.coordinate.longitude >= locationManager.location.coordinate.longitude)) {
+             else if ((crime.coordinate.latitude >= currentLocation.latitude)&&(crime.coordinate.longitude >= currentLocation.longitude)) {
                  [neArray addObject:crime];
              }
-             else if ((crime.coordinate.latitude <= locationManager.location.coordinate.latitude)&&(crime.coordinate.longitude <= locationManager.location.coordinate.longitude)) {
+             else if ((crime.coordinate.latitude <= currentLocation.latitude)&&(crime.coordinate.longitude <= currentLocation.longitude)) {
                  [swArray addObject:crime];
              }
-             else if ((crime.coordinate.latitude >= locationManager.location.coordinate.latitude)&&(crime.coordinate.longitude <= locationManager.location.coordinate.longitude)) {
+             else if ((crime.coordinate.latitude >= currentLocation.latitude)&&(crime.coordinate.longitude <= currentLocation.longitude)) {
                  [seArray addObject:crime];
              }
-         //NSLog(@"NW:%i NE:%i SW:%i SE:%i",[nwArray count],[neArray count], [swArray count], [seArray count]);
-         
-        
-         
+             //NSLog(@"NW:%i NE:%i SW:%i SE:%i",[nwArray count],[neArray count], [swArray count], [seArray count]);
+             
          }
-     int nwCrimeVolume = nwArray.count;
-     NSLog(@"%i",nwCrimeVolume);
-     int neCrimeVolume = neArray.count;
-     NSLog(@"%i",neCrimeVolume);
-     int swCrimeVolume = swArray.count;
-     NSLog(@"%i",swCrimeVolume);
-     int seCrimeVolume = seArray.count;
-     NSLog(@"%i",seCrimeVolume);
+            
      }];
-    
     
 }
 
@@ -104,11 +98,11 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    CLLocationCoordinate2D zoomLocation;
-    zoomLocation.latitude = 41.87811;
-    zoomLocation.longitude = -87.62980;
+    //    CLLocationCoordinate2D zoomLocation;
+    //    zoomLocation.latitude = 41.8856;
+    //    zoomLocation.longitude = -87.6522;
     
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 2.0*METERS_PER_MILE, 2.0
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(locationManager.location.coordinate, 2.0*METERS_PER_MILE, 2.0
                                                                        *METERS_PER_MILE);
     [crimeMapView setRegion:viewRegion animated:YES];
 }
@@ -158,7 +152,7 @@
 - (void)searchBarCancelButtonClicked:(UISearchBar *)aSearchBar{
     [aSearchBar resignFirstResponder];
     aSearchBar.hidden = YES;
-
+    
 }
 
 
