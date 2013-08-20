@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="TMA-2x-Xhb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="TMA-2x-Xhb">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -12,34 +12,36 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="hHK-xP-Tyi">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHK-xP-Tyi">
                                 <connections>
                                     <outlet property="delegate" destination="2" id="hiC-jo-mz6"/>
                                 </connections>
                             </mapView>
-                            <view alpha="0.30000001192092896" tag="1" contentMode="scaleToFill" id="eh5-s0-2rE">
-                                <rect key="frame" x="0.0" y="42" width="160" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view userInteractionEnabled="NO" alpha="0.5" tag="1" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="eh5-s0-2rE">
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                </accessibility>
                             </view>
-                            <view alpha="0.30000001192092896" tag="4" contentMode="scaleToFill" id="kvg-S4-ffD">
-                                <rect key="frame" x="160" y="228" width="160" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view userInteractionEnabled="NO" alpha="0.5" tag="4" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="kvg-S4-ffD">
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                </accessibility>
                             </view>
-                            <view alpha="0.30000001192092896" tag="3" contentMode="scaleToFill" id="IgT-YN-ZBM">
-                                <rect key="frame" x="0.0" y="228" width="160" height="188"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view userInteractionEnabled="NO" alpha="0.5" tag="3" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="IgT-YN-ZBM">
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                </accessibility>
                             </view>
-                            <view alpha="0.30000001192092896" tag="2" contentMode="scaleToFill" id="RY0-v9-7UR">
-                                <rect key="frame" x="160" y="42" width="160" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view userInteractionEnabled="NO" alpha="0.5" tag="2" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="RY0-v9-7UR">
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
+                                </accessibility>
                             </view>
-                            <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" showsCancelButton="YES" id="iKE-ZR-Aw3">
-                                <rect key="frame" x="0.0" y="-2" width="320" height="44"/>
+                            <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKE-ZR-Aw3">
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
@@ -51,6 +53,31 @@
                             </searchBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kvg-S4-ffD" firstAttribute="leading" secondItem="RY0-v9-7UR" secondAttribute="leading" type="default" id="1Fo-F7-Dzj"/>
+                            <constraint firstItem="kvg-S4-ffD" firstAttribute="trailing" secondItem="RY0-v9-7UR" secondAttribute="trailing" type="default" id="2GS-TS-pPF"/>
+                            <constraint firstItem="eh5-s0-2rE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="92" id="3jD-1N-VBu"/>
+                            <constraint firstItem="IgT-YN-ZBM" firstAttribute="trailing" secondItem="eh5-s0-2rE" secondAttribute="trailing" type="default" id="9oj-JM-CCr"/>
+                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="H0Y-NH-J9x"/>
+                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-2" id="Ido-9Q-yZ8"/>
+                            <constraint firstAttribute="trailing" secondItem="eh5-s0-2rE" secondAttribute="trailing" constant="206" id="Isb-nR-AiR"/>
+                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="NFk-5J-gY2"/>
+                            <constraint firstAttribute="trailing" secondItem="RY0-v9-7UR" secondAttribute="trailing" constant="55" id="O6Z-Hn-ULg"/>
+                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Pfy-VM-JYQ"/>
+                            <constraint firstItem="RY0-v9-7UR" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="190" id="PyY-TE-tdL"/>
+                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="RxI-00-mrV"/>
+                            <constraint firstItem="IgT-YN-ZBM" firstAttribute="top" secondItem="3" secondAttribute="top" constant="234" id="Td5-ZN-SEz"/>
+                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Y7k-zt-V9b"/>
+                            <constraint firstItem="RY0-v9-7UR" firstAttribute="bottom" secondItem="eh5-s0-2rE" secondAttribute="bottom" type="default" id="Zg5-XU-kKA"/>
+                            <constraint firstAttribute="bottom" secondItem="IgT-YN-ZBM" secondAttribute="bottom" constant="107" id="ZpD-2s-LC4"/>
+                            <constraint firstItem="eh5-s0-2rE" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="39" id="apZ-Ub-tQU"/>
+                            <constraint firstAttribute="bottom" secondItem="eh5-s0-2rE" secondAttribute="bottom" constant="249" id="fUS-1n-YsQ"/>
+                            <constraint firstItem="RY0-v9-7UR" firstAttribute="top" secondItem="eh5-s0-2rE" secondAttribute="top" type="default" id="lJl-R3-o9K"/>
+                            <constraint firstItem="kvg-S4-ffD" firstAttribute="bottom" secondItem="IgT-YN-ZBM" secondAttribute="bottom" type="default" id="lbB-Ts-4UV"/>
+                            <constraint firstItem="IgT-YN-ZBM" firstAttribute="leading" secondItem="eh5-s0-2rE" secondAttribute="leading" type="default" id="pbR-C3-rhO"/>
+                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="xfA-gP-LcD"/>
+                            <constraint firstItem="kvg-S4-ffD" firstAttribute="top" secondItem="IgT-YN-ZBM" secondAttribute="top" type="default" id="zqj-KI-Lug"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chicago Crime Map" id="5fl-CC-IA1">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Vp3-6r-VHF">
@@ -91,6 +118,26 @@
             <point key="canvasLocation" x="175" y="-1"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="CrimeMapViewController" superclassName="ViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CrimeMapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="showSearchBar:"/>
+                <relationship kind="outlet" name="crimeMapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="neView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="nwView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="seView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+                <relationship kind="outlet" name="swView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
