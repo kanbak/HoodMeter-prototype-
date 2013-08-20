@@ -19,10 +19,7 @@
     __weak IBOutlet MKMapView *crimeMapView;
     __weak IBOutlet UISearchBar *searchBar;
     CLLocationManager *locationManager;
-    __weak IBOutlet UIView *nwView;
-    __weak IBOutlet UIView *neView;
-    __weak IBOutlet UIView *swView;
-    __weak IBOutlet UIView *seView;
+  
     
 }
 - (IBAction)showSearchBar:(id)sender;
@@ -88,65 +85,9 @@
              }
              //NSLog(@"NW:%i NE:%i SW:%i SE:%i",[nwArray count],[neArray count], [swArray count], [seArray count]);
              
-             
-             
          }
-         int nwCrimeVolume = nwArray.count;
-         NSLog(@"NW %i",nwCrimeVolume);
-         int neCrimeVolume = neArray.count;
-         NSLog(@"NE %i",neCrimeVolume);
-         int swCrimeVolume = swArray.count;
-         NSLog(@"SW %i",swCrimeVolume);
-         int seCrimeVolume = seArray.count;
-         NSLog(@"SE %i",seCrimeVolume);
-         
-         if (nwCrimeVolume <=100) {
-             nwView.backgroundColor = [UIColor greenColor];}
-         else if
-             (nwCrimeVolume >=100 && nwCrimeVolume <=299){
-                 nwView.backgroundColor = [UIColor yellowColor];}
-         else if
-             (nwCrimeVolume >=300 && nwCrimeVolume <=599){
-                 nwView.backgroundColor = [UIColor orangeColor];}
-         else if
-             (nwCrimeVolume >=600){
-                 nwView.backgroundColor = [UIColor redColor];}
-         if (neCrimeVolume <=100) {
-             neView.backgroundColor = [UIColor greenColor];}
-         else if
-             (neCrimeVolume >=100 && neCrimeVolume <=299){
-                 neView.backgroundColor = [UIColor yellowColor];}
-         else if
-             (neCrimeVolume >=300 && neCrimeVolume <=599){
-                 neView.backgroundColor = [UIColor orangeColor];}
-         else if
-             (neCrimeVolume >=600){
-                 neView.backgroundColor = [UIColor redColor];}
-         if (swCrimeVolume <=100) {
-             swView.backgroundColor = [UIColor greenColor];}
-         else if
-             (swCrimeVolume >=100 && swCrimeVolume <=299){
-                 swView.backgroundColor = [UIColor yellowColor];}
-         else if
-             (swCrimeVolume >=300 && swCrimeVolume <=599){
-                 swView.backgroundColor = [UIColor orangeColor];}
-         else if
-             (swCrimeVolume >=600){
-                 swView.backgroundColor = [UIColor redColor];}
-         if (seCrimeVolume <=100) {
-             seView.backgroundColor = [UIColor greenColor];}
-         else if
-             (seCrimeVolume >=100 && seCrimeVolume <=299){
-                 seView.backgroundColor = [UIColor yellowColor];}
-         else if
-             (seCrimeVolume >=300 && seCrimeVolume <=599){
-                 seView.backgroundColor = [UIColor orangeColor];}
-         else if
-             (seCrimeVolume >=600){
-                 seView.backgroundColor = [UIColor redColor];}
-         
+            
      }];
-    
     
 }
 

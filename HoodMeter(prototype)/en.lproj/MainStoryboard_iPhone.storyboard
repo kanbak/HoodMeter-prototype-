@@ -18,34 +18,6 @@
                                     <outlet property="delegate" destination="2" id="hiC-jo-mz6"/>
                                 </connections>
                             </mapView>
-                            <view userInteractionEnabled="NO" alpha="0.5" tag="1" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" id="eh5-s0-2rE">
-                                <rect key="frame" x="39" y="92" width="75" height="75"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
-                                </accessibility>
-                            </view>
-                            <view userInteractionEnabled="NO" alpha="0.5" tag="4" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" id="kvg-S4-ffD">
-                                <rect key="frame" x="190" y="234" width="75" height="75"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
-                                </accessibility>
-                            </view>
-                            <view userInteractionEnabled="NO" alpha="0.5" tag="3" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" id="IgT-YN-ZBM">
-                                <rect key="frame" x="39" y="234" width="75" height="75"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
-                                </accessibility>
-                            </view>
-                            <view userInteractionEnabled="NO" alpha="0.5" tag="2" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" id="RY0-v9-7UR">
-                                <rect key="frame" x="190" y="92" width="75" height="75"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
-                                </accessibility>
-                            </view>
                             <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" showsCancelButton="YES" id="iKE-ZR-Aw3">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -68,11 +40,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="crimeMapView" destination="hHK-xP-Tyi" id="6gW-ho-ztt"/>
-                        <outlet property="neView" destination="RY0-v9-7UR" id="jje-31-HNf"/>
-                        <outlet property="nwView" destination="eh5-s0-2rE" id="QUQ-Xj-xke"/>
-                        <outlet property="seView" destination="kvg-S4-ffD" id="Ihf-Yk-x8u"/>
                         <outlet property="searchBar" destination="iKE-ZR-Aw3" id="oMq-M1-NEh"/>
-                        <outlet property="swView" destination="IgT-YN-ZBM" id="NaF-5l-27h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
@@ -93,7 +61,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="vCf-ZL-YzB">
-                                        <rect key="frame" x="20" y="45" width="25" height="25"/>
+                                        <rect key="frame" x="35" y="45" width="25" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
@@ -113,18 +81,28 @@
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="compass_needle.png" id="vft-ep-wPs">
-                                        <rect key="frame" x="-51" y="-47" width="312" height="364"/>
+                                        <rect key="frame" x="-5" y="-47" width="221" height="364"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
+                                    <view autoresizesSubviews="NO" clipsSubviews="YES" contentMode="scaleToFill" id="bDv-Vw-tY1">
+                                        <rect key="frame" x="93" y="129" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                     </view>
                     <navigationItem key="navigationItem" id="vAN-i0-Za7"/>
                     <connections>
-                        <outlet property="caOutlet" destination="snG-YX-jmM" id="D6b-ix-cdC"/>
+                        <outlet property="caOutlet" destination="bDv-Vw-tY1" id="uLN-Pd-4pI"/>
                         <outlet property="compassImage" destination="vft-ep-wPs" id="hju-lo-dTe"/>
+                        <outlet property="currentLocationView" destination="bDv-Vw-tY1" id="2JP-rF-EDW"/>
+                        <outlet property="neView" destination="CGv-F5-CUV" id="vAu-qK-8a5"/>
+                        <outlet property="nwView" destination="vCf-ZL-YzB" id="1mi-Qb-7Nx"/>
+                        <outlet property="seView" destination="OQz-cp-Afk" id="ay4-Y3-0YL"/>
+                        <outlet property="swView" destination="GOX-oc-Lnd" id="k75-cV-Ovx"/>
                         <outletCollection property="compassViews" destination="vft-ep-wPs" id="dG0-cg-wN4"/>
                         <segue destination="2" kind="push" identifier="toMapView" id="NAc-Zq-5vf"/>
                     </connections>
@@ -162,6 +140,11 @@
             <relationships>
                 <relationship kind="outlet" name="caOutlet" candidateClass="UIView"/>
                 <relationship kind="outlet" name="compassImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="currentLocationView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="neView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="nwView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="seView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="swView" candidateClass="UIView"/>
                 <relationship kind="outletCollection" name="compassViews" candidateClass="UIImageView"/>
             </relationships>
         </class>
@@ -170,11 +153,7 @@
             <relationships>
                 <relationship kind="action" name="showSearchBar:"/>
                 <relationship kind="outlet" name="crimeMapView" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="neView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="nwView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="seView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-                <relationship kind="outlet" name="swView" candidateClass="UIView"/>
             </relationships>
         </class>
         <class className="ViewController" superclassName="UIViewController">
