@@ -22,8 +22,12 @@
 		553CFEDC17BD629000DF6444 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553CFEDB17BD629000DF6444 /* MapKit.framework */; };
 		553CFEDF17BD63BF00DF6444 /* CrimeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */; };
 		553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */; };
+		557E811417C3EF32009EF1BA /* wedgeNEresized.png in Resources */ = {isa = PBXBuildFile; fileRef = 557E811317C3EF32009EF1BA /* wedgeNEresized.png */; };
 		559AA99F17BD360E00174BA6 /* Crime.m in Sources */ = {isa = PBXBuildFile; fileRef = 559AA99E17BD360E00174BA6 /* Crime.m */; };
 		559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559AA9A117BD38BF00174BA6 /* CoreLocation.framework */; };
+		55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F670BD17C3DA7800BBEEAA /* CompassViewController.m */; };
+		55F670C217C3E1DF00BBEEAA /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F670C117C3E1DF00BBEEAA /* compass_needle.png */; };
+		55F670CC17C3EC3800BBEEAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,9 +53,14 @@
 		553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeLocation.m; sourceTree = "<group>"; };
 		553CFEE017BD65CB00DF6444 /* CrimeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeMapViewController.h; sourceTree = "<group>"; };
 		553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeMapViewController.m; sourceTree = "<group>"; };
+		557E811317C3EF32009EF1BA /* wedgeNEresized.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = wedgeNEresized.png; path = ../wedgeNEresized.png; sourceTree = "<group>"; };
 		559AA99D17BD360E00174BA6 /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crime.h; path = ../Crime.h; sourceTree = "<group>"; };
 		559AA99E17BD360E00174BA6 /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crime.m; path = ../Crime.m; sourceTree = "<group>"; };
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
+		55F670BD17C3DA7800BBEEAA /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
+		55F670C117C3E1DF00BBEEAA /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass_needle.png; path = ../compass_needle.png; sourceTree = "<group>"; };
+		55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55F670CC17C3EC3800BBEEAA /* QuartzCore.framework in Frameworks */,
 				553CFEDC17BD629000DF6444 /* MapKit.framework in Frameworks */,
 				559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */,
 				55291EBB17BBD4F700512F2E /* UIKit.framework in Frameworks */,
@@ -90,6 +100,7 @@
 		55291EB917BBD4F700512F2E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */,
 				553CFEDB17BD629000DF6444 /* MapKit.framework */,
 				559AA9A117BD38BF00174BA6 /* CoreLocation.framework */,
 				55291EBA17BBD4F700512F2E /* UIKit.framework */,
@@ -102,10 +113,14 @@
 		55291EC017BBD4F700512F2E /* HoodMeter(prototype) */ = {
 			isa = PBXGroup;
 			children = (
+				55F670C117C3E1DF00BBEEAA /* compass_needle.png */,
+				557E811317C3EF32009EF1BA /* wedgeNEresized.png */,
 				559AA9A017BD362E00174BA6 /* Model */,
 				55291EC917BBD4F700512F2E /* AppDelegate.h */,
 				55291ECA17BBD4F700512F2E /* AppDelegate.m */,
 				55291ED217BBD4F700512F2E /* MainStoryboard_iPhone.storyboard */,
+				55F670BC17C3DA7800BBEEAA /* CompassViewController.h */,
+				55F670BD17C3DA7800BBEEAA /* CompassViewController.m */,
 				559AA99D17BD360E00174BA6 /* Crime.h */,
 				559AA99E17BD360E00174BA6 /* Crime.m */,
 				553CFEDD17BD63BF00DF6444 /* CrimeLocation.h */,
@@ -198,6 +213,8 @@
 				55291ED117BBD4F700512F2E /* Default-568h@2x.png in Resources */,
 				55291ED417BBD4F700512F2E /* MainStoryboard_iPhone.storyboard in Resources */,
 				55291ED717BBD4F700512F2E /* MainStoryboard_iPad.storyboard in Resources */,
+				55F670C217C3E1DF00BBEEAA /* compass_needle.png in Resources */,
+				557E811417C3EF32009EF1BA /* wedgeNEresized.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,6 +231,7 @@
 				559AA99F17BD360E00174BA6 /* Crime.m in Sources */,
 				553CFEDF17BD63BF00DF6444 /* CrimeLocation.m in Sources */,
 				553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */,
+				55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

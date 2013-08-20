@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="TMA-2x-Xhb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="pTg-pf-F9I">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
@@ -12,36 +12,42 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hHK-xP-Tyi">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="hHK-xP-Tyi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
                                 <connections>
                                     <outlet property="delegate" destination="2" id="hiC-jo-mz6"/>
                                 </connections>
                             </mapView>
-                            <view userInteractionEnabled="NO" alpha="0.5" tag="1" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="eh5-s0-2rE">
+                            <view userInteractionEnabled="NO" alpha="0.5" tag="1" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" id="eh5-s0-2rE">
+                                <rect key="frame" x="39" y="92" width="75" height="75"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
                                 </accessibility>
                             </view>
-                            <view userInteractionEnabled="NO" alpha="0.5" tag="4" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="kvg-S4-ffD">
+                            <view userInteractionEnabled="NO" alpha="0.5" tag="4" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" id="kvg-S4-ffD">
+                                <rect key="frame" x="190" y="234" width="75" height="75"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
                                 </accessibility>
                             </view>
-                            <view userInteractionEnabled="NO" alpha="0.5" tag="3" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="IgT-YN-ZBM">
+                            <view userInteractionEnabled="NO" alpha="0.5" tag="3" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" id="IgT-YN-ZBM">
+                                <rect key="frame" x="39" y="234" width="75" height="75"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
                                 </accessibility>
                             </view>
-                            <view userInteractionEnabled="NO" alpha="0.5" tag="2" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="RY0-v9-7UR">
+                            <view userInteractionEnabled="NO" alpha="0.5" tag="2" contentMode="scaleAspectFit" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" id="RY0-v9-7UR">
+                                <rect key="frame" x="190" y="92" width="75" height="75"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" none="YES" notEnabled="YES"/>
                                 </accessibility>
                             </view>
-                            <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iKE-ZR-Aw3">
+                            <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" showsCancelButton="YES" id="iKE-ZR-Aw3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
@@ -52,32 +58,6 @@
                                 </connections>
                             </searchBar>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="kvg-S4-ffD" firstAttribute="leading" secondItem="RY0-v9-7UR" secondAttribute="leading" type="default" id="1Fo-F7-Dzj"/>
-                            <constraint firstItem="kvg-S4-ffD" firstAttribute="trailing" secondItem="RY0-v9-7UR" secondAttribute="trailing" type="default" id="2GS-TS-pPF"/>
-                            <constraint firstItem="eh5-s0-2rE" firstAttribute="top" secondItem="3" secondAttribute="top" constant="92" id="3jD-1N-VBu"/>
-                            <constraint firstItem="IgT-YN-ZBM" firstAttribute="trailing" secondItem="eh5-s0-2rE" secondAttribute="trailing" type="default" id="9oj-JM-CCr"/>
-                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="H0Y-NH-J9x"/>
-                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="top" secondItem="3" secondAttribute="top" constant="-2" id="Ido-9Q-yZ8"/>
-                            <constraint firstAttribute="trailing" secondItem="eh5-s0-2rE" secondAttribute="trailing" constant="206" id="Isb-nR-AiR"/>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="NFk-5J-gY2"/>
-                            <constraint firstAttribute="trailing" secondItem="RY0-v9-7UR" secondAttribute="trailing" constant="55" id="O6Z-Hn-ULg"/>
-                            <constraint firstItem="iKE-ZR-Aw3" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="Pfy-VM-JYQ"/>
-                            <constraint firstItem="RY0-v9-7UR" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="190" id="PyY-TE-tdL"/>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="RxI-00-mrV"/>
-                            <constraint firstItem="IgT-YN-ZBM" firstAttribute="top" secondItem="3" secondAttribute="top" constant="234" id="Td5-ZN-SEz"/>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="Y7k-zt-V9b"/>
-                            <constraint firstItem="RY0-v9-7UR" firstAttribute="bottom" secondItem="eh5-s0-2rE" secondAttribute="bottom" type="default" id="Zg5-XU-kKA"/>
-                            <constraint firstAttribute="bottom" secondItem="IgT-YN-ZBM" secondAttribute="bottom" constant="107" id="ZpD-2s-LC4"/>
-                            <constraint firstItem="eh5-s0-2rE" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="39" id="apZ-Ub-tQU"/>
-                            <constraint firstAttribute="bottom" secondItem="eh5-s0-2rE" secondAttribute="bottom" constant="249" id="fUS-1n-YsQ"/>
-                            <constraint firstItem="RY0-v9-7UR" firstAttribute="top" secondItem="eh5-s0-2rE" secondAttribute="top" type="default" id="lJl-R3-o9K"/>
-                            <constraint firstItem="kvg-S4-ffD" firstAttribute="bottom" secondItem="IgT-YN-ZBM" secondAttribute="bottom" type="default" id="lbB-Ts-4UV"/>
-                            <constraint firstItem="IgT-YN-ZBM" firstAttribute="leading" secondItem="eh5-s0-2rE" secondAttribute="leading" type="default" id="pbR-C3-rhO"/>
-                            <constraint firstItem="hHK-xP-Tyi" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="xfA-gP-LcD"/>
-                            <constraint firstItem="kvg-S4-ffD" firstAttribute="top" secondItem="IgT-YN-ZBM" secondAttribute="top" type="default" id="zqj-KI-Lug"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Chicago Crime Map" id="5fl-CC-IA1">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Vp3-6r-VHF">
@@ -96,29 +76,95 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="8Vz-2G-jaI"/>
             </objects>
-            <point key="canvasLocation" x="1139" y="-1"/>
+            <point key="canvasLocation" x="1665" y="-1"/>
+        </scene>
+        <!--Compass View Controller-->
+        <scene sceneID="NKp-wa-YzC">
+            <objects>
+                <viewController id="YcS-LA-tHF" customClass="CompassViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qH3-3g-syp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="center" id="snG-YX-jmM">
+                                <rect key="frame" x="59" y="89" width="211" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="vCf-ZL-YzB">
+                                        <rect key="frame" x="20" y="45" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="GOX-oc-Lnd">
+                                        <rect key="frame" x="35" y="205" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="OQz-cp-Afk">
+                                        <rect key="frame" x="154" y="205" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="CGv-F5-CUV">
+                                        <rect key="frame" x="154" y="45" width="25" height="25"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="compass_needle.png" id="vft-ep-wPs">
+                                        <rect key="frame" x="-51" y="-47" width="312" height="364"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                    </view>
+                    <navigationItem key="navigationItem" id="vAN-i0-Za7"/>
+                    <connections>
+                        <outlet property="caOutlet" destination="snG-YX-jmM" id="D6b-ix-cdC"/>
+                        <outlet property="compassImage" destination="vft-ep-wPs" id="hju-lo-dTe"/>
+                        <outletCollection property="compassViews" destination="vft-ep-wPs" id="dG0-cg-wN4"/>
+                        <segue destination="2" kind="push" identifier="toMapView" id="NAc-Zq-5vf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wqp-WT-woo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="7IC-NT-yf2"/>
+            </objects>
+            <point key="canvasLocation" x="1152" y="-1"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="UdM-Rs-cnK">
+        <scene sceneID="7zk-Te-1EV">
             <objects>
-                <navigationController id="TMA-2x-Xhb" sceneMemberID="viewController">
+                <navigationController id="pTg-pf-F9I" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qUX-fa-yk7">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="au3-nY-np7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="2" kind="relationship" relationship="rootViewController" id="ecq-YA-lYP"/>
+                        <segue destination="YcS-LA-tHF" kind="relationship" relationship="rootViewController" id="HQf-M4-rXX"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XP8-KU-MyK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S4A-EN-EPY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="175" y="-1"/>
+            <point key="canvasLocation" x="618" y="4"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="compass_needle.png" width="300" height="289"/>
+    </resources>
     <classes>
+        <class className="CompassViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompassViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="caOutlet" candidateClass="UIView"/>
+                <relationship kind="outlet" name="compassImage" candidateClass="UIImageView"/>
+                <relationship kind="outletCollection" name="compassViews" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
         <class className="CrimeMapViewController" superclassName="ViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CrimeMapViewController.h"/>
             <relationships>
@@ -130,9 +176,6 @@
                 <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
                 <relationship kind="outlet" name="swView" candidateClass="UIView"/>
             </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
         </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
