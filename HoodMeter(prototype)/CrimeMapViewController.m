@@ -163,11 +163,11 @@
 }
 
 -(void)viewWillAppear:(BOOL)animated{
-    CLLocationCoordinate2D zoomLocation;
-    zoomLocation.latitude = 41.87811;
-    zoomLocation.longitude = -87.62980;
+//    CLLocationCoordinate2D zoomLocation;
+//    zoomLocation.latitude = 41.8856;
+//    zoomLocation.longitude = -87.6522;
     
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(zoomLocation, 2.0*METERS_PER_MILE, 2.0
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(locationManager.location.coordinate, 2.0*METERS_PER_MILE, 2.0
                                                                        *METERS_PER_MILE);
     [crimeMapView setRegion:viewRegion animated:YES];
 }
