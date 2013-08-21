@@ -19,10 +19,10 @@
     __weak IBOutlet MKMapView *crimeMapView;
     __weak IBOutlet UISearchBar *searchBar;
     CLLocationManager *locationManager;
-  
-    
+      
 }
 - (IBAction)showSearchBar:(id)sender;
+
 
 @property (nonatomic, strong) NSArray *crimesArray;
 
@@ -117,6 +117,8 @@
             annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
             annotationView.enabled = YES;
             annotationView.canShowCallout = YES;
+            annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            
         } else {
             annotationView.annotation = annotation;
         }
@@ -125,6 +127,9 @@
     }
     
     return nil;
+    
+    mapView.showsUserLocation = YES;
+    
 }
 -(void)searchBarSearchButtonClicked:(UISearchBar*)aSearchBar
 {
@@ -154,11 +159,11 @@
     aSearchBar.hidden = YES;
     
 }
-
-
-
-
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
+        [self performSegueWithIdentifier:@"toDetailView" sender:self];
+}
 - (IBAction)showSearchBar:(id)sender {
     searchBar.hidden = NO;
+    
 }
 @end
