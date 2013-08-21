@@ -7,10 +7,12 @@
 //
 
 #import "CompassViewController.h"
+#import "CoreDataManager.h"
+#import "CrimeModel.h"
 
 @interface CompassViewController ()
 {
-    
+    CoreDataManager* coreDataManager;
     __weak IBOutlet UIView *caOutlet;
     __weak IBOutlet UIView *nwView;
     __weak IBOutlet UIView *neView;
@@ -38,6 +40,8 @@
     
     [super viewDidLoad];
     
+    coreDataManager = [[CoreDataManager alloc]init];
+    
 	// Do any additional setup after loading the view.
     NSMutableArray *nwArray = [NSMutableArray array];
     NSMutableArray *neArray = [NSMutableArray array];
@@ -50,39 +54,48 @@
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
      {
          NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-         NSMutableArray *temporaryArray = [NSMutableArray arrayWithCapacity:[jsonArray count]];
+         
+         //         for (NSDictionary *dictionary in jsonArray) {
+         //             Crime *crime = [[Crime alloc] initWithCrimeDictionary:dictionary];
+         //            [coreDataManager createCrimeObjectWithCrime:crime];
+         //         }
+         //NSMutableArray *temporaryArray = [NSMutableArray arrayWithCapacity:[jsonArray count]];
          [jsonArray enumerateObjectsUsingBlock:^(NSDictionary *crimeDictionary, NSUInteger idx, BOOL *stop) {
-             Crime *crime = [[Crime alloc] initWithCrimeDictionary:crimeDictionary];
+             if ([crimeDictionary valueForKey:@"location"]) {
+                 Crime *crime = [[Crime alloc] initWithCrimeDictionary:crimeDictionary];
+                 [coreDataManager createCrimeObjectWithCrime:crime];
+             }
              
-             [temporaryArray addObject:crime];
+             //[temporaryArray addObject:crime];
          }];
-         self.crimesArray = [NSArray arrayWithArray:temporaryArray];
+         self.crimesArray = [coreDataManager getArrayOfCrimes];
          CLLocationCoordinate2D currentLocation = locationManager.location.coordinate;
          CLLocationDistance regionRadius = 2000.00;
          CLRegion *currentLocationRegion = [[CLRegion alloc]initCircularRegionWithCenter:locationManager.location.coordinate radius:regionRadius identifier:@"currentLocationRegion"];
          int currentLocationRegionCrimeVolumeCount;
          
-         for (Crime *crime in self.crimesArray){
-             if ([currentLocationRegion containsCoordinate:crime.coordinate]){
+         for (CrimeModel *crime in self.crimesArray){
+             CLLocationCoordinate2D coordinate = CLLocationCoordinate2DMake([crime.crimeLatitude doubleValue], [crime.crimeLongitude doubleValue]);
+             if ([currentLocationRegion containsCoordinate:coordinate]){
                  [currentLocationRegionArray addObject:crime];
-                  currentLocationRegionCrimeVolumeCount= currentLocationRegionArray.count;
-                    
+                 currentLocationRegionCrimeVolumeCount= currentLocationRegionArray.count;
+                 
              }
              
              
          }
          
-         for (Crime *crime in self.crimesArray) {
-             if ((crime.coordinate.latitude <= currentLocation.latitude)&&(crime.coordinate.longitude >= currentLocation.longitude)) {
+         for (CrimeModel *crime in self.crimesArray) {
+             if (([crime.crimeLatitude doubleValue] <= currentLocation.latitude)&&([crime.crimeLongitude doubleValue] >= currentLocation.longitude)) {
                  [nwArray addObject:crime];
              }
-             else if ((crime.coordinate.latitude >= currentLocation.latitude)&&(crime.coordinate.longitude >= currentLocation.longitude)) {
+             else if (([crime.crimeLatitude doubleValue] >= currentLocation.latitude)&&([crime.crimeLongitude doubleValue] >= currentLocation.longitude)) {
                  [neArray addObject:crime];
              }
-             else if ((crime.coordinate.latitude <= currentLocation.latitude)&&(crime.coordinate.longitude <= currentLocation.longitude)) {
+             else if (([crime.crimeLatitude doubleValue] <= currentLocation.latitude)&&([crime.crimeLongitude doubleValue] <= currentLocation.longitude)) {
                  [swArray addObject:crime];
              }
-             else if ((crime.coordinate.latitude >= currentLocation.latitude)&&(crime.coordinate.longitude <= currentLocation.longitude)) {
+             else if (([crime.crimeLatitude doubleValue] >= currentLocation.latitude)&&([crime.crimeLongitude doubleValue] <= currentLocation.longitude)) {
                  [seArray addObject:crime];
              }
              //NSLog(@"NW:%i NE:%i SW:%i SE:%i",[nwArray count],[neArray count], [swArray count], [seArray count])
@@ -153,11 +166,11 @@
          else if
              (currentLocationRegionCrimeVolumeCount >=600){
                  currentLocationView.backgroundColor = [UIColor redColor];}
-
          
-     
+         
+         
      }];
-
+    
 }
 
 

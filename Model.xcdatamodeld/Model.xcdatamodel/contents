@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="2061" systemVersion="12E55" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CrimeModel" representedClassName="" syncable="YES">
+        <attribute name="crimeDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="crimeDescriptionString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="crimeLatitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="crimeLongitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="crimeYear" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="locationDescriptionString" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="primaryTypeString" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CrimeModel" positionX="0" positionY="0" width="0" height="0"/>
+    </elements>
+</model>
