@@ -34,8 +34,8 @@
 /* Begin PBXFileReference section */
 		4C9E4EAE17C55FAD00762D49 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		4C9E4EAF17C55FAD00762D49 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		4C9E4EB117C5778500762D49 /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
-		4C9E4EB217C5778500762D49 /* innerCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = innerCircle.png; sourceTree = "<group>"; };
+		4C9E4EB117C5778500762D49 /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compass_needle.png; path = ../compass_needle.png; sourceTree = "<group>"; };
+		4C9E4EB217C5778500762D49 /* innerCircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = innerCircle.png; path = ../innerCircle.png; sourceTree = "<group>"; };
 		55291EB717BBD4F700512F2E /* HoodMeter(prototype).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HoodMeter(prototype).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55291EBA17BBD4F700512F2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55291EBC17BBD4F700512F2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -86,8 +86,6 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
-				4C9E4EB117C5778500762D49 /* compass_needle.png */,
-				4C9E4EB217C5778500762D49 /* innerCircle.png */,
 				55291EC017BBD4F700512F2E /* HoodMeter(prototype) */,
 				55291EB917BBD4F700512F2E /* Frameworks */,
 				55291EB817BBD4F700512F2E /* Products */,
@@ -133,6 +131,8 @@
 		55291EC117BBD4F700512F2E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				4C9E4EB117C5778500762D49 /* compass_needle.png */,
+				4C9E4EB217C5778500762D49 /* innerCircle.png */,
 				55291EC217BBD4F700512F2E /* HoodMeter(prototype)-Info.plist */,
 				55291EC317BBD4F700512F2E /* InfoPlist.strings */,
 				55291EC617BBD4F700512F2E /* main.m */,
