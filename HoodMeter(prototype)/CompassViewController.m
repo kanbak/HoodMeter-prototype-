@@ -17,6 +17,8 @@
     __weak IBOutlet UIView *swView;
     __weak IBOutlet UIView *seView;
     __weak IBOutlet UIView *currentLocationView;
+    int currentLocationRegionCrimeVolumeCount;
+
 }
 @property (nonatomic, strong) NSArray *crimesArray;
 
@@ -58,18 +60,15 @@
          }];
          self.crimesArray = [NSArray arrayWithArray:temporaryArray];
          CLLocationCoordinate2D currentLocation = locationManager.location.coordinate;
-         CLLocationDistance regionRadius = 2000.00;
+         CLLocationDistance regionRadius = 500.00;
          CLRegion *currentLocationRegion = [[CLRegion alloc]initCircularRegionWithCenter:locationManager.location.coordinate radius:regionRadius identifier:@"currentLocationRegion"];
-         int currentLocationRegionCrimeVolumeCount;
          
          for (Crime *crime in self.crimesArray){
              if ([currentLocationRegion containsCoordinate:crime.coordinate]){
                  [currentLocationRegionArray addObject:crime];
                   currentLocationRegionCrimeVolumeCount= currentLocationRegionArray.count;
-                    
+                 NSLog(@"CL %i",currentLocationRegionArray.count);
              }
-             
-             
          }
          
          for (Crime *crime in self.crimesArray) {

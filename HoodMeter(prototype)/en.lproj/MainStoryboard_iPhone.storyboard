@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Crime Map View Controller - Chicago Crime Map-->
+        <!--Crime Map View Controller - Crime Map-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="CrimeMapViewController" sceneMemberID="viewController">
@@ -12,9 +12,17 @@
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="hHK-xP-Tyi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="416"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="hiC-jo-mz6"/>
+                                </connections>
+                            </mapView>
                             <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" placeholder="Search Address" showsCancelButton="YES" id="iKE-ZR-Aw3">
-                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
@@ -24,22 +32,17 @@
                                     <outlet property="delegate" destination="2" id="47S-Bx-N2f"/>
                                 </connections>
                             </searchBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="hHK-xP-Tyi">
-                                <rect key="frame" x="0.0" y="46" width="320" height="416"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <connections>
-                                    <outlet property="delegate" destination="2" id="hiC-jo-mz6"/>
-                                </connections>
-                            </mapView>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" title="Chicago Crime Map" id="5fl-CC-IA1">
+                    <navigationItem key="navigationItem" title="Crime Map" id="5fl-CC-IA1">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Vp3-6r-VHF">
                             <connections>
                                 <action selector="showSearchBar:" destination="2" id="aGB-PF-fDD"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <connections>
                         <outlet property="crimeMapView" destination="hHK-xP-Tyi" id="6gW-ho-ztt"/>
                         <outlet property="searchBar" destination="iKE-ZR-Aw3" id="oMq-M1-NEh"/>
@@ -51,7 +54,7 @@
             </objects>
             <point key="canvasLocation" x="1693" y="-1"/>
         </scene>
-        <!--View Controller - Chicago Crime Description-->
+        <!--View Controller - Crime Details-->
         <scene sceneID="47c-UU-eGo">
             <objects>
                 <viewController id="0CV-wf-ews" sceneMemberID="viewController">
@@ -97,23 +100,25 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Chicago Crime Description" id="f89-1N-Wml"/>
+                    <navigationItem key="navigationItem" title="Crime Details" id="f89-1N-Wml"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4M-nd-5K1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2198" y="-1"/>
         </scene>
-        <!--Compass View Controller-->
+        <!--Compass View Controller - HoodMeter-->
         <scene sceneID="NKp-wa-YzC">
             <objects>
                 <viewController id="YcS-LA-tHF" customClass="CompassViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qH3-3g-syp">
                         <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="center" id="snG-YX-jmM">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" id="hFY-Ty-TiL">
                                         <rect key="frame" x="15" y="12" width="143" height="147"/>
@@ -135,26 +140,26 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compass_needle.png" id="Tgd-8t-nIa">
-                                        <rect key="frame" x="10" y="7" width="300" height="300"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
                                     <view contentMode="scaleToFill" id="ehm-Qq-bpB">
                                         <rect key="frame" x="104" y="102" width="111" height="113"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                     </view>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="innerCircle.png" id="6bK-ua-Lau">
-                                        <rect key="frame" x="60" y="57" width="200" height="200"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compass_needle.png" id="tPs-a7-nF5">
+                                        <rect key="frame" x="10" y="7" width="300" height="300"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="metrics.png" id="8k5-PT-lZp">
+                                <rect key="frame" x="43" y="42" width="234" height="227"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ufB-Md-yu7">
-                                <rect key="frame" x="222" y="350" width="78" height="40"/>
+                                <rect key="frame" x="199" y="350" width="115" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
                                 <state key="normal" title="Map it!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -165,7 +170,9 @@
                             </button>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" id="vAN-i0-Za7"/>
+                    <navigationItem key="navigationItem" title="HoodMeter" id="vAN-i0-Za7"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
                     <connections>
                         <outlet property="caOutlet" destination="snG-YX-jmM" id="hBJ-ck-LcA"/>
                         <outlet property="currentLocationView" destination="ehm-Qq-bpB" id="Dn1-XC-iu0"/>
@@ -186,7 +193,9 @@
             <objects>
                 <navigationController id="pTg-pf-F9I" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="au3-nY-np7">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackOpaque"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="au3-nY-np7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -202,7 +211,7 @@
     </scenes>
     <resources>
         <image name="compass_needle.png" width="300" height="300"/>
-        <image name="innerCircle.png" width="200" height="200"/>
+        <image name="metrics.png" width="202" height="202"/>
     </resources>
     <classes>
         <class className="CompassViewController" superclassName="UIViewController">
