@@ -23,7 +23,7 @@
         NSDateFormatter *newFormatter = [NSDateFormatter new];
         [newFormatter setDateFormat:@"yyyy-MM-ddTHH:mm:ss"];
         NSString *dateString = [crimeDictionary valueForKey:@"date"];
-        
+        _crimeDateString = dateString;
         _crimeDate = [newFormatter dateFromString:dateString];
         _crimeDescriptionString = [crimeDictionary valueForKey:@"description"];
         _crimeDistrictString = [crimeDictionary valueForKey:@"district"];

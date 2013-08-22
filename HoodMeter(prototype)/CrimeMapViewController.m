@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "CrimeLocation.h"
 #import "Crime.h"
+#import "DetailViewController.h"
 
 #define METERS_PER_MILE 1609.344
 
@@ -19,7 +20,8 @@
     __weak IBOutlet MKMapView *crimeMapView;
     __weak IBOutlet UISearchBar *searchBar;
     CLLocationManager *locationManager;
-      
+
+    
 }
 - (IBAction)showSearchBar:(id)sender;
 
@@ -160,7 +162,13 @@
     
 }
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
-        [self performSegueWithIdentifier:@"toDetailView" sender:self];
+    
+    Crime *selectedCrime = (Crime *) view.annotation;
+    DetailViewController *detailViewController;
+    [self performSegueWithIdentifier:@"toDetailView" sender:self];
+    detailViewController = (DetailViewController *) [self.navigationController.viewControllers lastObject];
+    detailViewController.crime=selectedCrime;
+    
 }
 - (IBAction)showSearchBar:(id)sender {
     searchBar.hidden = NO;

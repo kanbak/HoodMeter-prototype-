@@ -141,16 +141,16 @@
          else if
              (seCrimeVolume >=600){
                  seView.backgroundColor = [UIColor redColor];}
-         if (currentLocationRegionCrimeVolumeCount <=100) {
+         if (currentLocationRegionCrimeVolumeCount <=5) {
              currentLocationView.backgroundColor = [UIColor greenColor];}
          else if
-             (currentLocationRegionCrimeVolumeCount >=100 && currentLocationRegionCrimeVolumeCount <=299){
+             (currentLocationRegionCrimeVolumeCount >=6 && currentLocationRegionCrimeVolumeCount <=10){
                  currentLocationView.backgroundColor = [UIColor yellowColor];}
          else if
-             (currentLocationRegionCrimeVolumeCount >=300 && currentLocationRegionCrimeVolumeCount <=599){
+             (currentLocationRegionCrimeVolumeCount >=11 && currentLocationRegionCrimeVolumeCount <=20){
                  currentLocationView.backgroundColor = [UIColor orangeColor];}
          else if
-             (currentLocationRegionCrimeVolumeCount >=600){
+             (currentLocationRegionCrimeVolumeCount >=21){
                  currentLocationView.backgroundColor = [UIColor redColor];}
 
          
