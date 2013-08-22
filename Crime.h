@@ -12,7 +12,9 @@
 #import <MapKit/MapKit.h>
 
 @interface Crime : NSObject <MKAnnotation>
-
+{
+    int tmp;
+}
 @property (nonatomic, strong) NSNumber *arrestNumber;
 @property (nonatomic, strong) NSString *beatString;
 @property (nonatomic, strong) NSString *blockString;
