@@ -36,19 +36,19 @@
 -(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
     NSLog(@"CHANGED! %i", status);
     if (status == 0){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
+        UIAlertView *alert1 = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
                                                         message:@"To enable, please go to Settings and turn on Location Service for this app."
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];}
     else if (status == 1){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
+        UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
                                                         message:@"To enable, please go to Settings and turn on Location Service for this app."
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
                                               otherButtonTitles:nil];}
     else if (status == 2){
-        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
+        UIAlertView *alert3 = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
                                                         message:@"To re-enable, please go to Settings and turn on Location Service for this app."
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"

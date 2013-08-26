@@ -51,6 +51,7 @@
     searchBar.hidden = YES;
     
     [crimeMapView addAnnotations:self.crimesArray];
+   
 }
 
 - (void)didReceiveMemoryWarning
