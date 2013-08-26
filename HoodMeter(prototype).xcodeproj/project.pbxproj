@@ -22,15 +22,13 @@
 		553CFEDC17BD629000DF6444 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553CFEDB17BD629000DF6444 /* MapKit.framework */; };
 		553CFEDF17BD63BF00DF6444 /* CrimeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */; };
 		553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */; };
-		5544468917C652DC00C0974B /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5544468817C652DC00C0974B /* compass_needle.png */; };
 		5544468C17C6730700C0974B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544468B17C6730700C0974B /* DetailViewController.m */; };
-		554446AE17C6AF8800C0974B /* compassKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 554446AD17C6AF8800C0974B /* compassKey.png */; };
 		559AA99F17BD360E00174BA6 /* Crime.m in Sources */ = {isa = PBXBuildFile; fileRef = 559AA99E17BD360E00174BA6 /* Crime.m */; };
 		559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559AA9A117BD38BF00174BA6 /* CoreLocation.framework */; };
+		55BA275617CAAF1D001ADD3F /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA275517CAAF1D001ADD3F /* compass_needle.png */; };
+		55BA275C17CAD1FB001ADD3F /* compassKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA275B17CAD1FB001ADD3F /* compassKey.png */; };
 		55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F670BD17C3DA7800BBEEAA /* CompassViewController.m */; };
 		55F670CC17C3EC3800BBEEAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */; };
-		55FF2FED17C5D09A000DA718 /* metrics.png in Resources */ = {isa = PBXBuildFile; fileRef = 55FF2FEA17C5D09A000DA718 /* metrics.png */; };
-		55FF2FEE17C5D09A000DA718 /* needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55FF2FEB17C5D09A000DA718 /* needle.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,18 +54,16 @@
 		553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeLocation.m; sourceTree = "<group>"; };
 		553CFEE017BD65CB00DF6444 /* CrimeMapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeMapViewController.h; sourceTree = "<group>"; };
 		553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeMapViewController.m; sourceTree = "<group>"; };
-		5544468817C652DC00C0974B /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
 		5544468A17C6730700C0974B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		5544468B17C6730700C0974B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
-		554446AD17C6AF8800C0974B /* compassKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassKey.png; sourceTree = "<group>"; };
 		559AA99D17BD360E00174BA6 /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crime.h; path = ../Crime.h; sourceTree = "<group>"; };
 		559AA99E17BD360E00174BA6 /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crime.m; path = ../Crime.m; sourceTree = "<group>"; };
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		55BA275517CAAF1D001ADD3F /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
+		55BA275B17CAD1FB001ADD3F /* compassKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassKey.png; sourceTree = "<group>"; };
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
 		55F670BD17C3DA7800BBEEAA /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
 		55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		55FF2FEA17C5D09A000DA718 /* metrics.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = metrics.png; sourceTree = "<group>"; };
-		55FF2FEB17C5D09A000DA718 /* needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = needle.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +86,8 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
-				554446AD17C6AF8800C0974B /* compassKey.png */,
-				5544468817C652DC00C0974B /* compass_needle.png */,
-				55FF2FEA17C5D09A000DA718 /* metrics.png */,
-				55FF2FEB17C5D09A000DA718 /* needle.png */,
+				55BA275B17CAD1FB001ADD3F /* compassKey.png */,
+				55BA275517CAAF1D001ADD3F /* compass_needle.png */,
 				55291EC017BBD4F700512F2E /* HoodMeter(prototype) */,
 				55291EB917BBD4F700512F2E /* Frameworks */,
 				55291EB817BBD4F700512F2E /* Products */,
@@ -240,10 +234,8 @@
 				55291ED117BBD4F700512F2E /* Default-568h@2x.png in Resources */,
 				55291ED417BBD4F700512F2E /* MainStoryboard_iPhone.storyboard in Resources */,
 				55291ED717BBD4F700512F2E /* MainStoryboard_iPad.storyboard in Resources */,
-				55FF2FED17C5D09A000DA718 /* metrics.png in Resources */,
-				55FF2FEE17C5D09A000DA718 /* needle.png in Resources */,
-				5544468917C652DC00C0974B /* compass_needle.png in Resources */,
-				554446AE17C6AF8800C0974B /* compassKey.png in Resources */,
+				55BA275617CAAF1D001ADD3F /* compass_needle.png in Resources */,
+				55BA275C17CAD1FB001ADD3F /* compassKey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
