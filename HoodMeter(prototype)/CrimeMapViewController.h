@@ -12,4 +12,6 @@
 
 @interface CrimeMapViewController : ViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 
+-(void)loadCrimesArray:(NSArray*)crimesArray;
+
 @end

@@ -23,6 +23,8 @@
 		553CFEDF17BD63BF00DF6444 /* CrimeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */; };
 		553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */; };
 		5544468C17C6730700C0974B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544468B17C6730700C0974B /* DetailViewController.m */; };
+		55932B1817CBB20700D33154 /* CrimeAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55932B1717CBB20700D33154 /* CrimeAnnotationView.m */; };
+		55932B1A17CC0B4300D33154 /* THEFT.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B1917CC0B4300D33154 /* THEFT.png */; };
 		559AA99F17BD360E00174BA6 /* Crime.m in Sources */ = {isa = PBXBuildFile; fileRef = 559AA99E17BD360E00174BA6 /* Crime.m */; };
 		559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559AA9A117BD38BF00174BA6 /* CoreLocation.framework */; };
 		55BA275617CAAF1D001ADD3F /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA275517CAAF1D001ADD3F /* compass_needle.png */; };
@@ -58,6 +60,9 @@
 		553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeMapViewController.m; sourceTree = "<group>"; };
 		5544468A17C6730700C0974B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		5544468B17C6730700C0974B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		55932B1617CBB20700D33154 /* CrimeAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeAnnotationView.h; sourceTree = "<group>"; };
+		55932B1717CBB20700D33154 /* CrimeAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeAnnotationView.m; sourceTree = "<group>"; };
+		55932B1917CC0B4300D33154 /* THEFT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = THEFT.png; sourceTree = "<group>"; };
 		559AA99D17BD360E00174BA6 /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crime.h; path = ../Crime.h; sourceTree = "<group>"; };
 		559AA99E17BD360E00174BA6 /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crime.m; path = ../Crime.m; sourceTree = "<group>"; };
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -130,6 +135,8 @@
 				559AA99D17BD360E00174BA6 /* Crime.h */,
 				559AA99E17BD360E00174BA6 /* Crime.m */,
 				553CFEDD17BD63BF00DF6444 /* CrimeLocation.h */,
+				55932B1617CBB20700D33154 /* CrimeAnnotationView.h */,
+				55932B1717CBB20700D33154 /* CrimeAnnotationView.m */,
 				553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */,
 				55291EC117BBD4F700512F2E /* Supporting Files */,
 			);
@@ -139,6 +146,7 @@
 		55291EC117BBD4F700512F2E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				55932B1917CC0B4300D33154 /* THEFT.png */,
 				55291EC217BBD4F700512F2E /* HoodMeter(prototype)-Info.plist */,
 				55291EC317BBD4F700512F2E /* InfoPlist.strings */,
 				55291EC617BBD4F700512F2E /* main.m */,
@@ -244,6 +252,7 @@
 				55BA275C17CAD1FB001ADD3F /* compassKey.png in Resources */,
 				55BA276017CAF2EE001ADD3F /* 57x57.png in Resources */,
 				55BA276217CAF313001ADD3F /* 114x114.png in Resources */,
+				55932B1A17CC0B4300D33154 /* THEFT.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +271,7 @@
 				553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */,
 				55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */,
 				5544468C17C6730700C0974B /* DetailViewController.m in Sources */,
+				55932B1817CBB20700D33154 /* CrimeAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +317,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Umut KANBAK (ZBLDDTMZ62)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Umut KANBAK (ZBLDDTMZ62)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -322,6 +333,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "C3B662E8-DC31-4F98-B8C1-D5FDAE0DF324";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C3B662E8-DC31-4F98-B8C1-D5FDAE0DF324";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -339,7 +352,8 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Umut KANBAK (7L932ZA7HX)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Umut KANBAK (7L932ZA7HX)";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
@@ -347,6 +361,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PROVISIONING_PROFILE = "A013C9AA-3480-489B-BF4E-335888DDF8D9";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A013C9AA-3480-489B-BF4E-335888DDF8D9";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
