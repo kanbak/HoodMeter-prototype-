@@ -27,6 +27,8 @@
 		559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559AA9A117BD38BF00174BA6 /* CoreLocation.framework */; };
 		55BA275617CAAF1D001ADD3F /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA275517CAAF1D001ADD3F /* compass_needle.png */; };
 		55BA275C17CAD1FB001ADD3F /* compassKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA275B17CAD1FB001ADD3F /* compassKey.png */; };
+		55BA276017CAF2EE001ADD3F /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA275F17CAF2EE001ADD3F /* 57x57.png */; };
+		55BA276217CAF313001ADD3F /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA276117CAF313001ADD3F /* 114x114.png */; };
 		55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F670BD17C3DA7800BBEEAA /* CompassViewController.m */; };
 		55F670CC17C3EC3800BBEEAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
@@ -61,6 +63,8 @@
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		55BA275517CAAF1D001ADD3F /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
 		55BA275B17CAD1FB001ADD3F /* compassKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassKey.png; sourceTree = "<group>"; };
+		55BA275F17CAF2EE001ADD3F /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
+		55BA276117CAF313001ADD3F /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
 		55F670BD17C3DA7800BBEEAA /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
 		55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -86,6 +90,8 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
+				55BA276117CAF313001ADD3F /* 114x114.png */,
+				55BA275F17CAF2EE001ADD3F /* 57x57.png */,
 				55BA275B17CAD1FB001ADD3F /* compassKey.png */,
 				55BA275517CAAF1D001ADD3F /* compass_needle.png */,
 				55291EC017BBD4F700512F2E /* HoodMeter(prototype) */,
@@ -236,6 +242,8 @@
 				55291ED717BBD4F700512F2E /* MainStoryboard_iPad.storyboard in Resources */,
 				55BA275617CAAF1D001ADD3F /* compass_needle.png in Resources */,
 				55BA275C17CAD1FB001ADD3F /* compassKey.png in Resources */,
+				55BA276017CAF2EE001ADD3F /* 57x57.png in Resources */,
+				55BA276217CAF313001ADD3F /* 114x114.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
