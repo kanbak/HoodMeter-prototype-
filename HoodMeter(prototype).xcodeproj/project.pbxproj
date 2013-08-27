@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5519BD1117CD548E00CCFB34 /* compassKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 5519BD0F17CD548E00CCFB34 /* compassKey.png */; };
+		5519BD1217CD548E00CCFB34 /* compassKey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5519BD1017CD548E00CCFB34 /* compassKey@2x.png */; };
+		5519BD1517CD565700CCFB34 /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5519BD1317CD565700CCFB34 /* compass_needle.png */; };
+		5519BD1617CD565700CCFB34 /* compass_needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5519BD1417CD565700CCFB34 /* compass_needle@2x.png */; };
 		55291EBB17BBD4F700512F2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55291EBA17BBD4F700512F2E /* UIKit.framework */; };
 		55291EBD17BBD4F700512F2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55291EBC17BBD4F700512F2E /* Foundation.framework */; };
 		55291EBF17BBD4F700512F2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55291EBE17BBD4F700512F2E /* CoreGraphics.framework */; };
@@ -23,8 +27,6 @@
 		553CFEDF17BD63BF00DF6444 /* CrimeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */; };
 		553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */; };
 		5544468C17C6730700C0974B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544468B17C6730700C0974B /* DetailViewController.m */; };
-		554EC36317CD3EAC0025DD62 /* compassKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 554EC36117CD3EAC0025DD62 /* compassKey.png */; };
-		554EC36417CD3EAC0025DD62 /* compassKey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 554EC36217CD3EAC0025DD62 /* compassKey@2x.png */; };
 		55932B1817CBB20700D33154 /* CrimeAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55932B1717CBB20700D33154 /* CrimeAnnotationView.m */; };
 		55932B5E17CC45A200D33154 /* ARSON.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B4917CC45A200D33154 /* ARSON.png */; };
 		55932B5F17CC45A200D33154 /* ASSAULT.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B4A17CC45A200D33154 /* ASSAULT.png */; };
@@ -51,14 +53,16 @@
 		559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559AA9A117BD38BF00174BA6 /* CoreLocation.framework */; };
 		55BA276017CAF2EE001ADD3F /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA275F17CAF2EE001ADD3F /* 57x57.png */; };
 		55BA276217CAF313001ADD3F /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA276117CAF313001ADD3F /* 114x114.png */; };
-		55D07AF217CC5F63008CD478 /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D07AF017CC5F63008CD478 /* compass_needle.png */; };
-		55D07AF317CC5F63008CD478 /* compass_needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55D07AF117CC5F63008CD478 /* compass_needle@2x.png */; };
 		55EB33F617CC6E09007D4556 /* HOMICIDE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55EB33F517CC6E09007D4556 /* HOMICIDE.png */; };
 		55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F670BD17C3DA7800BBEEAA /* CompassViewController.m */; };
 		55F670CC17C3EC3800BBEEAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5519BD0F17CD548E00CCFB34 /* compassKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassKey.png; sourceTree = "<group>"; };
+		5519BD1017CD548E00CCFB34 /* compassKey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compassKey@2x.png"; sourceTree = "<group>"; };
+		5519BD1317CD565700CCFB34 /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
+		5519BD1417CD565700CCFB34 /* compass_needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_needle@2x.png"; sourceTree = "<group>"; };
 		55291EB717BBD4F700512F2E /* HoodMeter(prototype).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HoodMeter(prototype).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55291EBA17BBD4F700512F2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55291EBC17BBD4F700512F2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -83,8 +87,6 @@
 		553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeMapViewController.m; sourceTree = "<group>"; };
 		5544468A17C6730700C0974B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		5544468B17C6730700C0974B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
-		554EC36117CD3EAC0025DD62 /* compassKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassKey.png; sourceTree = "<group>"; };
-		554EC36217CD3EAC0025DD62 /* compassKey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compassKey@2x.png"; sourceTree = "<group>"; };
 		55932B1617CBB20700D33154 /* CrimeAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeAnnotationView.h; sourceTree = "<group>"; };
 		55932B1717CBB20700D33154 /* CrimeAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeAnnotationView.m; sourceTree = "<group>"; };
 		55932B4917CC45A200D33154 /* ARSON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ARSON.png; sourceTree = "<group>"; };
@@ -113,8 +115,6 @@
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		55BA275F17CAF2EE001ADD3F /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
 		55BA276117CAF313001ADD3F /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
-		55D07AF017CC5F63008CD478 /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
-		55D07AF117CC5F63008CD478 /* compass_needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_needle@2x.png"; sourceTree = "<group>"; };
 		55EB33F517CC6E09007D4556 /* HOMICIDE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOMICIDE.png; sourceTree = "<group>"; };
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
 		55F670BD17C3DA7800BBEEAA /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
@@ -141,10 +141,10 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
-				554EC36117CD3EAC0025DD62 /* compassKey.png */,
-				554EC36217CD3EAC0025DD62 /* compassKey@2x.png */,
-				55D07AF017CC5F63008CD478 /* compass_needle.png */,
-				55D07AF117CC5F63008CD478 /* compass_needle@2x.png */,
+				5519BD1317CD565700CCFB34 /* compass_needle.png */,
+				5519BD1417CD565700CCFB34 /* compass_needle@2x.png */,
+				5519BD0F17CD548E00CCFB34 /* compassKey.png */,
+				5519BD1017CD548E00CCFB34 /* compassKey@2x.png */,
 				55BA276117CAF313001ADD3F /* 114x114.png */,
 				55BA275F17CAF2EE001ADD3F /* 57x57.png */,
 				55291EC017BBD4F700512F2E /* HoodMeter(prototype) */,
@@ -340,11 +340,11 @@
 				55932B7017CC45A200D33154 /* SEX OFFENSE.png in Resources */,
 				55932B7117CC45A200D33154 /* THEFT.png in Resources */,
 				55932B7217CC45A200D33154 /* WEAPONS VIOLATION.png in Resources */,
-				55D07AF217CC5F63008CD478 /* compass_needle.png in Resources */,
-				55D07AF317CC5F63008CD478 /* compass_needle@2x.png in Resources */,
 				55EB33F617CC6E09007D4556 /* HOMICIDE.png in Resources */,
-				554EC36317CD3EAC0025DD62 /* compassKey.png in Resources */,
-				554EC36417CD3EAC0025DD62 /* compassKey@2x.png in Resources */,
+				5519BD1117CD548E00CCFB34 /* compassKey.png in Resources */,
+				5519BD1217CD548E00CCFB34 /* compassKey@2x.png in Resources */,
+				5519BD1517CD565700CCFB34 /* compass_needle.png in Resources */,
+				5519BD1617CD565700CCFB34 /* compass_needle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
