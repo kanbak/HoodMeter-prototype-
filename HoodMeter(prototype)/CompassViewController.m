@@ -35,24 +35,17 @@
 
 -(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
     NSLog(@"CHANGED! %i", status);
-    if (status == 0){
-        UIAlertView *alert1 = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
+    
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
                                                         message:@"To enable, please go to Settings and turn on Location Service for this app."
                                                        delegate:nil
                                               cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];}
-    else if (status == 1){
-        UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
-                                                        message:@"To enable, please go to Settings and turn on Location Service for this app."
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];}
-    else if (status == 2){
-        UIAlertView *alert3 = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
-                                                        message:@"To re-enable, please go to Settings and turn on Location Service for this app."
-                                                       delegate:nil
-                                              cancelButtonTitle:@"OK"
-                                              otherButtonTitles:nil];}
+                                              otherButtonTitles:nil];
+        if ((status ==0) || (status ==1) || (status==2)){
+        [alert show];
+    }
+
+    
 }
 
 //-(void)viewDidAppear:(BOOL)animated {
@@ -90,7 +83,7 @@
     NSMutableArray *swArray = [NSMutableArray array];
     NSMutableArray *seArray = [NSMutableArray array];
     NSMutableArray *currentLocationRegionArray = [NSMutableArray array];
-    //https://data.cityofchicago.org/api/views/a95h-gwzm/rows.json?accessType=DOWNLOAD
+    
     NSURL *url=[NSURL URLWithString:@"http://data.cityofchicago.org/resource/a95h-gwzm.json"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
