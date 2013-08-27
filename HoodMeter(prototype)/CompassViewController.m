@@ -7,17 +7,22 @@
 //
 
 #import "CompassViewController.h"
-
+#import "CrimeMapViewController.h"
 @interface CompassViewController ()
 {
-    
+
     __weak IBOutlet UIView *caOutlet;
     __weak IBOutlet UIView *nwView;
     __weak IBOutlet UIView *neView;
     __weak IBOutlet UIView *swView;
     __weak IBOutlet UIView *seView;
     __weak IBOutlet UIView *currentLocationView;
+    int currentLocationRegionCrimeVolumeCount;
+    __weak IBOutlet UIButton *mapItButtonOutlet;
+
 }
+
+
 @property (nonatomic, strong) NSArray *crimesArray;
 
 
@@ -28,13 +33,54 @@
 @synthesize locationManager;
 @synthesize compassViews;
 
+-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
+    NSLog(@"CHANGED! %i", status);
+    if (status == 0){
+        UIAlertView *alert1 = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
+                                                        message:@"To enable, please go to Settings and turn on Location Service for this app."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];}
+    else if (status == 1){
+        UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
+                                                        message:@"To enable, please go to Settings and turn on Location Service for this app."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];}
+    else if (status == 2){
+        UIAlertView *alert3 = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
+                                                        message:@"To re-enable, please go to Settings and turn on Location Service for this app."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];}
+}
+
+//-(void)viewDidAppear:(BOOL)animated {
+//    [super viewDidAppear:animated];
+//}
+
+
 - (void)viewDidLoad
 {
+    BOOL locationAllowed = [CLLocationManager locationServicesEnabled];
+    //BOOL locationAvailable = locationManager.location != nil;
+    if (locationAllowed == NO){
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
+                                                        message:@"To re-enable, please go to Settings and turn on Location Service for this app."
+                                                       delegate:nil
+                                              cancelButtonTitle:@"OK"
+                                              otherButtonTitles:nil];
+        [alert show];
+    }
+    
+    
     locationManager=[[CLLocationManager alloc] init];
 	locationManager.desiredAccuracy = kCLLocationAccuracyBest;
 	locationManager.headingFilter = 1;
 	locationManager.delegate=self;
 	[locationManager startUpdatingHeading];
+    [locationManager startUpdatingLocation];
+
     
     [super viewDidLoad];
     
@@ -56,20 +102,20 @@
              
              [temporaryArray addObject:crime];
          }];
+         
          self.crimesArray = [NSArray arrayWithArray:temporaryArray];
+         mapItButtonOutlet.enabled = YES;
+         
          CLLocationCoordinate2D currentLocation = locationManager.location.coordinate;
-         CLLocationDistance regionRadius = 2000.00;
+         CLLocationDistance regionRadius = 500.00;
          CLRegion *currentLocationRegion = [[CLRegion alloc]initCircularRegionWithCenter:locationManager.location.coordinate radius:regionRadius identifier:@"currentLocationRegion"];
-         int currentLocationRegionCrimeVolumeCount;
          
          for (Crime *crime in self.crimesArray){
              if ([currentLocationRegion containsCoordinate:crime.coordinate]){
                  [currentLocationRegionArray addObject:crime];
                   currentLocationRegionCrimeVolumeCount= currentLocationRegionArray.count;
-                    
+                 NSLog(@"CL %i",currentLocationRegionArray.count);
              }
-             
-             
          }
          
          for (Crime *crime in self.crimesArray) {
@@ -142,16 +188,16 @@
          else if
              (seCrimeVolume >=600){
                  seView.backgroundColor = [UIColor redColor];}
-         if (currentLocationRegionCrimeVolumeCount <=100) {
+         if (currentLocationRegionCrimeVolumeCount <=5) {
              currentLocationView.backgroundColor = [UIColor greenColor];}
          else if
-             (currentLocationRegionCrimeVolumeCount >=100 && currentLocationRegionCrimeVolumeCount <=299){
+             (currentLocationRegionCrimeVolumeCount >=6 && currentLocationRegionCrimeVolumeCount <=10){
                  currentLocationView.backgroundColor = [UIColor yellowColor];}
          else if
-             (currentLocationRegionCrimeVolumeCount >=300 && currentLocationRegionCrimeVolumeCount <=599){
+             (currentLocationRegionCrimeVolumeCount >=11 && currentLocationRegionCrimeVolumeCount <=20){
                  currentLocationView.backgroundColor = [UIColor orangeColor];}
          else if
-             (currentLocationRegionCrimeVolumeCount >=600){
+             (currentLocationRegionCrimeVolumeCount >=21){
                  currentLocationView.backgroundColor = [UIColor redColor];}
 
          
@@ -160,6 +206,14 @@
 
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"toTheMap"]) {
+        CrimeMapViewController *crimeMapViewController = (CrimeMapViewController *)segue.destinationViewController;
+        [crimeMapViewController loadCrimesArray:self.crimesArray];
+        
+        
+    }
+}
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading{
 	// Convert Degree to Radian and move the needle

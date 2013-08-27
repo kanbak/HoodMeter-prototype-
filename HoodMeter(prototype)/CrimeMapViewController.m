@@ -11,6 +11,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "CrimeLocation.h"
 #import "Crime.h"
+#import "DetailViewController.h"
 
 #define METERS_PER_MILE 1609.344
 
@@ -18,8 +19,7 @@
 {
     __weak IBOutlet MKMapView *crimeMapView;
     __weak IBOutlet UISearchBar *searchBar;
-    CLLocationManager *locationManager;
-      
+    
 }
 - (IBAction)showSearchBar:(id)sender;
 
@@ -29,6 +29,11 @@
 @end
 
 @implementation CrimeMapViewController
+
+-(void)loadCrimesArray:(NSArray*)crimesArray{
+    self.crimesArray = crimesArray;
+    
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -44,51 +49,9 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     searchBar.hidden = YES;
-    locationManager = [[CLLocationManager alloc]init];
-    locationManager.delegate = self;
-    locationManager.desiredAccuracy = kCLLocationAccuracyBest;
-    [locationManager startUpdatingLocation];
     
-    NSMutableArray *nwArray = [NSMutableArray array];
-    NSMutableArray *neArray = [NSMutableArray array];
-    NSMutableArray *swArray = [NSMutableArray array];
-    NSMutableArray *seArray = [NSMutableArray array];
-    
-    NSURL *url=[NSURL URLWithString:@"http://data.cityofchicago.org/resource/a95h-gwzm.json"];
-    NSURLRequest *request = [NSURLRequest requestWithURL:url];
-    [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
-     {
-         NSArray *jsonArray = [NSJSONSerialization JSONObjectWithData:data options:0 error:&error];
-         NSMutableArray *temporaryArray = [NSMutableArray arrayWithCapacity:[jsonArray count]];
-         [jsonArray enumerateObjectsUsingBlock:^(NSDictionary *crimeDictionary, NSUInteger idx, BOOL *stop) {
-             Crime *crime = [[Crime alloc] initWithCrimeDictionary:crimeDictionary];
-             
-             [temporaryArray addObject:crime];
-         }];
-         self.crimesArray = [NSArray arrayWithArray:temporaryArray];
-         [crimeMapView addAnnotations:self.crimesArray];
-         
-         CLLocationCoordinate2D currentLocation = locationManager.location.coordinate;
-         
-         for (Crime *crime in self.crimesArray) {
-             if ((crime.coordinate.latitude <= currentLocation.latitude)&&(crime.coordinate.longitude >= currentLocation.longitude)) {
-                 [nwArray addObject:crime];
-             }
-             else if ((crime.coordinate.latitude >= currentLocation.latitude)&&(crime.coordinate.longitude >= currentLocation.longitude)) {
-                 [neArray addObject:crime];
-             }
-             else if ((crime.coordinate.latitude <= currentLocation.latitude)&&(crime.coordinate.longitude <= currentLocation.longitude)) {
-                 [swArray addObject:crime];
-             }
-             else if ((crime.coordinate.latitude >= currentLocation.latitude)&&(crime.coordinate.longitude <= currentLocation.longitude)) {
-                 [seArray addObject:crime];
-             }
-             //NSLog(@"NW:%i NE:%i SW:%i SE:%i",[nwArray count],[neArray count], [swArray count], [seArray count]);
-             
-         }
-            
-     }];
-    
+    [crimeMapView addAnnotations:self.crimesArray];
+   
 }
 
 - (void)didReceiveMemoryWarning
@@ -97,31 +60,36 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)viewWillAppear:(BOOL)animated{
-    //    CLLocationCoordinate2D zoomLocation;
-    //    zoomLocation.latitude = 41.8856;
-    //    zoomLocation.longitude = -87.6522;
-    
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(locationManager.location.coordinate, 2.0*METERS_PER_MILE, 2.0
+-(void)viewDidAppear:(BOOL)animated {
+    crimeMapView.showsUserLocation = YES;
+}
+#pragma mark MKMapView Delegate
+
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {    
+    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 2.0*METERS_PER_MILE, 2.0
                                                                        *METERS_PER_MILE);
     [crimeMapView setRegion:viewRegion animated:YES];
 }
-#pragma mark MKMapView Delegate
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
     static NSString *identifier = @"MyLocation";
     if ([annotation isKindOfClass:[Crime class]]) {
-        
-        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        Crime *crimeAnnotation = (Crime *)annotation;
+        MKAnnotationView *annotationView = (MKAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
         if (annotationView == nil) {
-            annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:identifier];
+            annotationView = [[MKAnnotationView alloc] initWithAnnotation:crimeAnnotation reuseIdentifier:identifier];
             annotationView.enabled = YES;
             annotationView.canShowCallout = YES;
-            annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-            
+            annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];            
         } else {
             annotationView.annotation = annotation;
         }
+        
+        annotationView.image = [UIImage imageNamed:crimeAnnotation.primaryTypeString];
+        annotationView.frame = CGRectMake(annotationView.frame.origin.x,
+                                          annotationView.frame.origin.y,
+                                          annotationView.image.size.width,
+                                          annotationView.image.size.height);
         
         return annotationView;
     }
@@ -160,7 +128,13 @@
     
 }
 - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control{
-        [self performSegueWithIdentifier:@"toDetailView" sender:self];
+    
+    Crime *selectedCrime = (Crime *) view.annotation;
+    DetailViewController *detailViewController;
+    [self performSegueWithIdentifier:@"toDetailView" sender:self];
+    detailViewController = (DetailViewController *) [self.navigationController.viewControllers lastObject];
+    detailViewController.crime=selectedCrime;
+    
 }
 - (IBAction)showSearchBar:(id)sender {
     searchBar.hidden = NO;

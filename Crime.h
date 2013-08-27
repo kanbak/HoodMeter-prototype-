@@ -31,6 +31,7 @@
 @property (nonatomic, strong) NSString *primaryTypeString;
 @property (nonatomic, strong) NSDate *crimeUpdateDate;
 @property (nonatomic, strong) NSNumber *crimeYear;
+@property (nonatomic, strong) NSString *crimeDateString;
 
 -(instancetype)initWithCrimeDictionary:(NSDictionary *)crimeDictionary;
 

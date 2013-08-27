@@ -4,17 +4,25 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
-        <!--Crime Map View Controller - Chicago Crime Map-->
+        <!--Crime Map View Controller - Crime Map-->
         <scene sceneID="5">
             <objects>
                 <viewController id="2" customClass="CrimeMapViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="hHK-xP-Tyi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="hiC-jo-mz6"/>
+                                </connections>
+                            </mapView>
                             <searchBar alpha="0.90000000000000002" contentMode="redraw" text="" placeholder="Search Address" showsCancelButton="YES" id="iKE-ZR-Aw3">
-                                <rect key="frame" x="0.0" y="372" width="320" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <scopeButtonTitles>
                                     <string>Title</string>
@@ -24,16 +32,9 @@
                                     <outlet property="delegate" destination="2" id="47S-Bx-N2f"/>
                                 </connections>
                             </searchBar>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="hHK-xP-Tyi">
-                                <rect key="frame" x="0.0" y="46" width="320" height="416"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <connections>
-                                    <outlet property="delegate" destination="2" id="hiC-jo-mz6"/>
-                                </connections>
-                            </mapView>
                         </subviews>
                     </view>
-                    <navigationItem key="navigationItem" title="Chicago Crime Map" id="5fl-CC-IA1">
+                    <navigationItem key="navigationItem" title="Crime Map" id="5fl-CC-IA1">
                         <barButtonItem key="rightBarButtonItem" systemItem="search" id="Vp3-6r-VHF">
                             <connections>
                                 <action selector="showSearchBar:" destination="2" id="aGB-PF-fDD"/>
@@ -51,127 +52,177 @@
             </objects>
             <point key="canvasLocation" x="1693" y="-1"/>
         </scene>
-        <!--View Controller - Chicago Crime Description-->
+        <!--Detail View Controller - Crime Details-->
         <scene sceneID="47c-UU-eGo">
             <objects>
-                <viewController id="0CV-wf-ews" sceneMemberID="viewController">
+                <viewController id="0CV-wf-ews" customClass="DetailViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Weq-Y6-Brw">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Crime Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="saJ-uU-moY">
-                                <rect key="frame" x="20" y="32" width="136" height="21"/>
+                                <rect key="frame" x="20" y="37" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Crime Date" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="6gX-f9-rWv">
-                                <rect key="frame" x="20" y="73" width="86" height="21"/>
+                                <rect key="frame" x="20" y="133" width="138" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Crime Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="27J-gj-ybb">
-                                <rect key="frame" x="20" y="118" width="115" height="21"/>
+                                <rect key="frame" x="20" y="192" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Latitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EcK-gB-gXb">
-                                <rect key="frame" x="20" y="162" width="61" height="21"/>
+                                <rect key="frame" x="20" y="256" width="104" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Longitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Viv-j9-Xvm">
-                                <rect key="frame" x="20" y="213" width="75" height="21"/>
+                                <rect key="frame" x="20" y="317" width="104" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Crime Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N8R-Ao-f5d">
+                                <rect key="frame" x="20" y="97" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="someTime" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jBA-Jo-VZM">
+                                <rect key="frame" x="20" y="162" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Crime Location" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dce-uB-ZH2">
+                                <rect key="frame" x="20" y="227" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Latitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="g61-yK-cIw">
+                                <rect key="frame" x="20" y="285" width="172" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Longitude" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="NbA-gD-SHc">
+                                <rect key="frame" x="20" y="346" width="172" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Crime Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="5WH-Eo-XC6">
+                                <rect key="frame" x="20" y="66" width="280" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Chicago Crime Description" id="f89-1N-Wml"/>
+                    <navigationItem key="navigationItem" title="Crime Details" id="f89-1N-Wml"/>
+                    <connections>
+                        <outlet property="crimeDateOutlet" destination="jBA-Jo-VZM" id="Dkv-Jc-3ER"/>
+                        <outlet property="crimeDescOutlet" destination="N8R-Ao-f5d" id="oOO-T1-fXp"/>
+                        <outlet property="crimeLatitudeOutlet" destination="g61-yK-cIw" id="I9Y-ds-2j3"/>
+                        <outlet property="crimeLocationOutlet" destination="dce-uB-ZH2" id="9bc-Pp-BvV"/>
+                        <outlet property="crimeLongitudeOutlet" destination="NbA-gD-SHc" id="OLV-dL-gf0"/>
+                        <outlet property="crimeTypeOutlet" destination="5WH-Eo-XC6" id="pvc-wG-F7n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j4M-nd-5K1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2198" y="-1"/>
         </scene>
-        <!--Compass View Controller-->
+        <!--Compass View Controller - CRIMETER-->
         <scene sceneID="NKp-wa-YzC">
             <objects>
                 <viewController id="YcS-LA-tHF" customClass="CompassViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qH3-3g-syp">
-                        <rect key="frame" x="0.0" y="64" width="320" height="416"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="qH3-3g-syp">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <view contentMode="center" id="snG-YX-jmM">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="313"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" id="snG-YX-jmM">
+                                <rect key="frame" x="0.0" y="46" width="320" height="313"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" id="hFY-Ty-TiL">
-                                        <rect key="frame" x="10" y="7" width="148" height="152"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" id="hFY-Ty-TiL">
+                                        <rect key="frame" x="15" y="12" width="143" height="147"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="seD-Ow-EJc">
-                                        <rect key="frame" x="162" y="7" width="148" height="152"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" id="seD-Ow-EJc">
+                                        <rect key="frame" x="162" y="12" width="143" height="147"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="eug-wQ-yq5">
-                                        <rect key="frame" x="162" y="161" width="148" height="146"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" id="eug-wQ-yq5">
+                                        <rect key="frame" x="162" y="161" width="143" height="141"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <view contentMode="scaleToFill" id="kRs-20-Lp7">
-                                        <rect key="frame" x="10" y="161" width="148" height="146"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" id="kRs-20-Lp7">
+                                        <rect key="frame" x="15" y="161" width="143" height="141"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </view>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compass_needle.png" id="Tgd-8t-nIa">
-                                        <rect key="frame" x="10" y="7" width="300" height="300"/>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" id="ehm-Qq-bpB">
+                                        <rect key="frame" x="100" y="99" width="121" height="119"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="compass_needle.png" id="zgm-QQ-hg1">
+                                        <rect key="frame" x="0.0" y="-5" width="322" height="323"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                    </imageView>
-                                    <view contentMode="scaleToFill" id="ehm-Qq-bpB">
-                                        <rect key="frame" x="110" y="109" width="101" height="106"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                    </view>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="innerCircle.png" id="6bK-ua-Lau">
-                                        <rect key="frame" x="60" y="57" width="200" height="200"/>
-                                        <autoresizingMask key="autoresizingMask"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ufB-Md-yu7">
-                                <rect key="frame" x="117" y="373" width="111" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="Map">
-                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ufB-Md-yu7">
+                                <rect key="frame" x="109" y="389" width="105" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
+                                <state key="normal" title="Map it!">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <state key="highlighted">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                                 <connections>
-                                    <segue destination="2" kind="push" id="WSo-ob-aFB"/>
+                                    <segue destination="2" kind="push" identifier="toTheMap" id="WSo-ob-aFB"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compassKey.png" id="Kqn-yu-nVQ">
+                                <rect key="frame" x="8" y="448" width="305" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="vAN-i0-Za7"/>
+                    <navigationItem key="navigationItem" title="CRIMETER" id="vAN-i0-Za7"/>
                     <connections>
                         <outlet property="caOutlet" destination="snG-YX-jmM" id="hBJ-ck-LcA"/>
                         <outlet property="currentLocationView" destination="ehm-Qq-bpB" id="Dn1-XC-iu0"/>
+                        <outlet property="mapItButtonOutlet" destination="ufB-Md-yu7" id="zrd-Dm-t2a"/>
                         <outlet property="neView" destination="seD-Ow-EJc" id="uFg-op-U6F"/>
                         <outlet property="nwView" destination="hFY-Ty-TiL" id="ado-wr-53j"/>
                         <outlet property="seView" destination="eug-wQ-yq5" id="kHZ-OY-NgK"/>
@@ -189,7 +240,12 @@
             <objects>
                 <navigationController id="pTg-pf-F9I" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="au3-nY-np7">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="blackOpaque" prompted="NO"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="blackOpaque" id="au3-nY-np7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -204,8 +260,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="compassKey.png" width="300" height="46"/>
         <image name="compass_needle.png" width="300" height="300"/>
-        <image name="innerCircle.png" width="200" height="200"/>
     </resources>
     <classes>
         <class className="CompassViewController" superclassName="UIViewController">
@@ -214,6 +270,7 @@
                 <relationship kind="outlet" name="caOutlet" candidateClass="UIView"/>
                 <relationship kind="outlet" name="compassImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="currentLocationView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="mapItButtonOutlet" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="neView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="nwView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="seView" candidateClass="UIView"/>
@@ -229,6 +286,17 @@
                 <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
             </relationships>
         </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="crimeDateOutlet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="crimeDescOutlet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="crimeLatitudeOutlet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="crimeLocationOutlet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="crimeLongitudeOutlet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="crimeTypeOutlet" candidateClass="UILabel"/>
+            </relationships>
+        </class>
         <class className="ViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
         </class>
@@ -236,7 +304,7 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="WSo-ob-aFB"/>
