@@ -193,10 +193,10 @@
              (currentLocationRegionCrimeVolumeCount >=21){
                  currentLocationView.backgroundColor = [UIColor redColor];}
 
-         
-     
      }];
-
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidEnterBackground:) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(applicationDidBecomeActive:) name:UIApplicationDidBecomeActiveNotification object:nil];
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
@@ -222,7 +222,17 @@
 	NSLog(@"%f (%f) => %f (%f)", manager.heading.trueHeading, oldRad, newHeading.trueHeading, newRad);
 }
 
-
+- (void) applicationDidEnterBackground: (NSNotification *)notification
+{
+    [locationManager stopUpdatingLocation];
+    [locationManager stopUpdatingHeading];
+   
+}
+- (void)applicationDidBecomeActive:(NSNotification *)notification{
+    [locationManager startUpdatingLocation];
+    [locationManager startUpdatingHeading];
+    
+}
 
 - (void)didReceiveMemoryWarning
 {
