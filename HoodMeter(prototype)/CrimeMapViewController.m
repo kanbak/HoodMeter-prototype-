@@ -19,6 +19,7 @@
 {
     __weak IBOutlet MKMapView *crimeMapView;
     __weak IBOutlet UISearchBar *searchBar;
+    BOOL updatedLocation;
     
 }
 - (IBAction)showSearchBar:(id)sender;
@@ -51,6 +52,7 @@
     searchBar.hidden = YES;
     
     [crimeMapView addAnnotations:self.crimesArray];
+    updatedLocation = NO;
    
 }
 
@@ -65,10 +67,16 @@
 }
 #pragma mark MKMapView Delegate
 
--(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {    
-    MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 2.0*METERS_PER_MILE, 2.0
-                                                                       *METERS_PER_MILE);
-    [crimeMapView setRegion:viewRegion animated:YES];
+-(void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
+    
+    if (updatedLocation == NO){
+        MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(userLocation.location.coordinate, 2.0*METERS_PER_MILE, 2.0
+                                                                           *METERS_PER_MILE);
+        [crimeMapView setRegion:viewRegion animated:YES];
+        updatedLocation = YES;
+    }
+   
+    
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {

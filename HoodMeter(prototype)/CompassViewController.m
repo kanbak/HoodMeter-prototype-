@@ -90,7 +90,7 @@
     NSMutableArray *swArray = [NSMutableArray array];
     NSMutableArray *seArray = [NSMutableArray array];
     NSMutableArray *currentLocationRegionArray = [NSMutableArray array];
-    
+    //https://data.cityofchicago.org/api/views/a95h-gwzm/rows.json?accessType=DOWNLOAD
     NSURL *url=[NSURL URLWithString:@"http://data.cityofchicago.org/resource/a95h-gwzm.json"];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     [NSURLConnection sendAsynchronousRequest:request queue:[NSOperationQueue mainQueue] completionHandler:^(NSURLResponse *response, NSData *data, NSError *error)
