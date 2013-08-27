@@ -202,7 +202,7 @@
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ufB-Md-yu7">
                                 <rect key="frame" x="109" y="389" width="105" height="42"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="25"/>
+                                <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
                                 <state key="normal" title="Map it!">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -211,9 +211,9 @@
                                     <segue destination="2" kind="push" identifier="toTheMap" id="WSo-ob-aFB"/>
                                 </connections>
                             </button>
-                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compassKey.png" id="YwP-mC-7Jy">
-                                <rect key="frame" x="0.0" y="453" width="320" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compassKey.png" id="Kqn-yu-nVQ">
+                                <rect key="frame" x="8" y="448" width="305" height="46"/>
+                                <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -260,7 +260,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="compassKey.png" width="320" height="44"/>
+        <image name="compassKey.png" width="300" height="46"/>
         <image name="compass_needle.png" width="300" height="300"/>
     </resources>
     <classes>
