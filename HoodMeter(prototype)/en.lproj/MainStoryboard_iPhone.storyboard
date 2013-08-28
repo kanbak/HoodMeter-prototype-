@@ -219,7 +219,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ufB-Md-yu7">
-                                <rect key="frame" x="108" y="321" width="103" height="89"/>
+                                <rect key="frame" x="109" y="363" width="103" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
                                 <state key="normal" image="mapButton.png">
@@ -231,7 +231,7 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compassKey.png" id="Kqn-yu-nVQ">
-                                <rect key="frame" x="8" y="428" width="305" height="46"/>
+                                <rect key="frame" x="8" y="456" width="305" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                         </subviews>
@@ -282,7 +282,7 @@
         <image name="compassKey.png" width="300" height="46"/>
         <image name="compass_needle.png" width="300" height="300"/>
         <image name="locateMe.png" width="80" height="80"/>
-        <image name="mapButton.png" width="89" height="88"/>
+        <image name="mapButton.png" width="125" height="62"/>
         <image name="radar.png" width="101" height="100"/>
     </resources>
     <classes>
@@ -327,7 +327,7 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="WSo-ob-aFB"/>
