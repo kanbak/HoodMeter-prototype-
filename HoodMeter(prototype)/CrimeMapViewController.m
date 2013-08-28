@@ -152,7 +152,7 @@
 
 - (IBAction)locateMeAndZoom:(id)sender {
     CLLocationManager *locationManager = [CLLocationManager new];
-    MKCoordinateSpan span=MKCoordinateSpanMake(1.0, 1.0);
+    MKCoordinateSpan span=MKCoordinateSpanMake(0.0050, 0.0050);
     MKCoordinateRegion aRegion=MKCoordinateRegionMake(locationManager.location.coordinate, span);
     [crimeMapView setRegion:aRegion animated:YES];
 }
