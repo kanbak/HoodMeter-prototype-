@@ -52,8 +52,8 @@
 		55932B1817CBB20700D33154 /* CrimeAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55932B1717CBB20700D33154 /* CrimeAnnotationView.m */; };
 		559AA99F17BD360E00174BA6 /* Crime.m in Sources */ = {isa = PBXBuildFile; fileRef = 559AA99E17BD360E00174BA6 /* Crime.m */; };
 		559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559AA9A117BD38BF00174BA6 /* CoreLocation.framework */; };
-		55BA276017CAF2EE001ADD3F /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA275F17CAF2EE001ADD3F /* 57x57.png */; };
-		55BA276217CAF313001ADD3F /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA276117CAF313001ADD3F /* 114x114.png */; };
+		55E52E3917CE7CFD004A117D /* CriMeter-icon-5 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */; };
+		55E52E3A17CE7D02004A117D /* CriMeter-icon-5@2x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */; };
 		55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F670BD17C3DA7800BBEEAA /* CompassViewController.m */; };
 		55F670CC17C3EC3800BBEEAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */; };
 		55F8516717CDB38100B4612F /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F8516517CDB38100B4612F /* compass_needle.png */; };
@@ -118,6 +118,8 @@
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		55BA275F17CAF2EE001ADD3F /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
 		55BA276117CAF313001ADD3F /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
+		55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-5 2.png"; sourceTree = "<group>"; };
+		55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-5@2x 2.png"; sourceTree = "<group>"; };
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
 		55F670BD17C3DA7800BBEEAA /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
 		55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -145,6 +147,8 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
+				55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */,
+				55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */,
 				55880CED17CE532000679AB2 /* locateMe.png */,
 				55880CEE17CE532000679AB2 /* locateMe@2x.png */,
 				55F8516517CDB38100B4612F /* compass_needle.png */,
@@ -323,8 +327,6 @@
 				55291ED117BBD4F700512F2E /* Default-568h@2x.png in Resources */,
 				55291ED417BBD4F700512F2E /* MainStoryboard_iPhone.storyboard in Resources */,
 				55291ED717BBD4F700512F2E /* MainStoryboard_iPad.storyboard in Resources */,
-				55BA276017CAF2EE001ADD3F /* 57x57.png in Resources */,
-				55BA276217CAF313001ADD3F /* 114x114.png in Resources */,
 				5519BD1117CD548E00CCFB34 /* compassKey.png in Resources */,
 				5519BD1217CD548E00CCFB34 /* compassKey@2x.png in Resources */,
 				55F8516717CDB38100B4612F /* compass_needle.png in Resources */,
@@ -353,6 +355,8 @@
 				55880CEC17CE4D9700679AB2 /* WEAPONS VIOLATION.png in Resources */,
 				55880CEF17CE532000679AB2 /* locateMe.png in Resources */,
 				55880CF017CE532000679AB2 /* locateMe@2x.png in Resources */,
+				55E52E3917CE7CFD004A117D /* CriMeter-icon-5 2.png in Resources */,
+				55E52E3A17CE7D02004A117D /* CriMeter-icon-5@2x 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
