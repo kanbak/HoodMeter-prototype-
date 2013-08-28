@@ -23,6 +23,7 @@
     
 }
 - (IBAction)showSearchBar:(id)sender;
+- (IBAction)locateMeAndZoom:(id)sender;
 
 
 @property (nonatomic, strong) NSArray *crimesArray;
@@ -147,5 +148,12 @@
 - (IBAction)showSearchBar:(id)sender {
     searchBar.hidden = NO;
     
+}
+
+- (IBAction)locateMeAndZoom:(id)sender {
+    CLLocationManager *locationManager = [CLLocationManager new];
+    MKCoordinateSpan span=MKCoordinateSpanMake(0.0050, 0.0050);
+    MKCoordinateRegion aRegion=MKCoordinateRegionMake(locationManager.location.coordinate, span);
+    [crimeMapView setRegion:aRegion animated:YES];
 }
 @end
