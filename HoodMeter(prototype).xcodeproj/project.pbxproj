@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		5519BD1117CD548E00CCFB34 /* compassKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 5519BD0F17CD548E00CCFB34 /* compassKey.png */; };
 		5519BD1217CD548E00CCFB34 /* compassKey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5519BD1017CD548E00CCFB34 /* compassKey@2x.png */; };
-		5519BD1517CD565700CCFB34 /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 5519BD1317CD565700CCFB34 /* compass_needle.png */; };
-		5519BD1617CD565700CCFB34 /* compass_needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5519BD1417CD565700CCFB34 /* compass_needle@2x.png */; };
 		55291EBB17BBD4F700512F2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55291EBA17BBD4F700512F2E /* UIKit.framework */; };
 		55291EBD17BBD4F700512F2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55291EBC17BBD4F700512F2E /* Foundation.framework */; };
 		55291EBF17BBD4F700512F2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55291EBE17BBD4F700512F2E /* CoreGraphics.framework */; };
@@ -56,13 +54,15 @@
 		55EB33F617CC6E09007D4556 /* HOMICIDE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55EB33F517CC6E09007D4556 /* HOMICIDE.png */; };
 		55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F670BD17C3DA7800BBEEAA /* CompassViewController.m */; };
 		55F670CC17C3EC3800BBEEAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */; };
+		55F8516317CDA98300B4612F /* locateMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F8516117CDA98300B4612F /* locateMe.png */; };
+		55F8516417CDA98300B4612F /* locateMe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F8516217CDA98300B4612F /* locateMe@2x.png */; };
+		55F8516717CDB38100B4612F /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F8516517CDB38100B4612F /* compass_needle.png */; };
+		55F8516817CDB38100B4612F /* compass_needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F8516617CDB38100B4612F /* compass_needle@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5519BD0F17CD548E00CCFB34 /* compassKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassKey.png; sourceTree = "<group>"; };
 		5519BD1017CD548E00CCFB34 /* compassKey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compassKey@2x.png"; sourceTree = "<group>"; };
-		5519BD1317CD565700CCFB34 /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
-		5519BD1417CD565700CCFB34 /* compass_needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_needle@2x.png"; sourceTree = "<group>"; };
 		55291EB717BBD4F700512F2E /* HoodMeter(prototype).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HoodMeter(prototype).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		55291EBA17BBD4F700512F2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55291EBC17BBD4F700512F2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -119,6 +119,10 @@
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
 		55F670BD17C3DA7800BBEEAA /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
 		55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		55F8516117CDA98300B4612F /* locateMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locateMe.png; sourceTree = "<group>"; };
+		55F8516217CDA98300B4612F /* locateMe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locateMe@2x.png"; sourceTree = "<group>"; };
+		55F8516517CDB38100B4612F /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
+		55F8516617CDB38100B4612F /* compass_needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_needle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,8 +145,10 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
-				5519BD1317CD565700CCFB34 /* compass_needle.png */,
-				5519BD1417CD565700CCFB34 /* compass_needle@2x.png */,
+				55F8516517CDB38100B4612F /* compass_needle.png */,
+				55F8516617CDB38100B4612F /* compass_needle@2x.png */,
+				55F8516117CDA98300B4612F /* locateMe.png */,
+				55F8516217CDA98300B4612F /* locateMe@2x.png */,
 				5519BD0F17CD548E00CCFB34 /* compassKey.png */,
 				5519BD1017CD548E00CCFB34 /* compassKey@2x.png */,
 				55BA276117CAF313001ADD3F /* 114x114.png */,
@@ -343,8 +349,10 @@
 				55EB33F617CC6E09007D4556 /* HOMICIDE.png in Resources */,
 				5519BD1117CD548E00CCFB34 /* compassKey.png in Resources */,
 				5519BD1217CD548E00CCFB34 /* compassKey@2x.png in Resources */,
-				5519BD1517CD565700CCFB34 /* compass_needle.png in Resources */,
-				5519BD1617CD565700CCFB34 /* compass_needle@2x.png in Resources */,
+				55F8516317CDA98300B4612F /* locateMe.png in Resources */,
+				55F8516417CDA98300B4612F /* locateMe@2x.png in Resources */,
+				55F8516717CDB38100B4612F /* compass_needle.png in Resources */,
+				55F8516817CDB38100B4612F /* compass_needle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
