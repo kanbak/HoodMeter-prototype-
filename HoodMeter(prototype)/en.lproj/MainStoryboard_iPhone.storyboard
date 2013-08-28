@@ -214,11 +214,15 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="radar.png" id="RaI-Ug-VYt">
+                                <rect key="frame" x="110" y="106" width="101" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ufB-Md-yu7">
-                                <rect key="frame" x="108" y="363" width="105" height="42"/>
+                                <rect key="frame" x="109" y="363" width="103" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
-                                <state key="normal" title="Map It!">
+                                <state key="normal" image="mapButton.png">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -227,7 +231,7 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="compassKey.png" id="Kqn-yu-nVQ">
-                                <rect key="frame" x="8" y="428" width="305" height="46"/>
+                                <rect key="frame" x="8" y="456" width="305" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
                             </imageView>
                         </subviews>
@@ -278,11 +282,52 @@
         <image name="compassKey.png" width="300" height="46"/>
         <image name="compass_needle.png" width="300" height="300"/>
         <image name="locateMe.png" width="80" height="80"/>
+        <image name="mapButton.png" width="125" height="62"/>
+        <image name="radar.png" width="101" height="100"/>
     </resources>
+    <classes>
+        <class className="CompassViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompassViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="caOutlet" candidateClass="UIView"/>
+                <relationship kind="outlet" name="compassImage" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="currentLocationView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="mapItButtonOutlet" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="neView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="nwView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="seView" candidateClass="UIView"/>
+                <relationship kind="outlet" name="swView" candidateClass="UIView"/>
+                <relationship kind="outletCollection" name="compassViews" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="CrimeMapViewController" superclassName="ViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/CrimeMapViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="locateMeAndZoom:"/>
+                <relationship kind="action" name="showSearchBar:"/>
+                <relationship kind="outlet" name="crimeMapView" candidateClass="MKMapView"/>
+                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
+            </relationships>
+        </class>
+        <class className="DetailViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="crimeDateOutlet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="crimeDescOutlet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="crimeLatitudeOutlet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="crimeLocationOutlet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="crimeLongitudeOutlet" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="crimeTypeOutlet" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="WSo-ob-aFB"/>

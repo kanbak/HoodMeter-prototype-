@@ -25,6 +25,12 @@
 		553CFEDF17BD63BF00DF6444 /* CrimeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */; };
 		553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */; };
 		5544468C17C6730700C0974B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544468B17C6730700C0974B /* DetailViewController.m */; };
+		554B908217CE89B5008184E0 /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B908017CE89B5008184E0 /* compass_needle.png */; };
+		554B908317CE89B5008184E0 /* compass_needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B908117CE89B5008184E0 /* compass_needle@2x.png */; };
+		554B908A17CE8EDD008184E0 /* radar.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B908817CE8EDD008184E0 /* radar.png */; };
+		554B908B17CE8EDD008184E0 /* radar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B908917CE8EDD008184E0 /* radar@2x.png */; };
+		554B90AE17CEA7A1008184E0 /* mapButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B90AC17CEA7A1008184E0 /* mapButton.png */; };
+		554B90AF17CEA7A1008184E0 /* mapButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B90AD17CEA7A1008184E0 /* mapButton@2x.png */; };
 		55880CD717CE4D9700679AB2 /* ARSON.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC117CE4D9700679AB2 /* ARSON.png */; };
 		55880CD817CE4D9700679AB2 /* ASSAULT.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC217CE4D9700679AB2 /* ASSAULT.png */; };
 		55880CD917CE4D9700679AB2 /* BATTERY.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC317CE4D9700679AB2 /* BATTERY.png */; };
@@ -56,8 +62,6 @@
 		55E52E3A17CE7D02004A117D /* CriMeter-icon-5@2x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */; };
 		55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F670BD17C3DA7800BBEEAA /* CompassViewController.m */; };
 		55F670CC17C3EC3800BBEEAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */; };
-		55F8516717CDB38100B4612F /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F8516517CDB38100B4612F /* compass_needle.png */; };
-		55F8516817CDB38100B4612F /* compass_needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F8516617CDB38100B4612F /* compass_needle@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +91,12 @@
 		553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeMapViewController.m; sourceTree = "<group>"; };
 		5544468A17C6730700C0974B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		5544468B17C6730700C0974B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		554B908017CE89B5008184E0 /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
+		554B908117CE89B5008184E0 /* compass_needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_needle@2x.png"; sourceTree = "<group>"; };
+		554B908817CE8EDD008184E0 /* radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radar.png; sourceTree = "<group>"; };
+		554B908917CE8EDD008184E0 /* radar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radar@2x.png"; sourceTree = "<group>"; };
+		554B90AC17CEA7A1008184E0 /* mapButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapButton.png; sourceTree = "<group>"; };
+		554B90AD17CEA7A1008184E0 /* mapButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapButton@2x.png"; sourceTree = "<group>"; };
 		55880CC117CE4D9700679AB2 /* ARSON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ARSON.png; sourceTree = "<group>"; };
 		55880CC217CE4D9700679AB2 /* ASSAULT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ASSAULT.png; sourceTree = "<group>"; };
 		55880CC317CE4D9700679AB2 /* BATTERY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BATTERY.png; sourceTree = "<group>"; };
@@ -123,8 +133,6 @@
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
 		55F670BD17C3DA7800BBEEAA /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
 		55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		55F8516517CDB38100B4612F /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
-		55F8516617CDB38100B4612F /* compass_needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_needle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,12 +155,16 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
+				554B90AC17CEA7A1008184E0 /* mapButton.png */,
+				554B90AD17CEA7A1008184E0 /* mapButton@2x.png */,
+				554B908817CE8EDD008184E0 /* radar.png */,
+				554B908917CE8EDD008184E0 /* radar@2x.png */,
+				554B908017CE89B5008184E0 /* compass_needle.png */,
+				554B908117CE89B5008184E0 /* compass_needle@2x.png */,
 				55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */,
 				55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */,
 				55880CED17CE532000679AB2 /* locateMe.png */,
 				55880CEE17CE532000679AB2 /* locateMe@2x.png */,
-				55F8516517CDB38100B4612F /* compass_needle.png */,
-				55F8516617CDB38100B4612F /* compass_needle@2x.png */,
 				5519BD0F17CD548E00CCFB34 /* compassKey.png */,
 				5519BD1017CD548E00CCFB34 /* compassKey@2x.png */,
 				55BA276117CAF313001ADD3F /* 114x114.png */,
@@ -329,8 +341,6 @@
 				55291ED717BBD4F700512F2E /* MainStoryboard_iPad.storyboard in Resources */,
 				5519BD1117CD548E00CCFB34 /* compassKey.png in Resources */,
 				5519BD1217CD548E00CCFB34 /* compassKey@2x.png in Resources */,
-				55F8516717CDB38100B4612F /* compass_needle.png in Resources */,
-				55F8516817CDB38100B4612F /* compass_needle@2x.png in Resources */,
 				55880CD717CE4D9700679AB2 /* ARSON.png in Resources */,
 				55880CD817CE4D9700679AB2 /* ASSAULT.png in Resources */,
 				55880CD917CE4D9700679AB2 /* BATTERY.png in Resources */,
@@ -357,6 +367,12 @@
 				55880CF017CE532000679AB2 /* locateMe@2x.png in Resources */,
 				55E52E3917CE7CFD004A117D /* CriMeter-icon-5 2.png in Resources */,
 				55E52E3A17CE7D02004A117D /* CriMeter-icon-5@2x 2.png in Resources */,
+				554B908217CE89B5008184E0 /* compass_needle.png in Resources */,
+				554B908317CE89B5008184E0 /* compass_needle@2x.png in Resources */,
+				554B908A17CE8EDD008184E0 /* radar.png in Resources */,
+				554B908B17CE8EDD008184E0 /* radar@2x.png in Resources */,
+				554B90AE17CEA7A1008184E0 /* mapButton.png in Resources */,
+				554B90AF17CEA7A1008184E0 /* mapButton@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,11 +496,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Umut KANBAK (ZBLDDTMZ62)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HoodMeter(prototype)/HoodMeter(prototype)-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "HoodMeter(prototype)/HoodMeter(prototype)-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "C3B662E8-DC31-4F98-B8C1-D5FDAE0DF324";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C3B662E8-DC31-4F98-B8C1-D5FDAE0DF324";
 				TARGETED_DEVICE_FAMILY = 1;
+				WARNING_CFLAGS = "-Wall";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -496,11 +514,13 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Umut KANBAK (7L932ZA7HX)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HoodMeter(prototype)/HoodMeter(prototype)-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "HoodMeter(prototype)/HoodMeter(prototype)-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
+				WARNING_CFLAGS = "-Wall";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
