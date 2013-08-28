@@ -279,45 +279,6 @@
         <image name="compass_needle.png" width="300" height="300"/>
         <image name="locateMe.png" width="80" height="80"/>
     </resources>
-    <classes>
-        <class className="CompassViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CompassViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="caOutlet" candidateClass="UIView"/>
-                <relationship kind="outlet" name="compassImage" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="currentLocationView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="mapItButtonOutlet" candidateClass="UIButton"/>
-                <relationship kind="outlet" name="neView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="nwView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="seView" candidateClass="UIView"/>
-                <relationship kind="outlet" name="swView" candidateClass="UIView"/>
-                <relationship kind="outletCollection" name="compassViews" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="CrimeMapViewController" superclassName="ViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CrimeMapViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="locateMeAndZoom:"/>
-                <relationship kind="action" name="showSearchBar:"/>
-                <relationship kind="outlet" name="crimeMapView" candidateClass="MKMapView"/>
-                <relationship kind="outlet" name="searchBar" candidateClass="UISearchBar"/>
-            </relationships>
-        </class>
-        <class className="DetailViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DetailViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="crimeDateOutlet" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="crimeDescOutlet" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="crimeLatitudeOutlet" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="crimeLocationOutlet" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="crimeLongitudeOutlet" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="crimeTypeOutlet" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
