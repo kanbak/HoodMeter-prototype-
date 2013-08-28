@@ -25,37 +25,37 @@
 		553CFEDF17BD63BF00DF6444 /* CrimeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */; };
 		553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */; };
 		5544468C17C6730700C0974B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544468B17C6730700C0974B /* DetailViewController.m */; };
+		55880CD717CE4D9700679AB2 /* ARSON.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC117CE4D9700679AB2 /* ARSON.png */; };
+		55880CD817CE4D9700679AB2 /* ASSAULT.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC217CE4D9700679AB2 /* ASSAULT.png */; };
+		55880CD917CE4D9700679AB2 /* BATTERY.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC317CE4D9700679AB2 /* BATTERY.png */; };
+		55880CDA17CE4D9700679AB2 /* BURGLARY.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC417CE4D9700679AB2 /* BURGLARY.png */; };
+		55880CDB17CE4D9700679AB2 /* CRIMINAL DAMAGE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC517CE4D9700679AB2 /* CRIMINAL DAMAGE.png */; };
+		55880CDC17CE4D9700679AB2 /* CRIMINAL TRESPASS.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC617CE4D9700679AB2 /* CRIMINAL TRESPASS.png */; };
+		55880CDD17CE4D9700679AB2 /* DECEPTIVE PRACTICE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC717CE4D9700679AB2 /* DECEPTIVE PRACTICE.png */; };
+		55880CDE17CE4D9700679AB2 /* GAMBLING.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC817CE4D9700679AB2 /* GAMBLING.png */; };
+		55880CDF17CE4D9700679AB2 /* HOMICIDE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC917CE4D9700679AB2 /* HOMICIDE.png */; };
+		55880CE017CE4D9700679AB2 /* INTERFERENCE WITH PUBLIC OFFICER.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CCA17CE4D9700679AB2 /* INTERFERENCE WITH PUBLIC OFFICER.png */; };
+		55880CE117CE4D9700679AB2 /* KIDNAPPING.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CCB17CE4D9700679AB2 /* KIDNAPPING.png */; };
+		55880CE217CE4D9700679AB2 /* LIQUOR LAW VIOLATION.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CCC17CE4D9700679AB2 /* LIQUOR LAW VIOLATION.png */; };
+		55880CE317CE4D9700679AB2 /* MOTOR VEHICLE THEFT.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CCD17CE4D9700679AB2 /* MOTOR VEHICLE THEFT.png */; };
+		55880CE417CE4D9700679AB2 /* NARCOTICS.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CCE17CE4D9700679AB2 /* NARCOTICS.png */; };
+		55880CE517CE4D9700679AB2 /* OFFENSE INVOLVING CHILDREN.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CCF17CE4D9700679AB2 /* OFFENSE INVOLVING CHILDREN.png */; };
+		55880CE617CE4D9700679AB2 /* OTHER OFFENSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CD017CE4D9700679AB2 /* OTHER OFFENSE.png */; };
+		55880CE717CE4D9700679AB2 /* PROSTITUTION.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CD117CE4D9700679AB2 /* PROSTITUTION.png */; };
+		55880CE817CE4D9700679AB2 /* PUBLIC PEACE VIOLATION.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CD217CE4D9700679AB2 /* PUBLIC PEACE VIOLATION.png */; };
+		55880CE917CE4D9700679AB2 /* ROBBERY.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CD317CE4D9700679AB2 /* ROBBERY.png */; };
+		55880CEA17CE4D9700679AB2 /* SEX OFFENSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CD417CE4D9700679AB2 /* SEX OFFENSE.png */; };
+		55880CEB17CE4D9700679AB2 /* THEFT.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CD517CE4D9700679AB2 /* THEFT.png */; };
+		55880CEC17CE4D9700679AB2 /* WEAPONS VIOLATION.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CD617CE4D9700679AB2 /* WEAPONS VIOLATION.png */; };
+		55880CEF17CE532000679AB2 /* locateMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CED17CE532000679AB2 /* locateMe.png */; };
+		55880CF017CE532000679AB2 /* locateMe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CEE17CE532000679AB2 /* locateMe@2x.png */; };
 		55932B1817CBB20700D33154 /* CrimeAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55932B1717CBB20700D33154 /* CrimeAnnotationView.m */; };
-		55932B5E17CC45A200D33154 /* ARSON.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B4917CC45A200D33154 /* ARSON.png */; };
-		55932B5F17CC45A200D33154 /* ASSAULT.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B4A17CC45A200D33154 /* ASSAULT.png */; };
-		55932B6017CC45A200D33154 /* BATTERY.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B4B17CC45A200D33154 /* BATTERY.png */; };
-		55932B6117CC45A200D33154 /* BURGLARY.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B4C17CC45A200D33154 /* BURGLARY.png */; };
-		55932B6217CC45A200D33154 /* CRIMINAL DAMAGE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B4D17CC45A200D33154 /* CRIMINAL DAMAGE.png */; };
-		55932B6317CC45A200D33154 /* CRIMINAL TRESPASS.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B4E17CC45A200D33154 /* CRIMINAL TRESPASS.png */; };
-		55932B6417CC45A200D33154 /* DECEPTIVE PRACTICE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B4F17CC45A200D33154 /* DECEPTIVE PRACTICE.png */; };
-		55932B6517CC45A200D33154 /* GAMBLING.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5017CC45A200D33154 /* GAMBLING.png */; };
-		55932B6617CC45A200D33154 /* INTERFERENCE WITH PUBLIC OFFICER.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5117CC45A200D33154 /* INTERFERENCE WITH PUBLIC OFFICER.png */; };
-		55932B6717CC45A200D33154 /* KIDNAPPING.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5217CC45A200D33154 /* KIDNAPPING.png */; };
-		55932B6817CC45A200D33154 /* LIQUOR LAW VIOLATION.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5317CC45A200D33154 /* LIQUOR LAW VIOLATION.png */; };
-		55932B6917CC45A200D33154 /* MOTOR VEHICLE THEFT.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5417CC45A200D33154 /* MOTOR VEHICLE THEFT.png */; };
-		55932B6A17CC45A200D33154 /* NARCOTICS.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5517CC45A200D33154 /* NARCOTICS.png */; };
-		55932B6B17CC45A200D33154 /* OFFENSE INVOLVING CHILDREN.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5617CC45A200D33154 /* OFFENSE INVOLVING CHILDREN.png */; };
-		55932B6C17CC45A200D33154 /* OTHER OFFENSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5717CC45A200D33154 /* OTHER OFFENSE.png */; };
-		55932B6D17CC45A200D33154 /* PROSTITUTION.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5817CC45A200D33154 /* PROSTITUTION.png */; };
-		55932B6E17CC45A200D33154 /* PUBLIC PEACE VIOLATION.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5917CC45A200D33154 /* PUBLIC PEACE VIOLATION.png */; };
-		55932B6F17CC45A200D33154 /* ROBBERY.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5A17CC45A200D33154 /* ROBBERY.png */; };
-		55932B7017CC45A200D33154 /* SEX OFFENSE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5B17CC45A200D33154 /* SEX OFFENSE.png */; };
-		55932B7117CC45A200D33154 /* THEFT.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5C17CC45A200D33154 /* THEFT.png */; };
-		55932B7217CC45A200D33154 /* WEAPONS VIOLATION.png in Resources */ = {isa = PBXBuildFile; fileRef = 55932B5D17CC45A200D33154 /* WEAPONS VIOLATION.png */; };
 		559AA99F17BD360E00174BA6 /* Crime.m in Sources */ = {isa = PBXBuildFile; fileRef = 559AA99E17BD360E00174BA6 /* Crime.m */; };
 		559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559AA9A117BD38BF00174BA6 /* CoreLocation.framework */; };
 		55BA276017CAF2EE001ADD3F /* 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA275F17CAF2EE001ADD3F /* 57x57.png */; };
 		55BA276217CAF313001ADD3F /* 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 55BA276117CAF313001ADD3F /* 114x114.png */; };
-		55EB33F617CC6E09007D4556 /* HOMICIDE.png in Resources */ = {isa = PBXBuildFile; fileRef = 55EB33F517CC6E09007D4556 /* HOMICIDE.png */; };
 		55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F670BD17C3DA7800BBEEAA /* CompassViewController.m */; };
 		55F670CC17C3EC3800BBEEAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */; };
-		55F8516317CDA98300B4612F /* locateMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F8516117CDA98300B4612F /* locateMe.png */; };
-		55F8516417CDA98300B4612F /* locateMe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F8516217CDA98300B4612F /* locateMe@2x.png */; };
 		55F8516717CDB38100B4612F /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F8516517CDB38100B4612F /* compass_needle.png */; };
 		55F8516817CDB38100B4612F /* compass_needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55F8516617CDB38100B4612F /* compass_needle@2x.png */; };
 /* End PBXBuildFile section */
@@ -87,40 +87,40 @@
 		553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeMapViewController.m; sourceTree = "<group>"; };
 		5544468A17C6730700C0974B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		5544468B17C6730700C0974B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
+		55880CC117CE4D9700679AB2 /* ARSON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ARSON.png; sourceTree = "<group>"; };
+		55880CC217CE4D9700679AB2 /* ASSAULT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ASSAULT.png; sourceTree = "<group>"; };
+		55880CC317CE4D9700679AB2 /* BATTERY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BATTERY.png; sourceTree = "<group>"; };
+		55880CC417CE4D9700679AB2 /* BURGLARY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BURGLARY.png; sourceTree = "<group>"; };
+		55880CC517CE4D9700679AB2 /* CRIMINAL DAMAGE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CRIMINAL DAMAGE.png"; sourceTree = "<group>"; };
+		55880CC617CE4D9700679AB2 /* CRIMINAL TRESPASS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CRIMINAL TRESPASS.png"; sourceTree = "<group>"; };
+		55880CC717CE4D9700679AB2 /* DECEPTIVE PRACTICE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DECEPTIVE PRACTICE.png"; sourceTree = "<group>"; };
+		55880CC817CE4D9700679AB2 /* GAMBLING.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GAMBLING.png; sourceTree = "<group>"; };
+		55880CC917CE4D9700679AB2 /* HOMICIDE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOMICIDE.png; sourceTree = "<group>"; };
+		55880CCA17CE4D9700679AB2 /* INTERFERENCE WITH PUBLIC OFFICER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "INTERFERENCE WITH PUBLIC OFFICER.png"; sourceTree = "<group>"; };
+		55880CCB17CE4D9700679AB2 /* KIDNAPPING.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KIDNAPPING.png; sourceTree = "<group>"; };
+		55880CCC17CE4D9700679AB2 /* LIQUOR LAW VIOLATION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LIQUOR LAW VIOLATION.png"; sourceTree = "<group>"; };
+		55880CCD17CE4D9700679AB2 /* MOTOR VEHICLE THEFT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOTOR VEHICLE THEFT.png"; sourceTree = "<group>"; };
+		55880CCE17CE4D9700679AB2 /* NARCOTICS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NARCOTICS.png; sourceTree = "<group>"; };
+		55880CCF17CE4D9700679AB2 /* OFFENSE INVOLVING CHILDREN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OFFENSE INVOLVING CHILDREN.png"; sourceTree = "<group>"; };
+		55880CD017CE4D9700679AB2 /* OTHER OFFENSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OTHER OFFENSE.png"; sourceTree = "<group>"; };
+		55880CD117CE4D9700679AB2 /* PROSTITUTION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PROSTITUTION.png; sourceTree = "<group>"; };
+		55880CD217CE4D9700679AB2 /* PUBLIC PEACE VIOLATION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PUBLIC PEACE VIOLATION.png"; sourceTree = "<group>"; };
+		55880CD317CE4D9700679AB2 /* ROBBERY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ROBBERY.png; sourceTree = "<group>"; };
+		55880CD417CE4D9700679AB2 /* SEX OFFENSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SEX OFFENSE.png"; sourceTree = "<group>"; };
+		55880CD517CE4D9700679AB2 /* THEFT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = THEFT.png; sourceTree = "<group>"; };
+		55880CD617CE4D9700679AB2 /* WEAPONS VIOLATION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WEAPONS VIOLATION.png"; sourceTree = "<group>"; };
+		55880CED17CE532000679AB2 /* locateMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locateMe.png; sourceTree = "<group>"; };
+		55880CEE17CE532000679AB2 /* locateMe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locateMe@2x.png"; sourceTree = "<group>"; };
 		55932B1617CBB20700D33154 /* CrimeAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeAnnotationView.h; sourceTree = "<group>"; };
 		55932B1717CBB20700D33154 /* CrimeAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeAnnotationView.m; sourceTree = "<group>"; };
-		55932B4917CC45A200D33154 /* ARSON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ARSON.png; sourceTree = "<group>"; };
-		55932B4A17CC45A200D33154 /* ASSAULT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ASSAULT.png; sourceTree = "<group>"; };
-		55932B4B17CC45A200D33154 /* BATTERY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BATTERY.png; sourceTree = "<group>"; };
-		55932B4C17CC45A200D33154 /* BURGLARY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BURGLARY.png; sourceTree = "<group>"; };
-		55932B4D17CC45A200D33154 /* CRIMINAL DAMAGE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CRIMINAL DAMAGE.png"; sourceTree = "<group>"; };
-		55932B4E17CC45A200D33154 /* CRIMINAL TRESPASS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CRIMINAL TRESPASS.png"; sourceTree = "<group>"; };
-		55932B4F17CC45A200D33154 /* DECEPTIVE PRACTICE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "DECEPTIVE PRACTICE.png"; sourceTree = "<group>"; };
-		55932B5017CC45A200D33154 /* GAMBLING.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GAMBLING.png; sourceTree = "<group>"; };
-		55932B5117CC45A200D33154 /* INTERFERENCE WITH PUBLIC OFFICER.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "INTERFERENCE WITH PUBLIC OFFICER.png"; sourceTree = "<group>"; };
-		55932B5217CC45A200D33154 /* KIDNAPPING.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KIDNAPPING.png; sourceTree = "<group>"; };
-		55932B5317CC45A200D33154 /* LIQUOR LAW VIOLATION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LIQUOR LAW VIOLATION.png"; sourceTree = "<group>"; };
-		55932B5417CC45A200D33154 /* MOTOR VEHICLE THEFT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MOTOR VEHICLE THEFT.png"; sourceTree = "<group>"; };
-		55932B5517CC45A200D33154 /* NARCOTICS.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = NARCOTICS.png; sourceTree = "<group>"; };
-		55932B5617CC45A200D33154 /* OFFENSE INVOLVING CHILDREN.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OFFENSE INVOLVING CHILDREN.png"; sourceTree = "<group>"; };
-		55932B5717CC45A200D33154 /* OTHER OFFENSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "OTHER OFFENSE.png"; sourceTree = "<group>"; };
-		55932B5817CC45A200D33154 /* PROSTITUTION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PROSTITUTION.png; sourceTree = "<group>"; };
-		55932B5917CC45A200D33154 /* PUBLIC PEACE VIOLATION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PUBLIC PEACE VIOLATION.png"; sourceTree = "<group>"; };
-		55932B5A17CC45A200D33154 /* ROBBERY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ROBBERY.png; sourceTree = "<group>"; };
-		55932B5B17CC45A200D33154 /* SEX OFFENSE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SEX OFFENSE.png"; sourceTree = "<group>"; };
-		55932B5C17CC45A200D33154 /* THEFT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = THEFT.png; sourceTree = "<group>"; };
-		55932B5D17CC45A200D33154 /* WEAPONS VIOLATION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WEAPONS VIOLATION.png"; sourceTree = "<group>"; };
 		559AA99D17BD360E00174BA6 /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crime.h; path = ../Crime.h; sourceTree = "<group>"; };
 		559AA99E17BD360E00174BA6 /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crime.m; path = ../Crime.m; sourceTree = "<group>"; };
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		55BA275F17CAF2EE001ADD3F /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
 		55BA276117CAF313001ADD3F /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
-		55EB33F517CC6E09007D4556 /* HOMICIDE.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HOMICIDE.png; sourceTree = "<group>"; };
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
 		55F670BD17C3DA7800BBEEAA /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
 		55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		55F8516117CDA98300B4612F /* locateMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locateMe.png; sourceTree = "<group>"; };
-		55F8516217CDA98300B4612F /* locateMe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locateMe@2x.png"; sourceTree = "<group>"; };
 		55F8516517CDB38100B4612F /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
 		55F8516617CDB38100B4612F /* compass_needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_needle@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -145,10 +145,10 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
+				55880CED17CE532000679AB2 /* locateMe.png */,
+				55880CEE17CE532000679AB2 /* locateMe@2x.png */,
 				55F8516517CDB38100B4612F /* compass_needle.png */,
 				55F8516617CDB38100B4612F /* compass_needle@2x.png */,
-				55F8516117CDA98300B4612F /* locateMe.png */,
-				55F8516217CDA98300B4612F /* locateMe@2x.png */,
 				5519BD0F17CD548E00CCFB34 /* compassKey.png */,
 				5519BD1017CD548E00CCFB34 /* compassKey@2x.png */,
 				55BA276117CAF313001ADD3F /* 114x114.png */,
@@ -200,28 +200,28 @@
 		55291EC117BBD4F700512F2E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				55EB33F517CC6E09007D4556 /* HOMICIDE.png */,
-				55932B4917CC45A200D33154 /* ARSON.png */,
-				55932B4A17CC45A200D33154 /* ASSAULT.png */,
-				55932B4B17CC45A200D33154 /* BATTERY.png */,
-				55932B4C17CC45A200D33154 /* BURGLARY.png */,
-				55932B4D17CC45A200D33154 /* CRIMINAL DAMAGE.png */,
-				55932B4E17CC45A200D33154 /* CRIMINAL TRESPASS.png */,
-				55932B4F17CC45A200D33154 /* DECEPTIVE PRACTICE.png */,
-				55932B5017CC45A200D33154 /* GAMBLING.png */,
-				55932B5117CC45A200D33154 /* INTERFERENCE WITH PUBLIC OFFICER.png */,
-				55932B5217CC45A200D33154 /* KIDNAPPING.png */,
-				55932B5317CC45A200D33154 /* LIQUOR LAW VIOLATION.png */,
-				55932B5417CC45A200D33154 /* MOTOR VEHICLE THEFT.png */,
-				55932B5517CC45A200D33154 /* NARCOTICS.png */,
-				55932B5617CC45A200D33154 /* OFFENSE INVOLVING CHILDREN.png */,
-				55932B5717CC45A200D33154 /* OTHER OFFENSE.png */,
-				55932B5817CC45A200D33154 /* PROSTITUTION.png */,
-				55932B5917CC45A200D33154 /* PUBLIC PEACE VIOLATION.png */,
-				55932B5A17CC45A200D33154 /* ROBBERY.png */,
-				55932B5B17CC45A200D33154 /* SEX OFFENSE.png */,
-				55932B5C17CC45A200D33154 /* THEFT.png */,
-				55932B5D17CC45A200D33154 /* WEAPONS VIOLATION.png */,
+				55880CC117CE4D9700679AB2 /* ARSON.png */,
+				55880CC217CE4D9700679AB2 /* ASSAULT.png */,
+				55880CC317CE4D9700679AB2 /* BATTERY.png */,
+				55880CC417CE4D9700679AB2 /* BURGLARY.png */,
+				55880CC517CE4D9700679AB2 /* CRIMINAL DAMAGE.png */,
+				55880CC617CE4D9700679AB2 /* CRIMINAL TRESPASS.png */,
+				55880CC717CE4D9700679AB2 /* DECEPTIVE PRACTICE.png */,
+				55880CC817CE4D9700679AB2 /* GAMBLING.png */,
+				55880CC917CE4D9700679AB2 /* HOMICIDE.png */,
+				55880CCA17CE4D9700679AB2 /* INTERFERENCE WITH PUBLIC OFFICER.png */,
+				55880CCB17CE4D9700679AB2 /* KIDNAPPING.png */,
+				55880CCC17CE4D9700679AB2 /* LIQUOR LAW VIOLATION.png */,
+				55880CCD17CE4D9700679AB2 /* MOTOR VEHICLE THEFT.png */,
+				55880CCE17CE4D9700679AB2 /* NARCOTICS.png */,
+				55880CCF17CE4D9700679AB2 /* OFFENSE INVOLVING CHILDREN.png */,
+				55880CD017CE4D9700679AB2 /* OTHER OFFENSE.png */,
+				55880CD117CE4D9700679AB2 /* PROSTITUTION.png */,
+				55880CD217CE4D9700679AB2 /* PUBLIC PEACE VIOLATION.png */,
+				55880CD317CE4D9700679AB2 /* ROBBERY.png */,
+				55880CD417CE4D9700679AB2 /* SEX OFFENSE.png */,
+				55880CD517CE4D9700679AB2 /* THEFT.png */,
+				55880CD617CE4D9700679AB2 /* WEAPONS VIOLATION.png */,
 				55291EC217BBD4F700512F2E /* HoodMeter(prototype)-Info.plist */,
 				55291EC317BBD4F700512F2E /* InfoPlist.strings */,
 				55291EC617BBD4F700512F2E /* main.m */,
@@ -325,34 +325,34 @@
 				55291ED717BBD4F700512F2E /* MainStoryboard_iPad.storyboard in Resources */,
 				55BA276017CAF2EE001ADD3F /* 57x57.png in Resources */,
 				55BA276217CAF313001ADD3F /* 114x114.png in Resources */,
-				55932B5E17CC45A200D33154 /* ARSON.png in Resources */,
-				55932B5F17CC45A200D33154 /* ASSAULT.png in Resources */,
-				55932B6017CC45A200D33154 /* BATTERY.png in Resources */,
-				55932B6117CC45A200D33154 /* BURGLARY.png in Resources */,
-				55932B6217CC45A200D33154 /* CRIMINAL DAMAGE.png in Resources */,
-				55932B6317CC45A200D33154 /* CRIMINAL TRESPASS.png in Resources */,
-				55932B6417CC45A200D33154 /* DECEPTIVE PRACTICE.png in Resources */,
-				55932B6517CC45A200D33154 /* GAMBLING.png in Resources */,
-				55932B6617CC45A200D33154 /* INTERFERENCE WITH PUBLIC OFFICER.png in Resources */,
-				55932B6717CC45A200D33154 /* KIDNAPPING.png in Resources */,
-				55932B6817CC45A200D33154 /* LIQUOR LAW VIOLATION.png in Resources */,
-				55932B6917CC45A200D33154 /* MOTOR VEHICLE THEFT.png in Resources */,
-				55932B6A17CC45A200D33154 /* NARCOTICS.png in Resources */,
-				55932B6B17CC45A200D33154 /* OFFENSE INVOLVING CHILDREN.png in Resources */,
-				55932B6C17CC45A200D33154 /* OTHER OFFENSE.png in Resources */,
-				55932B6D17CC45A200D33154 /* PROSTITUTION.png in Resources */,
-				55932B6E17CC45A200D33154 /* PUBLIC PEACE VIOLATION.png in Resources */,
-				55932B6F17CC45A200D33154 /* ROBBERY.png in Resources */,
-				55932B7017CC45A200D33154 /* SEX OFFENSE.png in Resources */,
-				55932B7117CC45A200D33154 /* THEFT.png in Resources */,
-				55932B7217CC45A200D33154 /* WEAPONS VIOLATION.png in Resources */,
-				55EB33F617CC6E09007D4556 /* HOMICIDE.png in Resources */,
 				5519BD1117CD548E00CCFB34 /* compassKey.png in Resources */,
 				5519BD1217CD548E00CCFB34 /* compassKey@2x.png in Resources */,
-				55F8516317CDA98300B4612F /* locateMe.png in Resources */,
-				55F8516417CDA98300B4612F /* locateMe@2x.png in Resources */,
 				55F8516717CDB38100B4612F /* compass_needle.png in Resources */,
 				55F8516817CDB38100B4612F /* compass_needle@2x.png in Resources */,
+				55880CD717CE4D9700679AB2 /* ARSON.png in Resources */,
+				55880CD817CE4D9700679AB2 /* ASSAULT.png in Resources */,
+				55880CD917CE4D9700679AB2 /* BATTERY.png in Resources */,
+				55880CDA17CE4D9700679AB2 /* BURGLARY.png in Resources */,
+				55880CDB17CE4D9700679AB2 /* CRIMINAL DAMAGE.png in Resources */,
+				55880CDC17CE4D9700679AB2 /* CRIMINAL TRESPASS.png in Resources */,
+				55880CDD17CE4D9700679AB2 /* DECEPTIVE PRACTICE.png in Resources */,
+				55880CDE17CE4D9700679AB2 /* GAMBLING.png in Resources */,
+				55880CDF17CE4D9700679AB2 /* HOMICIDE.png in Resources */,
+				55880CE017CE4D9700679AB2 /* INTERFERENCE WITH PUBLIC OFFICER.png in Resources */,
+				55880CE117CE4D9700679AB2 /* KIDNAPPING.png in Resources */,
+				55880CE217CE4D9700679AB2 /* LIQUOR LAW VIOLATION.png in Resources */,
+				55880CE317CE4D9700679AB2 /* MOTOR VEHICLE THEFT.png in Resources */,
+				55880CE417CE4D9700679AB2 /* NARCOTICS.png in Resources */,
+				55880CE517CE4D9700679AB2 /* OFFENSE INVOLVING CHILDREN.png in Resources */,
+				55880CE617CE4D9700679AB2 /* OTHER OFFENSE.png in Resources */,
+				55880CE717CE4D9700679AB2 /* PROSTITUTION.png in Resources */,
+				55880CE817CE4D9700679AB2 /* PUBLIC PEACE VIOLATION.png in Resources */,
+				55880CE917CE4D9700679AB2 /* ROBBERY.png in Resources */,
+				55880CEA17CE4D9700679AB2 /* SEX OFFENSE.png in Resources */,
+				55880CEB17CE4D9700679AB2 /* THEFT.png in Resources */,
+				55880CEC17CE4D9700679AB2 /* WEAPONS VIOLATION.png in Resources */,
+				55880CEF17CE532000679AB2 /* locateMe.png in Resources */,
+				55880CF017CE532000679AB2 /* locateMe@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
