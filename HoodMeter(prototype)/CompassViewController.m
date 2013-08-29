@@ -31,27 +31,6 @@
 @implementation CompassViewController
 
 @synthesize locationManager;
-@synthesize compassViews;
-
-//-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-//    NSLog(@"CHANGED! %i", status);
-//    
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
-//                                                        message:@"To enable, please go to Settings and turn on Location Service for this app."
-//                                                       delegate:nil
-//                                              cancelButtonTitle:@"OK"
-//                                              otherButtonTitles:nil];
-//        if ((status ==0) || (status ==1) || (status==2)){
-//        [alert show];
-//    }
-//
-//    
-//}
-
-//-(void)viewDidAppear:(BOOL)animated {
-//    [super viewDidAppear:animated];
-//}
-
 
 - (void)viewDidLoad
 {

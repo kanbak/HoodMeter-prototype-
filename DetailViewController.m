@@ -72,18 +72,11 @@
         if (annotationView == nil) {
             annotationView = [[MKAnnotationView alloc] initWithAnnotation:crimeAnnotation reuseIdentifier:identifier];
             annotationView.enabled = YES;
-//            annotationView.canShowCallout = YES;
-//            annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            
         } else {
             annotationView.annotation = annotation;
         }
-        
-        annotationView.image = [UIImage imageNamed:crimeAnnotation.primaryTypeString];
-        annotationView.frame = CGRectMake(annotationView.frame.origin.x,
-                                          annotationView.frame.origin.y,
-                                          annotationView.image.size.width,
-                                          annotationView.image.size.height);
-        
+
         return annotationView;
     }
     
