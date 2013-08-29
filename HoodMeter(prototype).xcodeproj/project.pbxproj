@@ -21,6 +21,8 @@
 		55291ED417BBD4F700512F2E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55291ED217BBD4F700512F2E /* MainStoryboard_iPhone.storyboard */; };
 		55291ED717BBD4F700512F2E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55291ED517BBD4F700512F2E /* MainStoryboard_iPad.storyboard */; };
 		55291EDA17BBD4F700512F2E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55291ED917BBD4F700512F2E /* ViewController.m */; };
+		552D854A17CF009E00E423EE /* MapFrame.png in Resources */ = {isa = PBXBuildFile; fileRef = 552D854817CF009D00E423EE /* MapFrame.png */; };
+		552D854B17CF009E00E423EE /* MapFrame@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 552D854917CF009D00E423EE /* MapFrame@2x.png */; };
 		553CFEDC17BD629000DF6444 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 553CFEDB17BD629000DF6444 /* MapKit.framework */; };
 		553CFEDF17BD63BF00DF6444 /* CrimeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */; };
 		553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */; };
@@ -84,6 +86,8 @@
 		55291ED617BBD4F700512F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		55291ED817BBD4F700512F2E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		55291ED917BBD4F700512F2E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		552D854817CF009D00E423EE /* MapFrame.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MapFrame.png; sourceTree = "<group>"; };
+		552D854917CF009D00E423EE /* MapFrame@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "MapFrame@2x.png"; sourceTree = "<group>"; };
 		553CFEDB17BD629000DF6444 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		553CFEDD17BD63BF00DF6444 /* CrimeLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeLocation.h; sourceTree = "<group>"; };
 		553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeLocation.m; sourceTree = "<group>"; };
@@ -155,6 +159,8 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
+				552D854817CF009D00E423EE /* MapFrame.png */,
+				552D854917CF009D00E423EE /* MapFrame@2x.png */,
 				554B90AC17CEA7A1008184E0 /* mapButton.png */,
 				554B90AD17CEA7A1008184E0 /* mapButton@2x.png */,
 				554B908817CE8EDD008184E0 /* radar.png */,
@@ -373,6 +379,8 @@
 				554B908B17CE8EDD008184E0 /* radar@2x.png in Resources */,
 				554B90AE17CEA7A1008184E0 /* mapButton.png in Resources */,
 				554B90AF17CEA7A1008184E0 /* mapButton@2x.png in Resources */,
+				552D854A17CF009E00E423EE /* MapFrame.png in Resources */,
+				552D854B17CF009E00E423EE /* MapFrame@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
