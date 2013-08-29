@@ -130,8 +130,6 @@
 		559AA99D17BD360E00174BA6 /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crime.h; path = ../Crime.h; sourceTree = "<group>"; };
 		559AA99E17BD360E00174BA6 /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crime.m; path = ../Crime.m; sourceTree = "<group>"; };
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		55BA275F17CAF2EE001ADD3F /* 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 57x57.png; sourceTree = "<group>"; };
-		55BA276117CAF313001ADD3F /* 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 114x114.png; sourceTree = "<group>"; };
 		55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-5 2.png"; sourceTree = "<group>"; };
 		55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-5@2x 2.png"; sourceTree = "<group>"; };
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
@@ -173,8 +171,6 @@
 				55880CEE17CE532000679AB2 /* locateMe@2x.png */,
 				5519BD0F17CD548E00CCFB34 /* compassKey.png */,
 				5519BD1017CD548E00CCFB34 /* compassKey@2x.png */,
-				55BA276117CAF313001ADD3F /* 114x114.png */,
-				55BA275F17CAF2EE001ADD3F /* 57x57.png */,
 				55291EC017BBD4F700512F2E /* HoodMeter(prototype) */,
 				55291EB917BBD4F700512F2E /* Frameworks */,
 				55291EB817BBD4F700512F2E /* Products */,
