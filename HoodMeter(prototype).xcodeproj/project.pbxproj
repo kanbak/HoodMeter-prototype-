@@ -57,7 +57,6 @@
 		55880CEC17CE4D9700679AB2 /* WEAPONS VIOLATION.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CD617CE4D9700679AB2 /* WEAPONS VIOLATION.png */; };
 		55880CEF17CE532000679AB2 /* locateMe.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CED17CE532000679AB2 /* locateMe.png */; };
 		55880CF017CE532000679AB2 /* locateMe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CEE17CE532000679AB2 /* locateMe@2x.png */; };
-		55932B1817CBB20700D33154 /* CrimeAnnotationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 55932B1717CBB20700D33154 /* CrimeAnnotationView.m */; };
 		559AA99F17BD360E00174BA6 /* Crime.m in Sources */ = {isa = PBXBuildFile; fileRef = 559AA99E17BD360E00174BA6 /* Crime.m */; };
 		559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559AA9A117BD38BF00174BA6 /* CoreLocation.framework */; };
 		55E52E3917CE7CFD004A117D /* CriMeter-icon-5 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */; };
@@ -125,8 +124,6 @@
 		55880CD617CE4D9700679AB2 /* WEAPONS VIOLATION.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WEAPONS VIOLATION.png"; sourceTree = "<group>"; };
 		55880CED17CE532000679AB2 /* locateMe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locateMe.png; sourceTree = "<group>"; };
 		55880CEE17CE532000679AB2 /* locateMe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locateMe@2x.png"; sourceTree = "<group>"; };
-		55932B1617CBB20700D33154 /* CrimeAnnotationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrimeAnnotationView.h; sourceTree = "<group>"; };
-		55932B1717CBB20700D33154 /* CrimeAnnotationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeAnnotationView.m; sourceTree = "<group>"; };
 		559AA99D17BD360E00174BA6 /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crime.h; path = ../Crime.h; sourceTree = "<group>"; };
 		559AA99E17BD360E00174BA6 /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crime.m; path = ../Crime.m; sourceTree = "<group>"; };
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -207,8 +204,6 @@
 				559AA99D17BD360E00174BA6 /* Crime.h */,
 				559AA99E17BD360E00174BA6 /* Crime.m */,
 				553CFEDD17BD63BF00DF6444 /* CrimeLocation.h */,
-				55932B1617CBB20700D33154 /* CrimeAnnotationView.h */,
-				55932B1717CBB20700D33154 /* CrimeAnnotationView.m */,
 				553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */,
 				55291EC117BBD4F700512F2E /* Supporting Files */,
 			);
@@ -395,7 +390,6 @@
 				553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */,
 				55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */,
 				5544468C17C6730700C0974B /* DetailViewController.m in Sources */,
-				55932B1817CBB20700D33154 /* CrimeAnnotationView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
