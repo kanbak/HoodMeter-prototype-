@@ -68,14 +68,14 @@
 /* Begin PBXFileReference section */
 		5519BD0F17CD548E00CCFB34 /* compassKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassKey.png; sourceTree = "<group>"; };
 		5519BD1017CD548E00CCFB34 /* compassKey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compassKey@2x.png"; sourceTree = "<group>"; };
-		55291EB717BBD4F700512F2E /* HoodMeter(prototype).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HoodMeter(prototype).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		55291EB717BBD4F700512F2E /* HoodMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoodMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55291EBA17BBD4F700512F2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55291EBC17BBD4F700512F2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		55291EBE17BBD4F700512F2E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		55291EC217BBD4F700512F2E /* HoodMeter(prototype)-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HoodMeter(prototype)-Info.plist"; sourceTree = "<group>"; };
+		55291EC217BBD4F700512F2E /* HoodMeter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HoodMeter-Info.plist"; sourceTree = "<group>"; };
 		55291EC417BBD4F700512F2E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		55291EC617BBD4F700512F2E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		55291EC817BBD4F700512F2E /* HoodMeter(prototype)-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HoodMeter(prototype)-Prefix.pch"; sourceTree = "<group>"; };
+		55291EC817BBD4F700512F2E /* HoodMeter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HoodMeter-Prefix.pch"; sourceTree = "<group>"; };
 		55291EC917BBD4F700512F2E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		55291ECA17BBD4F700512F2E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		55291ECC17BBD4F700512F2E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -177,7 +177,7 @@
 		55291EB817BBD4F700512F2E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				55291EB717BBD4F700512F2E /* HoodMeter(prototype).app */,
+				55291EB717BBD4F700512F2E /* HoodMeter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -235,10 +235,10 @@
 				55880CD417CE4D9700679AB2 /* SEX OFFENSE.png */,
 				55880CD517CE4D9700679AB2 /* THEFT.png */,
 				55880CD617CE4D9700679AB2 /* WEAPONS VIOLATION.png */,
-				55291EC217BBD4F700512F2E /* HoodMeter(prototype)-Info.plist */,
+				55291EC217BBD4F700512F2E /* HoodMeter-Info.plist */,
 				55291EC317BBD4F700512F2E /* InfoPlist.strings */,
 				55291EC617BBD4F700512F2E /* main.m */,
-				55291EC817BBD4F700512F2E /* HoodMeter(prototype)-Prefix.pch */,
+				55291EC817BBD4F700512F2E /* HoodMeter-Prefix.pch */,
 				55291ECC17BBD4F700512F2E /* Default.png */,
 				55291ECE17BBD4F700512F2E /* Default@2x.png */,
 				55291ED017BBD4F700512F2E /* Default-568h@2x.png */,
@@ -282,9 +282,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		55291EB617BBD4F700512F2E /* HoodMeter(prototype) */ = {
+		55291EB617BBD4F700512F2E /* HoodMeter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 55291EDD17BBD4F700512F2E /* Build configuration list for PBXNativeTarget "HoodMeter(prototype)" */;
+			buildConfigurationList = 55291EDD17BBD4F700512F2E /* Build configuration list for PBXNativeTarget "HoodMeter" */;
 			buildPhases = (
 				55291EB317BBD4F700512F2E /* Sources */,
 				55291EB417BBD4F700512F2E /* Frameworks */,
@@ -294,9 +294,9 @@
 			);
 			dependencies = (
 			);
-			name = "HoodMeter(prototype)";
+			name = HoodMeter;
 			productName = "HoodMeter(prototype)";
-			productReference = 55291EB717BBD4F700512F2E /* HoodMeter(prototype).app */;
+			productReference = 55291EB717BBD4F700512F2E /* HoodMeter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -308,7 +308,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Umut Kanbak";
 			};
-			buildConfigurationList = 55291EB217BBD4F700512F2E /* Build configuration list for PBXProject "HoodMeter(prototype)" */;
+			buildConfigurationList = 55291EB217BBD4F700512F2E /* Build configuration list for PBXProject "HoodMeter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -320,7 +320,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				55291EB617BBD4F700512F2E /* HoodMeter(prototype) */,
+				55291EB617BBD4F700512F2E /* HoodMeter */,
 			);
 		};
 /* End PBXProject section */
@@ -479,8 +479,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				PROVISIONING_PROFILE = "A013C9AA-3480-489B-BF4E-335888DDF8D9";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A013C9AA-3480-489B-BF4E-335888DDF8D9";
+				PROVISIONING_PROFILE = "5BCC6947-2C55-4884-8976-204071ABE04B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5BCC6947-2C55-4884-8976-204071ABE04B";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
@@ -493,10 +493,10 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer: Umut KANBAK (ZBLDDTMZ62)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Umut KANBAK (ZBLDDTMZ62)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HoodMeter(prototype)/HoodMeter(prototype)-Prefix.pch";
+				GCC_PREFIX_HEADER = "HoodMeter(prototype)/HoodMeter-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				INFOPLIST_FILE = "HoodMeter(prototype)/HoodMeter(prototype)-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "HoodMeter(prototype)/HoodMeter-Info.plist";
+				PRODUCT_NAME = HoodMeter;
 				PROVISIONING_PROFILE = "C3B662E8-DC31-4F98-B8C1-D5FDAE0DF324";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C3B662E8-DC31-4F98-B8C1-D5FDAE0DF324";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -511,12 +511,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Umut KANBAK (7L932ZA7HX)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Umut KANBAK (7L932ZA7HX)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "HoodMeter(prototype)/HoodMeter(prototype)-Prefix.pch";
+				GCC_PREFIX_HEADER = "HoodMeter(prototype)/HoodMeter-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
-				INFOPLIST_FILE = "HoodMeter(prototype)/HoodMeter(prototype)-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				INFOPLIST_FILE = "HoodMeter(prototype)/HoodMeter-Info.plist";
+				PRODUCT_NAME = HoodMeter;
+				PROVISIONING_PROFILE = "5BCC6947-2C55-4884-8976-204071ABE04B";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5BCC6947-2C55-4884-8976-204071ABE04B";
 				TARGETED_DEVICE_FAMILY = 1;
 				WARNING_CFLAGS = "-Wall";
 				WRAPPER_EXTENSION = app;
@@ -526,7 +526,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		55291EB217BBD4F700512F2E /* Build configuration list for PBXProject "HoodMeter(prototype)" */ = {
+		55291EB217BBD4F700512F2E /* Build configuration list for PBXProject "HoodMeter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55291EDB17BBD4F700512F2E /* Debug */,
@@ -535,7 +535,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		55291EDD17BBD4F700512F2E /* Build configuration list for PBXNativeTarget "HoodMeter(prototype)" */ = {
+		55291EDD17BBD4F700512F2E /* Build configuration list for PBXNativeTarget "HoodMeter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				55291EDE17BBD4F700512F2E /* Debug */,

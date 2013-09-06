@@ -68,10 +68,11 @@
     static NSString *identifier = @"MyLocation";
     if ([annotation isKindOfClass:[Crime class]]) {
         Crime *crimeAnnotation = (Crime *)annotation;
-        MKAnnotationView *annotationView = (MKAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
         if (annotationView == nil) {
-            annotationView = [[MKAnnotationView alloc] initWithAnnotation:crimeAnnotation reuseIdentifier:identifier];
+            annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:crimeAnnotation reuseIdentifier:identifier];
             annotationView.enabled = YES;
+            annotationView.pinColor = MKPinAnnotationColorPurple;
             
         } else {
             annotationView.annotation = annotation;

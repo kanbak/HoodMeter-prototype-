@@ -230,7 +230,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ufB-Md-yu7">
-                                <rect key="frame" x="109" y="363" width="103" height="89"/>
+                                <rect key="frame" x="109" y="364" width="103" height="89"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
                                 <state key="normal" image="mapButton.png">
@@ -302,14 +302,12 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/CompassViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="caOutlet" candidateClass="UIView"/>
-                <relationship kind="outlet" name="compassImage" candidateClass="UIImageView"/>
                 <relationship kind="outlet" name="currentLocationView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="mapItButtonOutlet" candidateClass="UIButton"/>
                 <relationship kind="outlet" name="neView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="nwView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="seView" candidateClass="UIView"/>
                 <relationship kind="outlet" name="swView" candidateClass="UIView"/>
-                <relationship kind="outletCollection" name="compassViews" candidateClass="UIImageView"/>
             </relationships>
         </class>
         <class className="CrimeMapViewController" superclassName="ViewController">
