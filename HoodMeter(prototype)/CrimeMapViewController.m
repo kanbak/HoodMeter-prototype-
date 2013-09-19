@@ -147,6 +147,7 @@
 }
 - (IBAction)showSearchBar:(id)sender {
     searchBar.hidden = NO;
+    [searchBar becomeFirstResponder];
     
 }
 
