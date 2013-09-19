@@ -31,8 +31,6 @@
 		554B908B17CE8EDD008184E0 /* radar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B908917CE8EDD008184E0 /* radar@2x.png */; };
 		554B90AE17CEA7A1008184E0 /* mapButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B90AC17CEA7A1008184E0 /* mapButton.png */; };
 		554B90AF17CEA7A1008184E0 /* mapButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B90AD17CEA7A1008184E0 /* mapButton@2x.png */; };
-		557D8CD417EB5AB90064C614 /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 557D8CD217EB5AB80064C614 /* compass_needle.png */; };
-		557D8CD517EB5AB90064C614 /* compass_needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 557D8CD317EB5AB80064C614 /* compass_needle@2x.png */; };
 		55880CD717CE4D9700679AB2 /* ARSON.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC117CE4D9700679AB2 /* ARSON.png */; };
 		55880CD817CE4D9700679AB2 /* ASSAULT.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC217CE4D9700679AB2 /* ASSAULT.png */; };
 		55880CD917CE4D9700679AB2 /* BATTERY.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC317CE4D9700679AB2 /* BATTERY.png */; };
@@ -59,6 +57,8 @@
 		55880CF017CE532000679AB2 /* locateMe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CEE17CE532000679AB2 /* locateMe@2x.png */; };
 		559AA99F17BD360E00174BA6 /* Crime.m in Sources */ = {isa = PBXBuildFile; fileRef = 559AA99E17BD360E00174BA6 /* Crime.m */; };
 		559AA9A217BD38BF00174BA6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 559AA9A117BD38BF00174BA6 /* CoreLocation.framework */; };
+		55C06FC317EB93D100F07D2B /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C06FC117EB93D100F07D2B /* compass_needle.png */; };
+		55C06FC417EB93D100F07D2B /* compass_needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55C06FC217EB93D100F07D2B /* compass_needle@2x.png */; };
 		55E52E3917CE7CFD004A117D /* CriMeter-icon-5 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */; };
 		55E52E3A17CE7D02004A117D /* CriMeter-icon-5@2x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */; };
 		55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F670BD17C3DA7800BBEEAA /* CompassViewController.m */; };
@@ -98,8 +98,6 @@
 		554B908917CE8EDD008184E0 /* radar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radar@2x.png"; sourceTree = "<group>"; };
 		554B90AC17CEA7A1008184E0 /* mapButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapButton.png; sourceTree = "<group>"; };
 		554B90AD17CEA7A1008184E0 /* mapButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapButton@2x.png"; sourceTree = "<group>"; };
-		557D8CD217EB5AB80064C614 /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
-		557D8CD317EB5AB80064C614 /* compass_needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_needle@2x.png"; sourceTree = "<group>"; };
 		55880CC117CE4D9700679AB2 /* ARSON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ARSON.png; sourceTree = "<group>"; };
 		55880CC217CE4D9700679AB2 /* ASSAULT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ASSAULT.png; sourceTree = "<group>"; };
 		55880CC317CE4D9700679AB2 /* BATTERY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BATTERY.png; sourceTree = "<group>"; };
@@ -127,6 +125,8 @@
 		559AA99D17BD360E00174BA6 /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crime.h; path = ../Crime.h; sourceTree = "<group>"; };
 		559AA99E17BD360E00174BA6 /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crime.m; path = ../Crime.m; sourceTree = "<group>"; };
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		55C06FC117EB93D100F07D2B /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
+		55C06FC217EB93D100F07D2B /* compass_needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_needle@2x.png"; sourceTree = "<group>"; };
 		55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-5 2.png"; sourceTree = "<group>"; };
 		55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-5@2x 2.png"; sourceTree = "<group>"; };
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
@@ -154,8 +154,8 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
-				557D8CD217EB5AB80064C614 /* compass_needle.png */,
-				557D8CD317EB5AB80064C614 /* compass_needle@2x.png */,
+				55C06FC117EB93D100F07D2B /* compass_needle.png */,
+				55C06FC217EB93D100F07D2B /* compass_needle@2x.png */,
 				552D854817CF009D00E423EE /* MapFrame.png */,
 				552D854917CF009D00E423EE /* MapFrame@2x.png */,
 				554B90AC17CEA7A1008184E0 /* mapButton.png */,
@@ -366,11 +366,11 @@
 				55E52E3A17CE7D02004A117D /* CriMeter-icon-5@2x 2.png in Resources */,
 				554B908A17CE8EDD008184E0 /* radar.png in Resources */,
 				554B908B17CE8EDD008184E0 /* radar@2x.png in Resources */,
-				557D8CD417EB5AB90064C614 /* compass_needle.png in Resources */,
+				55C06FC317EB93D100F07D2B /* compass_needle.png in Resources */,
 				554B90AE17CEA7A1008184E0 /* mapButton.png in Resources */,
 				554B90AF17CEA7A1008184E0 /* mapButton@2x.png in Resources */,
 				552D854A17CF009E00E423EE /* MapFrame.png in Resources */,
-				557D8CD517EB5AB90064C614 /* compass_needle@2x.png in Resources */,
+				55C06FC417EB93D100F07D2B /* compass_needle@2x.png in Resources */,
 				552D854B17CF009E00E423EE /* MapFrame@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

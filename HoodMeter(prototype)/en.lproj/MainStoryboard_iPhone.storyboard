@@ -251,7 +251,7 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" image="radar.png" id="RkA-aE-fIL">
-                                <rect key="frame" x="109" y="172" width="101" height="100"/>
+                                <rect key="frame" x="108" y="171" width="101" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </imageView>
@@ -264,7 +264,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="CRIMETER" id="vAN-i0-Za7"/>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" prompted="NO"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" barStyle="black" translucent="NO" prompted="NO"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <connections>
