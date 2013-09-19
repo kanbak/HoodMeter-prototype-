@@ -27,12 +27,12 @@
 		553CFEDF17BD63BF00DF6444 /* CrimeLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */; };
 		553CFEE217BD65CB00DF6444 /* CrimeMapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */; };
 		5544468C17C6730700C0974B /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5544468B17C6730700C0974B /* DetailViewController.m */; };
-		554B908217CE89B5008184E0 /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B908017CE89B5008184E0 /* compass_needle.png */; };
-		554B908317CE89B5008184E0 /* compass_needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B908117CE89B5008184E0 /* compass_needle@2x.png */; };
 		554B908A17CE8EDD008184E0 /* radar.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B908817CE8EDD008184E0 /* radar.png */; };
 		554B908B17CE8EDD008184E0 /* radar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B908917CE8EDD008184E0 /* radar@2x.png */; };
 		554B90AE17CEA7A1008184E0 /* mapButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B90AC17CEA7A1008184E0 /* mapButton.png */; };
 		554B90AF17CEA7A1008184E0 /* mapButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 554B90AD17CEA7A1008184E0 /* mapButton@2x.png */; };
+		557D8CD417EB5AB90064C614 /* compass_needle.png in Resources */ = {isa = PBXBuildFile; fileRef = 557D8CD217EB5AB80064C614 /* compass_needle.png */; };
+		557D8CD517EB5AB90064C614 /* compass_needle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 557D8CD317EB5AB80064C614 /* compass_needle@2x.png */; };
 		55880CD717CE4D9700679AB2 /* ARSON.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC117CE4D9700679AB2 /* ARSON.png */; };
 		55880CD817CE4D9700679AB2 /* ASSAULT.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC217CE4D9700679AB2 /* ASSAULT.png */; };
 		55880CD917CE4D9700679AB2 /* BATTERY.png in Resources */ = {isa = PBXBuildFile; fileRef = 55880CC317CE4D9700679AB2 /* BATTERY.png */; };
@@ -94,12 +94,12 @@
 		553CFEE117BD65CB00DF6444 /* CrimeMapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrimeMapViewController.m; sourceTree = "<group>"; };
 		5544468A17C6730700C0974B /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DetailViewController.h; path = ../DetailViewController.h; sourceTree = "<group>"; };
 		5544468B17C6730700C0974B /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DetailViewController.m; path = ../DetailViewController.m; sourceTree = "<group>"; };
-		554B908017CE89B5008184E0 /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
-		554B908117CE89B5008184E0 /* compass_needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_needle@2x.png"; sourceTree = "<group>"; };
 		554B908817CE8EDD008184E0 /* radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radar.png; sourceTree = "<group>"; };
 		554B908917CE8EDD008184E0 /* radar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radar@2x.png"; sourceTree = "<group>"; };
 		554B90AC17CEA7A1008184E0 /* mapButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapButton.png; sourceTree = "<group>"; };
 		554B90AD17CEA7A1008184E0 /* mapButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapButton@2x.png"; sourceTree = "<group>"; };
+		557D8CD217EB5AB80064C614 /* compass_needle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compass_needle.png; sourceTree = "<group>"; };
+		557D8CD317EB5AB80064C614 /* compass_needle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_needle@2x.png"; sourceTree = "<group>"; };
 		55880CC117CE4D9700679AB2 /* ARSON.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ARSON.png; sourceTree = "<group>"; };
 		55880CC217CE4D9700679AB2 /* ASSAULT.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ASSAULT.png; sourceTree = "<group>"; };
 		55880CC317CE4D9700679AB2 /* BATTERY.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BATTERY.png; sourceTree = "<group>"; };
@@ -154,14 +154,14 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
+				557D8CD217EB5AB80064C614 /* compass_needle.png */,
+				557D8CD317EB5AB80064C614 /* compass_needle@2x.png */,
 				552D854817CF009D00E423EE /* MapFrame.png */,
 				552D854917CF009D00E423EE /* MapFrame@2x.png */,
 				554B90AC17CEA7A1008184E0 /* mapButton.png */,
 				554B90AD17CEA7A1008184E0 /* mapButton@2x.png */,
 				554B908817CE8EDD008184E0 /* radar.png */,
 				554B908917CE8EDD008184E0 /* radar@2x.png */,
-				554B908017CE89B5008184E0 /* compass_needle.png */,
-				554B908117CE89B5008184E0 /* compass_needle@2x.png */,
 				55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */,
 				55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */,
 				55880CED17CE532000679AB2 /* locateMe.png */,
@@ -364,13 +364,13 @@
 				55880CF017CE532000679AB2 /* locateMe@2x.png in Resources */,
 				55E52E3917CE7CFD004A117D /* CriMeter-icon-5 2.png in Resources */,
 				55E52E3A17CE7D02004A117D /* CriMeter-icon-5@2x 2.png in Resources */,
-				554B908217CE89B5008184E0 /* compass_needle.png in Resources */,
-				554B908317CE89B5008184E0 /* compass_needle@2x.png in Resources */,
 				554B908A17CE8EDD008184E0 /* radar.png in Resources */,
 				554B908B17CE8EDD008184E0 /* radar@2x.png in Resources */,
+				557D8CD417EB5AB90064C614 /* compass_needle.png in Resources */,
 				554B90AE17CEA7A1008184E0 /* mapButton.png in Resources */,
 				554B90AF17CEA7A1008184E0 /* mapButton@2x.png in Resources */,
 				552D854A17CF009E00E423EE /* MapFrame.png in Resources */,
+				557D8CD517EB5AB90064C614 /* compass_needle@2x.png in Resources */,
 				552D854B17CF009E00E423EE /* MapFrame@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
