@@ -197,7 +197,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" id="snG-YX-jmM">
-                                <rect key="frame" x="0.0" y="81" width="320" height="328"/>
+                                <rect key="frame" x="0.0" y="120" width="320" height="328"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" id="hFY-Ty-TiL">
@@ -233,7 +233,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" highlighted="YES" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ufB-Md-yu7">
-                                <rect key="frame" x="97.5" y="439" width="126" height="64"/>
+                                <rect key="frame" x="97.5" y="449" width="126" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="GillSans-Bold" family="Gill Sans" pointSize="25"/>
                                 <state key="normal" image="mapButton.png">
@@ -244,8 +244,7 @@
                                 </connections>
                             </button>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" image="radar.png" id="Bic-IB-Ikt">
-                                <rect key="frame" x="110" y="195" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask"/>
+                                <rect key="frame" x="110" y="234" width="100" height="100"/>
                             </imageView>
                             <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="compassKey.png" id="Kqn-yu-nVQ">
                                 <rect key="frame" x="8" y="513.5" width="305" height="46"/>
@@ -303,7 +302,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="compassKey.png" width="300" height="46"/>
+        <image name="compassKey.png" width="1249" height="208"/>
         <image name="locButton.png" width="233" height="229"/>
         <image name="mapButton.png" width="262" height="133"/>
         <image name="radar.png" width="416" height="416"/>

@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5519BD1117CD548E00CCFB34 /* compassKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 5519BD0F17CD548E00CCFB34 /* compassKey.png */; };
-		5519BD1217CD548E00CCFB34 /* compassKey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5519BD1017CD548E00CCFB34 /* compassKey@2x.png */; };
 		55291EBB17BBD4F700512F2E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55291EBA17BBD4F700512F2E /* UIKit.framework */; };
 		55291EBD17BBD4F700512F2E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55291EBC17BBD4F700512F2E /* Foundation.framework */; };
 		55291EBF17BBD4F700512F2E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55291EBE17BBD4F700512F2E /* CoreGraphics.framework */; };
@@ -75,10 +73,10 @@
 		55A9CFC617EBE67200E7EB10 /* SEX OFFENSE@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A9CFB017EBE67200E7EB10 /* SEX OFFENSE@2x.png */; };
 		55A9CFC817EBE67200E7EB10 /* WEAPONS VIOLATION@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A9CFB217EBE67200E7EB10 /* WEAPONS VIOLATION@2x.png */; };
 		55A9CFCA17EBE6D700E7EB10 /* THEFT@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A9CFC917EBE6D700E7EB10 /* THEFT@2x.png */; };
-		55A9CFCD17EBE85000E7EB10 /* whiteOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A9CFCB17EBE85000E7EB10 /* whiteOut.png */; };
-		55A9CFCE17EBE85000E7EB10 /* whiteOut@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A9CFCC17EBE85000E7EB10 /* whiteOut@2x.png */; };
-		55A9CFD117EBE87900E7EB10 /* compassKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A9CFCF17EBE87900E7EB10 /* compassKey.png */; };
-		55A9CFD217EBE87900E7EB10 /* compassKey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A9CFD017EBE87900E7EB10 /* compassKey@2x.png */; };
+		55A9CFD517EBE91800E7EB10 /* compassKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A9CFD317EBE91800E7EB10 /* compassKey.png */; };
+		55A9CFD617EBE91800E7EB10 /* compassKey@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A9CFD417EBE91800E7EB10 /* compassKey@2x.png */; };
+		55A9CFD917EBED6100E7EB10 /* whiteOut.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A9CFD717EBED6000E7EB10 /* whiteOut.png */; };
+		55A9CFDA17EBED6100E7EB10 /* whiteOut@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 55A9CFD817EBED6100E7EB10 /* whiteOut@2x.png */; };
 		55E52E3917CE7CFD004A117D /* CriMeter-icon-5 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */; };
 		55E52E3A17CE7D02004A117D /* CriMeter-icon-5@2x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */; };
 		55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F670BD17C3DA7800BBEEAA /* CompassViewController.m */; };
@@ -163,10 +161,10 @@
 		55A9CFB017EBE67200E7EB10 /* SEX OFFENSE@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SEX OFFENSE@2x.png"; sourceTree = "<group>"; };
 		55A9CFB217EBE67200E7EB10 /* WEAPONS VIOLATION@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WEAPONS VIOLATION@2x.png"; sourceTree = "<group>"; };
 		55A9CFC917EBE6D700E7EB10 /* THEFT@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "THEFT@2x.png"; sourceTree = "<group>"; };
-		55A9CFCB17EBE85000E7EB10 /* whiteOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteOut.png; sourceTree = "<group>"; };
-		55A9CFCC17EBE85000E7EB10 /* whiteOut@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteOut@2x.png"; sourceTree = "<group>"; };
-		55A9CFCF17EBE87900E7EB10 /* compassKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassKey.png; sourceTree = "<group>"; };
-		55A9CFD017EBE87900E7EB10 /* compassKey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compassKey@2x.png"; sourceTree = "<group>"; };
+		55A9CFD317EBE91800E7EB10 /* compassKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassKey.png; sourceTree = "<group>"; };
+		55A9CFD417EBE91800E7EB10 /* compassKey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compassKey@2x.png"; sourceTree = "<group>"; };
+		55A9CFD717EBED6000E7EB10 /* whiteOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteOut.png; sourceTree = "<group>"; };
+		55A9CFD817EBED6100E7EB10 /* whiteOut@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteOut@2x.png"; sourceTree = "<group>"; };
 		55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-5 2.png"; sourceTree = "<group>"; };
 		55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-5@2x 2.png"; sourceTree = "<group>"; };
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
@@ -194,10 +192,10 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
-				55A9CFCF17EBE87900E7EB10 /* compassKey.png */,
-				55A9CFD017EBE87900E7EB10 /* compassKey@2x.png */,
-				55A9CFCB17EBE85000E7EB10 /* whiteOut.png */,
-				55A9CFCC17EBE85000E7EB10 /* whiteOut@2x.png */,
+				55A9CFD717EBED6000E7EB10 /* whiteOut.png */,
+				55A9CFD817EBED6100E7EB10 /* whiteOut@2x.png */,
+				55A9CFD317EBE91800E7EB10 /* compassKey.png */,
+				55A9CFD417EBE91800E7EB10 /* compassKey@2x.png */,
 				55A9CF9917EBE4B200E7EB10 /* locButton.png */,
 				55A9CF9A17EBE4B200E7EB10 /* locButton@2x.png */,
 				55A9CF9117EBDE1E00E7EB10 /* radar.png */,
@@ -395,19 +393,17 @@
 				55A9CFB317EBE67200E7EB10 /* ARSON@2x.png in Resources */,
 				55291EC517BBD4F700512F2E /* InfoPlist.strings in Resources */,
 				55A9CFC517EBE67200E7EB10 /* ROBBERY@2x.png in Resources */,
-				55A9CFCD17EBE85000E7EB10 /* whiteOut.png in Resources */,
 				55A9CFC617EBE67200E7EB10 /* SEX OFFENSE@2x.png in Resources */,
 				55291ECD17BBD4F700512F2E /* Default.png in Resources */,
 				55A9CFC817EBE67200E7EB10 /* WEAPONS VIOLATION@2x.png in Resources */,
 				55A9CFBC17EBE67200E7EB10 /* INTERFERENCE WITH PUBLIC OFFICER@2x.png in Resources */,
 				55A9CFB417EBE67200E7EB10 /* ASSAULT@2x.png in Resources */,
-				55A9CFCE17EBE85000E7EB10 /* whiteOut@2x.png in Resources */,
 				55291ECF17BBD4F700512F2E /* Default@2x.png in Resources */,
 				55291ED117BBD4F700512F2E /* Default-568h@2x.png in Resources */,
 				55A9CFBD17EBE67200E7EB10 /* KIDNAPPING@2x.png in Resources */,
 				55291ED417BBD4F700512F2E /* MainStoryboard_iPhone.storyboard in Resources */,
 				55A9CFC417EBE67200E7EB10 /* PUBLIC PEACE VIOLATION@2x.png in Resources */,
-				55A9CFD217EBE87900E7EB10 /* compassKey@2x.png in Resources */,
+				55A9CFD617EBE91800E7EB10 /* compassKey@2x.png in Resources */,
 				55291ED717BBD4F700512F2E /* MainStoryboard_iPad.storyboard in Resources */,
 				55A9CFB917EBE67200E7EB10 /* DECEPTIVE PRACTICE@2x.png in Resources */,
 				55A9CFC117EBE67200E7EB10 /* OFFENSE INVOLVING CHILDREN@2x.png in Resources */,
@@ -417,6 +413,7 @@
 				55880CDA17CE4D9700679AB2 /* BURGLARY.png in Resources */,
 				55A9CFB517EBE67200E7EB10 /* BATTERY@2x.png in Resources */,
 				55880CDB17CE4D9700679AB2 /* CRIMINAL DAMAGE.png in Resources */,
+				55A9CFDA17EBED6100E7EB10 /* whiteOut@2x.png in Resources */,
 				55A9CF9B17EBE4B200E7EB10 /* locButton.png in Resources */,
 				55880CDC17CE4D9700679AB2 /* CRIMINAL TRESPASS.png in Resources */,
 				55880CDD17CE4D9700679AB2 /* DECEPTIVE PRACTICE.png in Resources */,
@@ -441,7 +438,8 @@
 				55880CE817CE4D9700679AB2 /* PUBLIC PEACE VIOLATION.png in Resources */,
 				55880CE917CE4D9700679AB2 /* ROBBERY.png in Resources */,
 				55880CEA17CE4D9700679AB2 /* SEX OFFENSE.png in Resources */,
-				55A9CFD117EBE87900E7EB10 /* compassKey.png in Resources */,
+				55A9CFD517EBE91800E7EB10 /* compassKey.png in Resources */,
+				55A9CFD917EBED6100E7EB10 /* whiteOut.png in Resources */,
 				55880CEB17CE4D9700679AB2 /* THEFT.png in Resources */,
 				55880CEC17CE4D9700679AB2 /* WEAPONS VIOLATION.png in Resources */,
 				55A9CFC317EBE67200E7EB10 /* PROSTITUTION@2x.png in Resources */,
