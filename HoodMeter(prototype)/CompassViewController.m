@@ -118,57 +118,57 @@
          NSLog(@"SE %i",seCrimeVolume);
          
          if (nwCrimeVolume <=100) {
-             nwView.backgroundColor = [UIColor colorWithRed:76.0/255.0 green:217.0/255.0 blue:100.0/255.0 alpha:1];}//green
+             nwView.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//green
          else if
              (nwCrimeVolume >=100 && nwCrimeVolume <=299){
-                 nwView.backgroundColor = [UIColor colorWithRed:240.0/255.0 green:226.0/255.0 blue:42.0/255.0 alpha:1];}//yellow
+                 nwView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//yellow
          else if
              (nwCrimeVolume >=300 && nwCrimeVolume <=599){
-                 nwView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:161.0/255.0 blue:0.0/255.0 alpha:1];}//orange
+                 nwView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:167.0/255.0 blue:0.0/255.0 alpha:1];}//orange
          else if
              (nwCrimeVolume >=600){
                  nwView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:59.0/255.0 blue:48.0/255.0 alpha:1];}//red
          if (neCrimeVolume <=100) {
-             neView.backgroundColor = [UIColor colorWithRed:76.0/255.0 green:217.0/255.0 blue:100.0/255.0 alpha:1];}//green
+             neView.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//green
          else if
              (neCrimeVolume >=100 && neCrimeVolume <=299){
-                 neView.backgroundColor = [UIColor colorWithRed:240.0/255.0 green:226.0/255.0 blue:42.0/255.0 alpha:1];}//yellow
+                 neView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//yellow
          else if
              (neCrimeVolume >=300 && neCrimeVolume <=599){
-                 neView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:161.0/255.0 blue:0.0/255.0 alpha:1];}//orange
+                 neView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:167.0/255.0 blue:0.0/255.0 alpha:1];}//orange
          else if
              (neCrimeVolume >=600){
                  neView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:59.0/255.0 blue:48.0/255.0 alpha:1];}//red
          if (swCrimeVolume <=100) {
-             swView.backgroundColor = [UIColor colorWithRed:76.0/255.0 green:217.0/255.0 blue:100.0/255.0 alpha:1];}//green
+             swView.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//green
          else if
              (swCrimeVolume >=100 && swCrimeVolume <=299){
-                 swView.backgroundColor = [UIColor colorWithRed:240.0/255.0 green:226.0/255.0 blue:42.0/255.0 alpha:1];}//yellow
+                 swView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//yellow
          else if
              (swCrimeVolume >=300 && swCrimeVolume <=599){
-                 swView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:161.0/255.0 blue:0.0/255.0 alpha:1];}//orange
+                 swView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:167.0/255.0 blue:0.0/255.0 alpha:1];}//orange
          else if
              (swCrimeVolume >=600){
                  swView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:59.0/255.0 blue:48.0/255.0 alpha:1];}//red
          if (seCrimeVolume <=100) {
-             seView.backgroundColor = [UIColor colorWithRed:76.0/255.0 green:217.0/255.0 blue:100.0/255.0 alpha:1];}//green
+             seView.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//green
          else if
              (seCrimeVolume >=100 && seCrimeVolume <=299){
-                 seView.backgroundColor = [UIColor colorWithRed:240.0/255.0 green:226.0/255.0 blue:42.0/255.0 alpha:1];}//yellow
+                 seView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//yellow
          else if
              (seCrimeVolume >=300 && seCrimeVolume <=599){
-                 seView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:161.0/255.0 blue:0.0/255.0 alpha:1];}//orange
+                 seView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:167.0/255.0 blue:0.0/255.0 alpha:1];}//orange
          else if
              (seCrimeVolume >=600){
                  seView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:59.0/255.0 blue:48.0/255.0 alpha:1];}//red
          if (currentLocationRegionCrimeVolumeCount <=10) {
-             currentLocationView.backgroundColor = [UIColor colorWithRed:76.0/255.0 green:217.0/255.0 blue:100.0/255.0 alpha:1];}//green
+             currentLocationView.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//green
          else if
              (currentLocationRegionCrimeVolumeCount >=11 && currentLocationRegionCrimeVolumeCount <=20){
-                 currentLocationView.backgroundColor = [UIColor colorWithRed:240.0/255.0 green:226.0/255.0 blue:42.0/255.0 alpha:1];}//yellow
+                 currentLocationView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//yellow
          else if
              (currentLocationRegionCrimeVolumeCount >=21 && currentLocationRegionCrimeVolumeCount <=30){
-                 currentLocationView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:161.0/255.0 blue:0.0/255.0 alpha:1];}//orange
+                 currentLocationView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:167.0/255.0 blue:0.0/255.0 alpha:1];}//orange
          else if
              (currentLocationRegionCrimeVolumeCount >=31){
                  currentLocationView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:59.0/255.0 blue:48.0/255.0 alpha:1];}//red
