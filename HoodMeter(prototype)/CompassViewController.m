@@ -53,7 +53,6 @@
 	locationManager.delegate=self;
 	[locationManager startUpdatingHeading];
     [locationManager startUpdatingLocation];
-
     
     [super viewDidLoad];
     

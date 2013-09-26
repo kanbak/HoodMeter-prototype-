@@ -84,8 +84,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		551D9F1617EBACE50089ED82 /* mapButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mapButton.png; sourceTree = "<group>"; };
-		551D9F1717EBACE50089ED82 /* mapButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "mapButton@2x.png"; sourceTree = "<group>"; };
+		551D9F1617EBACE50089ED82 /* mapButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = mapButton.png; path = ../mapButton.png; sourceTree = "<group>"; };
+		551D9F1717EBACE50089ED82 /* mapButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mapButton@2x.png"; path = "../mapButton@2x.png"; sourceTree = "<group>"; };
 		55291EB717BBD4F700512F2E /* HoodMeter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HoodMeter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55291EBA17BBD4F700512F2E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		55291EBC17BBD4F700512F2E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -135,10 +135,10 @@
 		559AA99D17BD360E00174BA6 /* Crime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Crime.h; path = ../Crime.h; sourceTree = "<group>"; };
 		559AA99E17BD360E00174BA6 /* Crime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Crime.m; path = ../Crime.m; sourceTree = "<group>"; };
 		559AA9A117BD38BF00174BA6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		55A9CF9117EBDE1E00E7EB10 /* radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radar.png; sourceTree = "<group>"; };
-		55A9CF9217EBDE1E00E7EB10 /* radar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "radar@2x.png"; sourceTree = "<group>"; };
-		55A9CF9917EBE4B200E7EB10 /* locButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = locButton.png; sourceTree = "<group>"; };
-		55A9CF9A17EBE4B200E7EB10 /* locButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "locButton@2x.png"; sourceTree = "<group>"; };
+		55A9CF9117EBDE1E00E7EB10 /* radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = radar.png; path = ../radar.png; sourceTree = "<group>"; };
+		55A9CF9217EBDE1E00E7EB10 /* radar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "radar@2x.png"; path = "../radar@2x.png"; sourceTree = "<group>"; };
+		55A9CF9917EBE4B200E7EB10 /* locButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = locButton.png; path = ../locButton.png; sourceTree = "<group>"; };
+		55A9CF9A17EBE4B200E7EB10 /* locButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "locButton@2x.png"; path = "../locButton@2x.png"; sourceTree = "<group>"; };
 		55A9CF9D17EBE67200E7EB10 /* ARSON@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ARSON@2x.png"; sourceTree = "<group>"; };
 		55A9CF9E17EBE67200E7EB10 /* ASSAULT@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ASSAULT@2x.png"; sourceTree = "<group>"; };
 		55A9CF9F17EBE67200E7EB10 /* BATTERY@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BATTERY@2x.png"; sourceTree = "<group>"; };
@@ -161,12 +161,12 @@
 		55A9CFB017EBE67200E7EB10 /* SEX OFFENSE@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SEX OFFENSE@2x.png"; sourceTree = "<group>"; };
 		55A9CFB217EBE67200E7EB10 /* WEAPONS VIOLATION@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WEAPONS VIOLATION@2x.png"; sourceTree = "<group>"; };
 		55A9CFC917EBE6D700E7EB10 /* THEFT@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "THEFT@2x.png"; sourceTree = "<group>"; };
-		55A9CFD317EBE91800E7EB10 /* compassKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = compassKey.png; sourceTree = "<group>"; };
-		55A9CFD417EBE91800E7EB10 /* compassKey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compassKey@2x.png"; sourceTree = "<group>"; };
-		55A9CFD717EBED6000E7EB10 /* whiteOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = whiteOut.png; sourceTree = "<group>"; };
-		55A9CFD817EBED6100E7EB10 /* whiteOut@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "whiteOut@2x.png"; sourceTree = "<group>"; };
-		55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-5 2.png"; sourceTree = "<group>"; };
-		55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-5@2x 2.png"; sourceTree = "<group>"; };
+		55A9CFD317EBE91800E7EB10 /* compassKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = compassKey.png; path = ../compassKey.png; sourceTree = "<group>"; };
+		55A9CFD417EBE91800E7EB10 /* compassKey@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "compassKey@2x.png"; path = "../compassKey@2x.png"; sourceTree = "<group>"; };
+		55A9CFD717EBED6000E7EB10 /* whiteOut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = whiteOut.png; path = ../whiteOut.png; sourceTree = "<group>"; };
+		55A9CFD817EBED6100E7EB10 /* whiteOut@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "whiteOut@2x.png"; path = "../whiteOut@2x.png"; sourceTree = "<group>"; };
+		55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CriMeter-icon-5 2.png"; path = "../CriMeter-icon-5 2.png"; sourceTree = "<group>"; };
+		55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "CriMeter-icon-5@2x 2.png"; path = "../CriMeter-icon-5@2x 2.png"; sourceTree = "<group>"; };
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
 		55F670BD17C3DA7800BBEEAA /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
 		55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -192,18 +192,6 @@
 		55291EAE17BBD4F700512F2E = {
 			isa = PBXGroup;
 			children = (
-				55A9CFD717EBED6000E7EB10 /* whiteOut.png */,
-				55A9CFD817EBED6100E7EB10 /* whiteOut@2x.png */,
-				55A9CFD317EBE91800E7EB10 /* compassKey.png */,
-				55A9CFD417EBE91800E7EB10 /* compassKey@2x.png */,
-				55A9CF9917EBE4B200E7EB10 /* locButton.png */,
-				55A9CF9A17EBE4B200E7EB10 /* locButton@2x.png */,
-				55A9CF9117EBDE1E00E7EB10 /* radar.png */,
-				55A9CF9217EBDE1E00E7EB10 /* radar@2x.png */,
-				551D9F1617EBACE50089ED82 /* mapButton.png */,
-				551D9F1717EBACE50089ED82 /* mapButton@2x.png */,
-				55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */,
-				55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */,
 				55291EC017BBD4F700512F2E /* HoodMeter(prototype) */,
 				55291EB917BBD4F700512F2E /* Frameworks */,
 				55291EB817BBD4F700512F2E /* Products */,
@@ -237,10 +225,6 @@
 				557E811617C42DE1009EF1BA /* Main Project */,
 				557E811517C42D7A009EF1BA /* ViewControllers */,
 				559AA9A017BD362E00174BA6 /* Model */,
-				559AA99D17BD360E00174BA6 /* Crime.h */,
-				559AA99E17BD360E00174BA6 /* Crime.m */,
-				553CFEDD17BD63BF00DF6444 /* CrimeLocation.h */,
-				553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */,
 				55291EC117BBD4F700512F2E /* Supporting Files */,
 			);
 			path = "HoodMeter(prototype)";
@@ -249,6 +233,18 @@
 		55291EC117BBD4F700512F2E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				55A9CFD717EBED6000E7EB10 /* whiteOut.png */,
+				55A9CFD817EBED6100E7EB10 /* whiteOut@2x.png */,
+				55A9CFD317EBE91800E7EB10 /* compassKey.png */,
+				55A9CFD417EBE91800E7EB10 /* compassKey@2x.png */,
+				55A9CF9917EBE4B200E7EB10 /* locButton.png */,
+				55A9CF9A17EBE4B200E7EB10 /* locButton@2x.png */,
+				55A9CF9117EBDE1E00E7EB10 /* radar.png */,
+				55A9CF9217EBDE1E00E7EB10 /* radar@2x.png */,
+				551D9F1617EBACE50089ED82 /* mapButton.png */,
+				551D9F1717EBACE50089ED82 /* mapButton@2x.png */,
+				55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */,
+				55E52E3517CE7CA9004A117D /* CriMeter-icon-5 2.png */,
 				55A9CF9D17EBE67200E7EB10 /* ARSON@2x.png */,
 				55A9CF9E17EBE67200E7EB10 /* ASSAULT@2x.png */,
 				55A9CF9F17EBE67200E7EB10 /* BATTERY@2x.png */,
@@ -333,6 +329,10 @@
 		559AA9A017BD362E00174BA6 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				559AA99D17BD360E00174BA6 /* Crime.h */,
+				559AA99E17BD360E00174BA6 /* Crime.m */,
+				553CFEDD17BD63BF00DF6444 /* CrimeLocation.h */,
+				553CFEDE17BD63BF00DF6444 /* CrimeLocation.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
