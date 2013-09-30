@@ -13,11 +13,9 @@
 
 @interface CompassViewController : UIViewController <CLLocationManagerDelegate>
 {
-IBOutlet UIImageView *compassImage;
 CLLocationManager *locationManager;
 }
 @property (nonatomic,retain) CLLocationManager *locationManager;
 
-@property (nonatomic, strong) IBOutletCollection(UIImageView) NSArray *compassViews;
 
 @end

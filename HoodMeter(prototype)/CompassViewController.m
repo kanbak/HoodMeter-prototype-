@@ -4,6 +4,7 @@
 //
 //  Created by Umut Kanbak on 8/20/13.
 //  Copyright (c) 2013 Umut Kanbak. All rights reserved.
+// 
 //
 
 #import "CompassViewController.h"
@@ -31,27 +32,6 @@
 @implementation CompassViewController
 
 @synthesize locationManager;
-@synthesize compassViews;
-
-//-(void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-//    NSLog(@"CHANGED! %i", status);
-//    
-//        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Service Disabled"
-//                                                        message:@"To enable, please go to Settings and turn on Location Service for this app."
-//                                                       delegate:nil
-//                                              cancelButtonTitle:@"OK"
-//                                              otherButtonTitles:nil];
-//        if ((status ==0) || (status ==1) || (status==2)){
-//        [alert show];
-//    }
-//
-//    
-//}
-
-//-(void)viewDidAppear:(BOOL)animated {
-//    [super viewDidAppear:animated];
-//}
-
 
 - (void)viewDidLoad
 {
@@ -73,7 +53,6 @@
 	locationManager.delegate=self;
 	[locationManager startUpdatingHeading];
     [locationManager startUpdatingLocation];
-
     
     [super viewDidLoad];
     
@@ -138,60 +117,60 @@
          NSLog(@"SE %i",seCrimeVolume);
          
          if (nwCrimeVolume <=100) {
-             nwView.backgroundColor = [UIColor greenColor];}
+             nwView.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//green
          else if
              (nwCrimeVolume >=100 && nwCrimeVolume <=299){
-                 nwView.backgroundColor = [UIColor yellowColor];}
+                 nwView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//yellow
          else if
              (nwCrimeVolume >=300 && nwCrimeVolume <=599){
-                 nwView.backgroundColor = [UIColor orangeColor];}
+                 nwView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:167.0/255.0 blue:0.0/255.0 alpha:1];}//orange
          else if
              (nwCrimeVolume >=600){
-                 nwView.backgroundColor = [UIColor redColor];}
+                 nwView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:59.0/255.0 blue:48.0/255.0 alpha:1];}//red
          if (neCrimeVolume <=100) {
-             neView.backgroundColor = [UIColor greenColor];}
+             neView.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//green
          else if
              (neCrimeVolume >=100 && neCrimeVolume <=299){
-                 neView.backgroundColor = [UIColor yellowColor];}
+                 neView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//yellow
          else if
              (neCrimeVolume >=300 && neCrimeVolume <=599){
-                 neView.backgroundColor = [UIColor orangeColor];}
+                 neView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:167.0/255.0 blue:0.0/255.0 alpha:1];}//orange
          else if
              (neCrimeVolume >=600){
-                 neView.backgroundColor = [UIColor redColor];}
+                 neView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:59.0/255.0 blue:48.0/255.0 alpha:1];}//red
          if (swCrimeVolume <=100) {
-             swView.backgroundColor = [UIColor greenColor];}
+             swView.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//green
          else if
              (swCrimeVolume >=100 && swCrimeVolume <=299){
-                 swView.backgroundColor = [UIColor yellowColor];}
+                 swView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//yellow
          else if
              (swCrimeVolume >=300 && swCrimeVolume <=599){
-                 swView.backgroundColor = [UIColor orangeColor];}
+                 swView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:167.0/255.0 blue:0.0/255.0 alpha:1];}//orange
          else if
              (swCrimeVolume >=600){
-                 swView.backgroundColor = [UIColor redColor];}
+                 swView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:59.0/255.0 blue:48.0/255.0 alpha:1];}//red
          if (seCrimeVolume <=100) {
-             seView.backgroundColor = [UIColor greenColor];}
+             seView.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//green
          else if
              (seCrimeVolume >=100 && seCrimeVolume <=299){
-                 seView.backgroundColor = [UIColor yellowColor];}
+                 seView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//yellow
          else if
              (seCrimeVolume >=300 && seCrimeVolume <=599){
-                 seView.backgroundColor = [UIColor orangeColor];}
+                 seView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:167.0/255.0 blue:0.0/255.0 alpha:1];}//orange
          else if
              (seCrimeVolume >=600){
-                 seView.backgroundColor = [UIColor redColor];}
+                 seView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:59.0/255.0 blue:48.0/255.0 alpha:1];}//red
          if (currentLocationRegionCrimeVolumeCount <=10) {
-             currentLocationView.backgroundColor = [UIColor greenColor];}
+             currentLocationView.backgroundColor = [UIColor colorWithRed:102.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//green
          else if
              (currentLocationRegionCrimeVolumeCount >=11 && currentLocationRegionCrimeVolumeCount <=20){
-                 currentLocationView.backgroundColor = [UIColor yellowColor];}
+                 currentLocationView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:255.0/255.0 blue:0.0/255.0 alpha:1];}//yellow
          else if
              (currentLocationRegionCrimeVolumeCount >=21 && currentLocationRegionCrimeVolumeCount <=30){
-                 currentLocationView.backgroundColor = [UIColor orangeColor];}
+                 currentLocationView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:167.0/255.0 blue:0.0/255.0 alpha:1];}//orange
          else if
              (currentLocationRegionCrimeVolumeCount >=31){
-                 currentLocationView.backgroundColor = [UIColor redColor];}
+                 currentLocationView.backgroundColor = [UIColor colorWithRed:255.0/255.0 green:59.0/255.0 blue:48.0/255.0 alpha:1];}//red
 
      }];
     

@@ -9,6 +9,8 @@
 #import "DetailViewController.h"
 #import "Crime.h"
 
+#define METERS_PER_MILE 1609.344
+
 @interface DetailViewController ()
 {
     __weak IBOutlet UILabel *crimeTypeOutlet;
@@ -20,6 +22,7 @@
     NSString *crimeLatitude;
     NSString *crimeLongitude;
 
+    __weak IBOutlet MKMapView *detailViewMapViewOutlet;
 }
 
 @end
@@ -54,7 +57,36 @@
     crimeLatitudeOutlet.text = crimeLatitude;
     crimeLongitudeOutlet.text = crimeLongitude;
     NSLog(@"%@", crime.primaryTypeString);
+    
+    MKCoordinateSpan span = MKCoordinateSpanMake(0.0050, 0.0050);
+    MKCoordinateRegion aRegion = MKCoordinateRegionMake(crime.coordinate, span);
+    [detailViewMapViewOutlet setRegion:aRegion animated:NO];
+    [detailViewMapViewOutlet addAnnotation:crime];
 }
+
+- (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation {
+    static NSString *identifier = @"MyLocation";
+    if ([annotation isKindOfClass:[Crime class]]) {
+        Crime *crimeAnnotation = (Crime *)annotation;
+        MKPinAnnotationView *annotationView = (MKPinAnnotationView *) [mapView dequeueReusableAnnotationViewWithIdentifier:identifier];
+        if (annotationView == nil) {
+            annotationView = [[MKPinAnnotationView alloc] initWithAnnotation:crimeAnnotation reuseIdentifier:identifier];
+            annotationView.enabled = YES;
+            annotationView.pinColor = MKPinAnnotationColorPurple;
+            
+        } else {
+            annotationView.annotation = annotation;
+        }
+
+        return annotationView;
+    }
+    
+    return nil;
+    
+    mapView.showsUserLocation = YES;
+    
+}
+
 
 - (void)didReceiveMemoryWarning
 {
