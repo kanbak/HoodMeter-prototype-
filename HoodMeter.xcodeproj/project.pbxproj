@@ -365,6 +365,11 @@
 			attributes = {
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Umut Kanbak";
+				TargetAttributes = {
+					55291EB617BBD4F700512F2E = {
+						DevelopmentTeam = 7L932ZA7HX;
+					};
+				};
 			};
 			buildConfigurationList = 55291EB217BBD4F700512F2E /* Build configuration list for PBXProject "HoodMeter" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -573,8 +578,9 @@
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "HoodMeter(prototype)/HoodMeter-Info.plist";
 				PRODUCT_NAME = HoodMeter;
-				PROVISIONING_PROFILE = "C3B662E8-DC31-4F98-B8C1-D5FDAE0DF324";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C3B662E8-DC31-4F98-B8C1-D5FDAE0DF324";
+				PROVISIONING_PROFILE = "C89BDDD8-5023-48AE-AD06-5C4A0863A437";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "C89BDDD8-5023-48AE-AD06-5C4A0863A437";
+				SDKROOT = iphoneos7.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				WARNING_CFLAGS = "-Wall";
 				WRAPPER_EXTENSION = app;
@@ -584,8 +590,8 @@
 		55291EDF17BBD4F700512F2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Umut KANBAK (7L932ZA7HX)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Umut KANBAK (7L932ZA7HX)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Umut KANBAK (ZBLDDTMZ62)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HoodMeter(prototype)/HoodMeter-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -593,6 +599,7 @@
 				PRODUCT_NAME = HoodMeter;
 				PROVISIONING_PROFILE = "5BCC6947-2C55-4884-8976-204071ABE04B";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5BCC6947-2C55-4884-8976-204071ABE04B";
+				SDKROOT = iphoneos7.0;
 				TARGETED_DEVICE_FAMILY = 1;
 				WARNING_CFLAGS = "-Wall";
 				WRAPPER_EXTENSION = app;
