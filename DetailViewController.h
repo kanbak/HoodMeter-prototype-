@@ -6,10 +6,12 @@
 //  Copyright (c) 2013 Umut Kanbak. All rights reserved.
 //
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
+#import <CoreLocation/CoreLocation.h>
 #import "Crime.h"
 @class Crime;
 
-@interface DetailViewController : UIViewController 
+@interface DetailViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
 
 @property (nonatomic, strong)Crime *crime;
 

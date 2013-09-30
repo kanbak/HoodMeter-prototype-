@@ -11,8 +11,8 @@
 
 @interface CrimeLocation : NSObject <MKAnnotation>
 
-@property(strong, nonatomic) NSString *title;
-@property(strong,nonatomic) NSString *description;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, copy) NSString *subtitle;
 @property(assign, nonatomic) CLLocationCoordinate2D coordinate;
 
 
