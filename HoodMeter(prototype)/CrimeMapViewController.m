@@ -117,13 +117,16 @@
         
         CLPlacemark *placemark = [placemarks objectAtIndex:0];
         MKCoordinateRegion region;
-        region.center.latitude = placemark.region.center.latitude;
-        region.center.longitude = placemark.region.center.longitude;
+        region.center = [(CLCircularRegion *)placemark.region center];
+       // region.center.latitude = placemark.region.center.latitude; deprecated in iOS7
+       // region.center.longitude = placemark.region.center.longitude; deprecated in iOS7
         MKCoordinateSpan span;
-        double radius = placemark.region.radius / 1000; // convert to km
+       // double radius = placemark.region.radius / 1000; // convert to km deprecated in iOS7
         
-        NSLog(@"[searchBarSearchButtonClicked] Radius is %f", radius);
-        span.latitudeDelta = radius / 20.0;
+      //  NSLog(@"[searchBarSearchButtonClicked] Radius is %f", radius); deprecated in iOS7
+        //span.latitudeDelta = radius / 20.0;
+        span.latitudeDelta = 0.01;
+        span.longitudeDelta = 0.01;
         
         region.span = span;
         

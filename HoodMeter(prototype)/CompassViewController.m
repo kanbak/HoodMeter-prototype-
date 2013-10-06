@@ -80,7 +80,8 @@
          
          CLLocationCoordinate2D currentLocation = locationManager.location.coordinate;
          CLLocationDistance regionRadius = 500.00;
-         CLRegion *currentLocationRegion = [[CLRegion alloc]initCircularRegionWithCenter:locationManager.location.coordinate radius:regionRadius identifier:@"currentLocationRegion"];
+         //CLRegion *currentLocationRegion = [[CLRegion alloc]initCircularRegionWithCenter:locationManager.location.coordinate radius:regionRadius identifier:@"currentLocationRegion"]; deprecated in iOS7
+         CLCircularRegion *currentLocationRegion = [[CLCircularRegion alloc]initWithCenter:locationManager.location.coordinate radius:regionRadius identifier:@"currentLocationRegion"];
          
          for (Crime *crime in self.crimesArray){
              if ([currentLocationRegion containsCoordinate:crime.coordinate]){
