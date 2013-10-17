@@ -83,6 +83,12 @@
 		55E52E3A17CE7D02004A117D /* CriMeter-icon-5@2x 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 55E52E3717CE7CAC004A117D /* CriMeter-icon-5@2x 2.png */; };
 		55F670BE17C3DA7800BBEEAA /* CompassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F670BD17C3DA7800BBEEAA /* CompassViewController.m */; };
 		55F670CC17C3EC3800BBEEAA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */; };
+		AAAF1B711810357400C80538 /* CriMeter-icon-58x58.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAF1B6B1810357400C80538 /* CriMeter-icon-58x58.png */; };
+		AAAF1B721810357400C80538 /* CriMeter-icon-58x58@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAF1B6C1810357400C80538 /* CriMeter-icon-58x58@2x.png */; };
+		AAAF1B731810357400C80538 /* CriMeter-icon-80x80.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAF1B6D1810357400C80538 /* CriMeter-icon-80x80.png */; };
+		AAAF1B741810357400C80538 /* CriMeter-icon-80x80@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAF1B6E1810357400C80538 /* CriMeter-icon-80x80@2x.png */; };
+		AAAF1B751810357400C80538 /* CriMeter-icon-120x120.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAF1B6F1810357400C80538 /* CriMeter-icon-120x120.png */; };
+		AAAF1B761810357400C80538 /* CriMeter-icon-120x120@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AAAF1B701810357400C80538 /* CriMeter-icon-120x120@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -172,6 +178,12 @@
 		55F670BC17C3DA7800BBEEAA /* CompassViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompassViewController.h; sourceTree = "<group>"; };
 		55F670BD17C3DA7800BBEEAA /* CompassViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompassViewController.m; sourceTree = "<group>"; };
 		55F670CB17C3EC3800BBEEAA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AAAF1B6B1810357400C80538 /* CriMeter-icon-58x58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-58x58.png"; sourceTree = "<group>"; };
+		AAAF1B6C1810357400C80538 /* CriMeter-icon-58x58@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-58x58@2x.png"; sourceTree = "<group>"; };
+		AAAF1B6D1810357400C80538 /* CriMeter-icon-80x80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-80x80.png"; sourceTree = "<group>"; };
+		AAAF1B6E1810357400C80538 /* CriMeter-icon-80x80@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-80x80@2x.png"; sourceTree = "<group>"; };
+		AAAF1B6F1810357400C80538 /* CriMeter-icon-120x120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-120x120.png"; sourceTree = "<group>"; };
+		AAAF1B701810357400C80538 /* CriMeter-icon-120x120@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CriMeter-icon-120x120@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +247,12 @@
 		55291EC117BBD4F700512F2E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AAAF1B6B1810357400C80538 /* CriMeter-icon-58x58.png */,
+				AAAF1B6C1810357400C80538 /* CriMeter-icon-58x58@2x.png */,
+				AAAF1B6D1810357400C80538 /* CriMeter-icon-80x80.png */,
+				AAAF1B6E1810357400C80538 /* CriMeter-icon-80x80@2x.png */,
+				AAAF1B6F1810357400C80538 /* CriMeter-icon-120x120.png */,
+				AAAF1B701810357400C80538 /* CriMeter-icon-120x120@2x.png */,
 				557B3EBC17FA080900215313 /* mapButton.png */,
 				557B3EBD17FA080900215313 /* mapButton@2x.png */,
 				55A9CFD717EBED6000E7EB10 /* whiteOut.png */,
@@ -420,6 +438,7 @@
 				55880CD917CE4D9700679AB2 /* BATTERY.png in Resources */,
 				55880CDA17CE4D9700679AB2 /* BURGLARY.png in Resources */,
 				55A9CFB517EBE67200E7EB10 /* BATTERY@2x.png in Resources */,
+				AAAF1B761810357400C80538 /* CriMeter-icon-120x120@2x.png in Resources */,
 				55880CDB17CE4D9700679AB2 /* CRIMINAL DAMAGE.png in Resources */,
 				55A9CFDA17EBED6100E7EB10 /* whiteOut@2x.png in Resources */,
 				55A9CF9B17EBE4B200E7EB10 /* locButton.png in Resources */,
@@ -430,10 +449,12 @@
 				55A9CFBB17EBE67200E7EB10 /* HOMICIDE@2x.png in Resources */,
 				55880CDF17CE4D9700679AB2 /* HOMICIDE.png in Resources */,
 				55880CE017CE4D9700679AB2 /* INTERFERENCE WITH PUBLIC OFFICER.png in Resources */,
+				AAAF1B751810357400C80538 /* CriMeter-icon-120x120.png in Resources */,
 				55880CE117CE4D9700679AB2 /* KIDNAPPING.png in Resources */,
 				55A9CFCA17EBE6D700E7EB10 /* THEFT@2x.png in Resources */,
 				55880CE217CE4D9700679AB2 /* LIQUOR LAW VIOLATION.png in Resources */,
 				55A9CFC017EBE67200E7EB10 /* NARCOTICS@2x.png in Resources */,
+				AAAF1B721810357400C80538 /* CriMeter-icon-58x58@2x.png in Resources */,
 				55A9CFBF17EBE67200E7EB10 /* MOTOR VEHICLE THEFT@2x.png in Resources */,
 				55880CE317CE4D9700679AB2 /* MOTOR VEHICLE THEFT.png in Resources */,
 				557B3EBF17FA080900215313 /* mapButton@2x.png in Resources */,
@@ -450,13 +471,16 @@
 				55A9CFD517EBE91800E7EB10 /* compassKey.png in Resources */,
 				55A9CFD917EBED6100E7EB10 /* whiteOut.png in Resources */,
 				55880CEB17CE4D9700679AB2 /* THEFT.png in Resources */,
+				AAAF1B711810357400C80538 /* CriMeter-icon-58x58.png in Resources */,
 				55880CEC17CE4D9700679AB2 /* WEAPONS VIOLATION.png in Resources */,
 				55A9CFC317EBE67200E7EB10 /* PROSTITUTION@2x.png in Resources */,
 				55E52E3917CE7CFD004A117D /* CriMeter-icon-5 2.png in Resources */,
 				55A9CFB817EBE67200E7EB10 /* CRIMINAL TRESPASS@2x.png in Resources */,
 				55A9CF9617EBDE1E00E7EB10 /* radar@2x.png in Resources */,
 				55E52E3A17CE7D02004A117D /* CriMeter-icon-5@2x 2.png in Resources */,
+				AAAF1B731810357400C80538 /* CriMeter-icon-80x80.png in Resources */,
 				55A9CFB717EBE67200E7EB10 /* CRIMINAL DAMAGE@2x.png in Resources */,
+				AAAF1B741810357400C80538 /* CriMeter-icon-80x80@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
