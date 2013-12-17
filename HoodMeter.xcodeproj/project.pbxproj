@@ -599,15 +599,15 @@
 		55291EDE17BBD4F700512F2E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: Umut KANBAK (ZBLDDTMZ62)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Umut KANBAK (ZBLDDTMZ62)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HoodMeter(prototype)/HoodMeter-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "HoodMeter(prototype)/HoodMeter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = HoodMeter;
-				PROVISIONING_PROFILE = "A00CD092-7771-44E0-A443-5426094A27EC";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "A00CD092-7771-44E0-A443-5426094A27EC";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -619,15 +619,15 @@
 		55291EDF17BBD4F700512F2E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Umut KANBAK (7L932ZA7HX)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Umut KANBAK (7L932ZA7HX)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HoodMeter(prototype)/HoodMeter-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				INFOPLIST_FILE = "HoodMeter(prototype)/HoodMeter-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = HoodMeter;
-				PROVISIONING_PROFILE = "563BE899-59DA-440E-9F17-A079D223B699";
+				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "563BE899-59DA-440E-9F17-A079D223B699";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 1;
